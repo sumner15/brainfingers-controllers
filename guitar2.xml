@@ -1,0 +1,1864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<SubSystem>
+		<Name>Controller</Name>
+		<xPCName>guitar2/Controller</xPCName>
+		<SubSystem>
+			<Name>PID</Name>
+			<xPCName>guitar2/Controller/PID</xPCName>
+			<SubSystem>
+				<Name>Compare
+To Constant</Name>
+				<xPCName>guitar2/Controller/PID/Compare To Constant</xPCName>
+				<block>
+					<blkName>Constant</blkName>
+					<xpcblkName>Controller/PID/Compare To Constant/Constant</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/Compare To Constant/Constant</SLblockPath>
+					<isSrc>[1 0 1]</isSrc>
+					<parameter>
+						<paramName>Value</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>Compare</sigName>
+					<xpcsigName>Controller/PID/Compare To Constant/Compare</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<SubSystem>
+				<Name>Scope (xPC) 1</Name>
+				<xPCName>guitar2/Controller/PID/Scope (xPC) 1</xPCName>
+			</SubSystem>
+			<SubSystem>
+				<Name>gain file</Name>
+				<xPCName>guitar2/Controller/PID/gain file</xPCName>
+				<SubSystem>
+					<Name>Scope (xPC) </Name>
+					<xPCName>guitar2/Controller/PID/gain file/Scope (xPC) </xPCName>
+				</SubSystem>
+				<SubSystem>
+					<Name>file readable outputs</Name>
+					<xPCName>guitar2/Controller/PID/gain file/file readable outputs</xPCName>
+				</SubSystem>
+				<signal>
+					<sigName>file readable outputs</sigName>
+					<xpcsigName>Controller/PID/gain file/file readable outputs</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<SubSystem>
+				<Name>gain transition</Name>
+				<xPCName>guitar2/Controller/PID/gain transition</xPCName>
+				<SubSystem>
+					<Name>gainramp</Name>
+					<xPCName>guitar2/Controller/PID/gain transition/gainramp</xPCName>
+				</SubSystem>
+				<block>
+					<blkName>Memory</blkName>
+					<xpcblkName>Controller/PID/gain transition/Memory</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/gain transition/Memory</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>X0</paramName>
+						<dim>[1, 4]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>gainramp/p1</sigName>
+					<xpcsigName>Controller/PID/gain transition/gainramp/p1</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>gainramp/p2</sigName>
+					<xpcsigName>Controller/PID/gain transition/gainramp/p2</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Memory</sigName>
+					<xpcsigName>Controller/PID/gain transition/Memory</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<SubSystem>
+				<Name>gain transition1</Name>
+				<xPCName>guitar2/Controller/PID/gain transition1</xPCName>
+				<SubSystem>
+					<Name>gainramp</Name>
+					<xPCName>guitar2/Controller/PID/gain transition1/gainramp</xPCName>
+				</SubSystem>
+				<block>
+					<blkName>Memory</blkName>
+					<xpcblkName>Controller/PID/gain transition1/Memory</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/gain transition1/Memory</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>X0</paramName>
+						<dim>[1, 4]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>gainramp/p1</sigName>
+					<xpcsigName>Controller/PID/gain transition1/gainramp/p1</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>gainramp/p2</sigName>
+					<xpcsigName>Controller/PID/gain transition1/gainramp/p2</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Memory</sigName>
+					<xpcsigName>Controller/PID/gain transition1/Memory</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<SubSystem>
+				<Name>gain transition2</Name>
+				<xPCName>guitar2/Controller/PID/gain transition2</xPCName>
+				<SubSystem>
+					<Name>gainramp</Name>
+					<xPCName>guitar2/Controller/PID/gain transition2/gainramp</xPCName>
+				</SubSystem>
+				<block>
+					<blkName>Memory</blkName>
+					<xpcblkName>Controller/PID/gain transition2/Memory</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/gain transition2/Memory</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>X0</paramName>
+						<dim>[1, 4]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>gainramp/p1</sigName>
+					<xpcsigName>Controller/PID/gain transition2/gainramp/p1</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>gainramp/p2</sigName>
+					<xpcsigName>Controller/PID/gain transition2/gainramp/p2</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Memory</sigName>
+					<xpcsigName>Controller/PID/gain transition2/Memory</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<SubSystem>
+				<Name>gain transition3</Name>
+				<xPCName>guitar2/Controller/PID/gain transition3</xPCName>
+				<SubSystem>
+					<Name>gainramp</Name>
+					<xPCName>guitar2/Controller/PID/gain transition3/gainramp</xPCName>
+				</SubSystem>
+				<block>
+					<blkName>Memory</blkName>
+					<xpcblkName>Controller/PID/gain transition3/Memory</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/gain transition3/Memory</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>X0</paramName>
+						<dim>[1, 4]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>gainramp/p1</sigName>
+					<xpcsigName>Controller/PID/gain transition3/gainramp/p1</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>gainramp/p2</sigName>
+					<xpcsigName>Controller/PID/gain transition3/gainramp/p2</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Memory</sigName>
+					<xpcsigName>Controller/PID/gain transition3/Memory</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<SubSystem>
+				<Name>gain transition4</Name>
+				<xPCName>guitar2/Controller/PID/gain transition4</xPCName>
+				<SubSystem>
+					<Name>gainramp</Name>
+					<xPCName>guitar2/Controller/PID/gain transition4/gainramp</xPCName>
+				</SubSystem>
+				<block>
+					<blkName>Constant</blkName>
+					<xpcblkName>Controller/PID/gain transition4/Constant</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/gain transition4/Constant</SLblockPath>
+					<isSrc>[1 0 1]</isSrc>
+					<parameter>
+						<paramName>Value</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<block>
+					<blkName>Memory</blkName>
+					<xpcblkName>Controller/PID/gain transition4/Memory</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/gain transition4/Memory</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>X0</paramName>
+						<dim>[1, 4]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>gainramp/p1</sigName>
+					<xpcsigName>Controller/PID/gain transition4/gainramp/p1</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>gainramp/p2</sigName>
+					<xpcsigName>Controller/PID/gain transition4/gainramp/p2</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Memory</sigName>
+					<xpcsigName>Controller/PID/gain transition4/Memory</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<block>
+				<blkName>Kd2 gain</blkName>
+				<xpcblkName>Controller/PID/Kd2 gain</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/Kd2 gain</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Kp2 gain</blkName>
+				<xpcblkName>Controller/PID/Kp2 gain</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/Kp2 gain</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>add position offset</blkName>
+				<xpcblkName>Controller/PID/add position offset</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/add position offset</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>kd1 gain</blkName>
+				<xpcblkName>Controller/PID/kd1 gain</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/kd1 gain</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>kp1 gain</blkName>
+				<xpcblkName>Controller/PID/kp1 gain</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/kp1 gain</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>sigmoid duration in seconds</blkName>
+				<xpcblkName>Controller/PID/sigmoid duration in seconds</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/sigmoid duration in seconds</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>sigmoid duration in seconds1</blkName>
+				<xpcblkName>Controller/PID/sigmoid duration in seconds1</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/sigmoid duration in seconds1</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Gain</blkName>
+				<xpcblkName>Controller/PID/Gain</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/Gain</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Gain1</blkName>
+				<xpcblkName>Controller/PID/Gain1</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/Gain1</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Gain2</blkName>
+				<xpcblkName>Controller/PID/Gain2</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/Gain2</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Gain3</blkName>
+				<xpcblkName>Controller/PID/Gain3</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/Gain3</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Gain4</blkName>
+				<xpcblkName>Controller/PID/Gain4</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/Gain4</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Gain5</blkName>
+				<xpcblkName>Controller/PID/Gain5</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/Gain5</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>Clock</sigName>
+				<xpcsigName>Controller/PID/Clock</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Gain</sigName>
+				<xpcsigName>Controller/PID/Gain</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Gain1</sigName>
+				<xpcsigName>Controller/PID/Gain1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Gain2</sigName>
+				<xpcsigName>Controller/PID/Gain2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Gain3</sigName>
+				<xpcsigName>Controller/PID/Gain3</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Gain4</sigName>
+				<xpcsigName>Controller/PID/Gain4</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Gain5</sigName>
+				<xpcsigName>Controller/PID/Gain5</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Product1</sigName>
+				<xpcsigName>Controller/PID/Product1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Product2</sigName>
+				<xpcsigName>Controller/PID/Product2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Product3</sigName>
+				<xpcsigName>Controller/PID/Product3</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Product4</sigName>
+				<xpcsigName>Controller/PID/Product4</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Product5</sigName>
+				<xpcsigName>Controller/PID/Product5</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Product6</sigName>
+				<xpcsigName>Controller/PID/Product6</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum1</sigName>
+				<xpcsigName>Controller/PID/Sum1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum2</sigName>
+				<xpcsigName>Controller/PID/Sum2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum3</sigName>
+				<xpcsigName>Controller/PID/Sum3</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum4</sigName>
+				<xpcsigName>Controller/PID/Sum4</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum5</sigName>
+				<xpcsigName>Controller/PID/Sum5</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum6</sigName>
+				<xpcsigName>Controller/PID/Sum6</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum7</sigName>
+				<xpcsigName>Controller/PID/Sum7</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum8</sigName>
+				<xpcsigName>Controller/PID/Sum8</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<SubSystem>
+			<Name>start</Name>
+			<xPCName>guitar2/Controller/start</xPCName>
+			<SubSystem>
+				<Name>Ramp</Name>
+				<xPCName>guitar2/Controller/start/Ramp</xPCName>
+				<block>
+					<blkName>Constant</blkName>
+					<xpcblkName>Controller/start/Ramp/Constant</xpcblkName>
+					<SLblockPath>guitar2/Controller/start/Ramp/Constant</SLblockPath>
+					<isSrc>[1 0 1]</isSrc>
+					<parameter>
+						<paramName>Value</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<block>
+					<blkName>Constant1</blkName>
+					<xpcblkName>Controller/start/Ramp/Constant1</xpcblkName>
+					<SLblockPath>guitar2/Controller/start/Ramp/Constant1</SLblockPath>
+					<isSrc>[1 0 1]</isSrc>
+					<parameter>
+						<paramName>Value</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<block>
+					<blkName>Step</blkName>
+					<xpcblkName>Controller/start/Ramp/Step</xpcblkName>
+					<SLblockPath>guitar2/Controller/start/Ramp/Step</SLblockPath>
+					<isSrc>[1 0 1]</isSrc>
+					<parameter>
+						<paramName>Time</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+					<parameter>
+						<paramName>Before</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+					<parameter>
+						<paramName>After</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>Clock</sigName>
+					<xpcsigName>Controller/start/Ramp/Clock</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Product</sigName>
+					<xpcsigName>Controller/start/Ramp/Product</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Step</sigName>
+					<xpcsigName>Controller/start/Ramp/Step</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Output</sigName>
+					<xpcsigName>Controller/start/Ramp/Output</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Sum</sigName>
+					<xpcsigName>Controller/start/Ramp/Sum</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<block>
+				<blkName>Saturation</blkName>
+				<xpcblkName>Controller/start/Saturation</xpcblkName>
+				<SLblockPath>guitar2/Controller/start/Saturation</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>UpperLimit</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+				<parameter>
+					<paramName>LowerLimit</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>Saturation</sigName>
+				<xpcsigName>Controller/start/Saturation</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<SubSystem>
+			<Name>stop</Name>
+			<xPCName>guitar2/Controller/stop</xPCName>
+			<block>
+				<blkName>Gain</blkName>
+				<xpcblkName>Controller/stop/Gain</xpcblkName>
+				<SLblockPath>guitar2/Controller/stop/Gain</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Gain1</blkName>
+				<xpcblkName>Controller/stop/Gain1</xpcblkName>
+				<SLblockPath>guitar2/Controller/stop/Gain1</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>Gain</sigName>
+				<xpcsigName>Controller/stop/Gain</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Gain1</sigName>
+				<xpcsigName>Controller/stop/Gain1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<SubSystem>
+			<Name>Chart</Name>
+			<xPCName>guitar2/Controller/Chart</xPCName>
+		</SubSystem>
+		<block>
+			<blkName>controller type:
+PID=1
+AAN = 2
+Generalized AAN =3</blkName>
+			<xpcblkName>Controller/controller type: PID=1 AAN = 2 Generalized AAN =3</xpcblkName>
+			<SLblockPath>guitar2/Controller/controller type: PID=1 AAN = 2 Generalized AAN =3</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>stop forces</blkName>
+			<xpcblkName>Controller/stop forces</xpcblkName>
+			<SLblockPath>guitar2/Controller/stop forces</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<signal>
+			<sigName>Chart/p1</sigName>
+			<xpcsigName>Controller/Chart/p1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Chart/p2</sigName>
+			<xpcsigName>Controller/Chart/p2</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Chart/p3</sigName>
+			<xpcsigName>Controller/Chart/p3</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Chart/p4</sigName>
+			<xpcsigName>Controller/Chart/p4</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>controller type:
+PID=1
+AAN = 2
+Generalized AAN =3</sigName>
+			<xpcsigName>Controller/controller type: PID=1 AAN = 2 Generalized AAN =3</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Multiport
+Switch</sigName>
+			<xpcsigName>Controller/Multiport Switch</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Multiport
+Switch1</sigName>
+			<xpcsigName>Controller/Multiport Switch1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Product</sigName>
+			<xpcsigName>Controller/Product</xpcsigName>
+			<sigWidth>2</sigWidth>
+			<sigDim>[2, 1]</sigDim>
+		</signal>
+	</SubSystem>
+	<SubSystem>
+		<Name>Controller Parameters</Name>
+		<xPCName>guitar2/Controller Parameters</xPCName>
+		<block>
+			<blkName>Adaptation Rate</blkName>
+			<xpcblkName>Controller Parameters/Adaptation Rate</xpcblkName>
+			<SLblockPath>guitar2/Controller Parameters/Adaptation Rate</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Lambda</blkName>
+			<xpcblkName>Controller Parameters/Lambda</xpcblkName>
+			<SLblockPath>guitar2/Controller Parameters/Lambda</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>PD d</blkName>
+			<xpcblkName>Controller Parameters/PD d</xpcblkName>
+			<SLblockPath>guitar2/Controller Parameters/PD d</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>PD p</blkName>
+			<xpcblkName>Controller Parameters/PD p</xpcblkName>
+			<SLblockPath>guitar2/Controller Parameters/PD p</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>PD p1</blkName>
+			<xpcblkName>Controller Parameters/PD p1</xpcblkName>
+			<SLblockPath>guitar2/Controller Parameters/PD p1</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>forgetting rate</blkName>
+			<xpcblkName>Controller Parameters/forgetting rate</xpcblkName>
+			<SLblockPath>guitar2/Controller Parameters/forgetting rate</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<signal>
+			<sigName>Adaptation Rate</sigName>
+			<xpcsigName>Controller Parameters/Adaptation Rate</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Lambda</sigName>
+			<xpcsigName>Controller Parameters/Lambda</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>PD d</sigName>
+			<xpcsigName>Controller Parameters/PD d</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>PD p</sigName>
+			<xpcsigName>Controller Parameters/PD p</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>PD p1</sigName>
+			<xpcsigName>Controller Parameters/PD p1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>forgetting rate</sigName>
+			<xpcsigName>Controller Parameters/forgetting rate</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+	</SubSystem>
+	<SubSystem>
+		<Name>Host file</Name>
+		<xPCName>guitar2/Host file</xPCName>
+		<SubSystem>
+			<Name>Scope (xPC) 1</Name>
+			<xPCName>guitar2/Host file/Scope (xPC) 1</xPCName>
+		</SubSystem>
+		<SubSystem>
+			<Name>Subsystem</Name>
+			<xPCName>guitar2/Host file/Subsystem</xPCName>
+			<signal>
+				<sigName>Sum</sigName>
+				<xpcsigName>Host file/Subsystem/Sum</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum1</sigName>
+				<xpcsigName>Host file/Subsystem/Sum1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<SubSystem>
+			<Name>Embedded
+MATLAB Function1</Name>
+			<xPCName>guitar2/Host file/Embedded MATLAB Function1</xPCName>
+		</SubSystem>
+		<SubSystem>
+			<Name>Embedded
+MATLAB Function2</Name>
+			<xPCName>guitar2/Host file/Embedded MATLAB Function2</xPCName>
+		</SubSystem>
+		<SubSystem>
+			<Name>Embedded
+MATLAB Function3</Name>
+			<xPCName>guitar2/Host file/Embedded MATLAB Function3</xPCName>
+		</SubSystem>
+		<SubSystem>
+			<Name>Embedded
+MATLAB Function4</Name>
+			<xPCName>guitar2/Host file/Embedded MATLAB Function4</xPCName>
+		</SubSystem>
+		<signal>
+			<sigName>Embedded
+MATLAB Function1</sigName>
+			<xpcsigName>Host file/Embedded MATLAB Function1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Embedded
+MATLAB Function2</sigName>
+			<xpcsigName>Host file/Embedded MATLAB Function2</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Embedded
+MATLAB Function3</sigName>
+			<xpcsigName>Host file/Embedded MATLAB Function3</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Embedded
+MATLAB Function4</sigName>
+			<xpcsigName>Host file/Embedded MATLAB Function4</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+	</SubSystem>
+	<SubSystem>
+		<Name>Kalman Filter</Name>
+		<xPCName>guitar2/Kalman Filter</xPCName>
+		<SubSystem>
+			<Name>kalman1</Name>
+			<xPCName>guitar2/Kalman Filter/kalman1</xPCName>
+			<block>
+				<blkName>A</blkName>
+				<xpcblkName>Kalman Filter/kalman1/A</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman1/A</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 3]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B</blkName>
+				<xpcblkName>Kalman Filter/kalman1/B</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman1/B</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B1</blkName>
+				<xpcblkName>Kalman Filter/kalman1/B1</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman1/B1</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B2</blkName>
+				<xpcblkName>Kalman Filter/kalman1/B2</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman1/B2</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B3</blkName>
+				<xpcblkName>Kalman Filter/kalman1/B3</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman1/B3</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>C</blkName>
+				<xpcblkName>Kalman Filter/kalman1/C</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman1/C</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 3]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>K</blkName>
+				<xpcblkName>Kalman Filter/kalman1/K</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman1/K</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Integrator</blkName>
+				<xpcblkName>Kalman Filter/kalman1/Integrator</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman1/Integrator</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>InitialCondition</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>A</sigName>
+				<xpcsigName>Kalman Filter/kalman1/A</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B</sigName>
+				<xpcsigName>Kalman Filter/kalman1/B</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B1</sigName>
+				<xpcsigName>Kalman Filter/kalman1/B1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B2</sigName>
+				<xpcsigName>Kalman Filter/kalman1/B2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B3</sigName>
+				<xpcsigName>Kalman Filter/kalman1/B3</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>C</sigName>
+				<xpcsigName>Kalman Filter/kalman1/C</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>K</sigName>
+				<xpcsigName>Kalman Filter/kalman1/K</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Integrator</sigName>
+				<xpcsigName>Kalman Filter/kalman1/Integrator</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum2</sigName>
+				<xpcsigName>Kalman Filter/kalman1/Sum2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum3</sigName>
+				<xpcsigName>Kalman Filter/kalman1/Sum3</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum4</sigName>
+				<xpcsigName>Kalman Filter/kalman1/Sum4</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<SubSystem>
+			<Name>kalman2</Name>
+			<xPCName>guitar2/Kalman Filter/kalman2</xPCName>
+			<block>
+				<blkName>A</blkName>
+				<xpcblkName>Kalman Filter/kalman2/A</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman2/A</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 3]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B</blkName>
+				<xpcblkName>Kalman Filter/kalman2/B</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman2/B</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B1</blkName>
+				<xpcblkName>Kalman Filter/kalman2/B1</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman2/B1</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B2</blkName>
+				<xpcblkName>Kalman Filter/kalman2/B2</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman2/B2</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B3</blkName>
+				<xpcblkName>Kalman Filter/kalman2/B3</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman2/B3</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>C</blkName>
+				<xpcblkName>Kalman Filter/kalman2/C</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman2/C</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 3]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>K</blkName>
+				<xpcblkName>Kalman Filter/kalman2/K</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman2/K</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Integrator</blkName>
+				<xpcblkName>Kalman Filter/kalman2/Integrator</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman2/Integrator</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>InitialCondition</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>A</sigName>
+				<xpcsigName>Kalman Filter/kalman2/A</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B</sigName>
+				<xpcsigName>Kalman Filter/kalman2/B</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B1</sigName>
+				<xpcsigName>Kalman Filter/kalman2/B1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B2</sigName>
+				<xpcsigName>Kalman Filter/kalman2/B2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B3</sigName>
+				<xpcsigName>Kalman Filter/kalman2/B3</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>C</sigName>
+				<xpcsigName>Kalman Filter/kalman2/C</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>K</sigName>
+				<xpcsigName>Kalman Filter/kalman2/K</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Integrator</sigName>
+				<xpcsigName>Kalman Filter/kalman2/Integrator</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum2</sigName>
+				<xpcsigName>Kalman Filter/kalman2/Sum2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum3</sigName>
+				<xpcsigName>Kalman Filter/kalman2/Sum3</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum4</sigName>
+				<xpcsigName>Kalman Filter/kalman2/Sum4</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<block>
+			<blkName>Gain</blkName>
+			<xpcblkName>Kalman Filter/Gain</xpcblkName>
+			<SLblockPath>guitar2/Kalman Filter/Gain</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<signal>
+			<sigName>Gain</sigName>
+			<xpcsigName>Kalman Filter/Gain</xpcsigName>
+			<sigWidth>4</sigWidth>
+			<sigDim>[4, 1]</sigDim>
+		</signal>
+	</SubSystem>
+	<SubSystem>
+		<Name>Robot</Name>
+		<xPCName>guitar2/Robot</xPCName>
+		<block>
+			<blkName>Constant</blkName>
+			<xpcblkName>Robot/Constant</xpcblkName>
+			<SLblockPath>guitar2/Robot/Constant</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Gain</blkName>
+			<xpcblkName>Robot/Gain</xpcblkName>
+			<SLblockPath>guitar2/Robot/Gain</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Gain1</blkName>
+			<xpcblkName>Robot/Gain1</xpcblkName>
+			<SLblockPath>guitar2/Robot/Gain1</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Gain2</blkName>
+			<xpcblkName>Robot/Gain2</xpcblkName>
+			<SLblockPath>guitar2/Robot/Gain2</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>PCI 6221 ENC </blkName>
+			<xpcblkName>Robot/PCI 6221 ENC </xpcblkName>
+			<SLblockPath>guitar2/Robot/PCI 6221 ENC </SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>P1</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P2</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P3</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P4</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P5</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P6</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P7</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P8</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P9</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P10</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>PCI 6221 ENC 1</blkName>
+			<xpcblkName>Robot/PCI 6221 ENC 1</xpcblkName>
+			<SLblockPath>guitar2/Robot/PCI 6221 ENC 1</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>P1</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P2</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P3</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P4</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P5</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P6</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P7</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P8</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P9</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P10</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>PCI-6221 AD1</blkName>
+			<xpcblkName>Robot/PCI-6221 AD1</xpcblkName>
+			<SLblockPath>guitar2/Robot/PCI-6221 AD1</SLblockPath>
+			<isSrc>[1 0 3]</isSrc>
+			<parameter>
+				<paramName>P1</paramName>
+				<dim>[1, 3]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P2</paramName>
+				<dim>[1, 3]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P3</paramName>
+				<dim>[1, 3]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P4</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P5</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P6</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P7</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>PCI-6221 DA</blkName>
+			<xpcblkName>Robot/PCI-6221 DA</xpcblkName>
+			<SLblockPath>guitar2/Robot/PCI-6221 DA</SLblockPath>
+			<isSrc>[0 2 0]</isSrc>
+			<parameter>
+				<paramName>P1</paramName>
+				<dim>[1, 2]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P2</paramName>
+				<dim>[1, 2]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P3</paramName>
+				<dim>[1, 2]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P4</paramName>
+				<dim>[1, 2]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P5</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P6</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+			<parameter>
+				<paramName>P7</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<signal>
+			<sigName>Gain</sigName>
+			<xpcsigName>Robot/Gain</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Gain1</sigName>
+			<xpcsigName>Robot/Gain1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Gain2</sigName>
+			<xpcsigName>Robot/Gain2</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>PCI 6221 ENC </sigName>
+			<xpcsigName>Robot/PCI 6221 ENC </xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>PCI 6221 ENC 1</sigName>
+			<xpcsigName>Robot/PCI 6221 ENC 1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>PCI-6221 AD1/p1</sigName>
+			<xpcsigName>Robot/PCI-6221 AD1/p1</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>PCI-6221 AD1/p2</sigName>
+			<xpcsigName>Robot/PCI-6221 AD1/p2</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>PCI-6221 AD1/p3</sigName>
+			<xpcsigName>Robot/PCI-6221 AD1/p3</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Sum</sigName>
+			<xpcsigName>Robot/Sum</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+	</SubSystem>
+	<SubSystem>
+		<Name>Scope (xPC) </Name>
+		<xPCName>guitar2/Scope (xPC) </xPCName>
+	</SubSystem>
+	<SubSystem>
+		<Name>trajectory planning</Name>
+		<xPCName>guitar2/trajectory planning</xPCName>
+		<SubSystem>
+			<Name>block commands</Name>
+			<xPCName>guitar2/trajectory planning/block commands</xPCName>
+			<block>
+				<blkName>block command blue</blkName>
+				<xpcblkName>trajectory planning/block commands/block command blue</xpcblkName>
+				<SLblockPath>guitar2/trajectory planning/block commands/block command blue</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>block command gold</blkName>
+				<xpcblkName>trajectory planning/block commands/block command gold</xpcblkName>
+				<SLblockPath>guitar2/trajectory planning/block commands/block command gold</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>block fraction</blkName>
+				<xpcblkName>trajectory planning/block commands/block fraction</xpcblkName>
+				<SLblockPath>guitar2/trajectory planning/block commands/block fraction</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+		</SubSystem>
+		<SubSystem>
+			<Name>minimum jerk</Name>
+			<xPCName>guitar2/trajectory planning/minimum jerk</xPCName>
+			<SubSystem>
+				<Name>MATLAB Function</Name>
+				<xPCName>guitar2/trajectory planning/minimum jerk/MATLAB Function</xPCName>
+			</SubSystem>
+			<SubSystem>
+				<Name>MATLAB Function1</Name>
+				<xPCName>guitar2/trajectory planning/minimum jerk/MATLAB Function1</xPCName>
+			</SubSystem>
+			<block>
+				<blkName>added offset 2</blkName>
+				<xpcblkName>trajectory planning/minimum jerk/added offset 2</xpcblkName>
+				<SLblockPath>guitar2/trajectory planning/minimum jerk/added offset 2</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>added offset1</blkName>
+				<xpcblkName>trajectory planning/minimum jerk/added offset1</xpcblkName>
+				<SLblockPath>guitar2/trajectory planning/minimum jerk/added offset1</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Gain</blkName>
+				<xpcblkName>trajectory planning/minimum jerk/Gain</xpcblkName>
+				<SLblockPath>guitar2/trajectory planning/minimum jerk/Gain</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>tag des pos1</blkName>
+				<xpcblkName>trajectory planning/minimum jerk/tag des pos1</xpcblkName>
+				<SLblockPath>guitar2/trajectory planning/minimum jerk/tag des pos1</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>tag des pos2</blkName>
+				<xpcblkName>trajectory planning/minimum jerk/tag des pos2</xpcblkName>
+				<SLblockPath>guitar2/trajectory planning/minimum jerk/tag des pos2</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Saturation1</blkName>
+				<xpcblkName>trajectory planning/minimum jerk/Saturation1</xpcblkName>
+				<SLblockPath>guitar2/trajectory planning/minimum jerk/Saturation1</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>UpperLimit</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+				<parameter>
+					<paramName>LowerLimit</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Saturation2</blkName>
+				<xpcblkName>trajectory planning/minimum jerk/Saturation2</xpcblkName>
+				<SLblockPath>guitar2/trajectory planning/minimum jerk/Saturation2</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>UpperLimit</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+				<parameter>
+					<paramName>LowerLimit</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>MATLAB Function</sigName>
+				<xpcsigName>trajectory planning/minimum jerk/MATLAB Function</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>MATLAB Function1</sigName>
+				<xpcsigName>trajectory planning/minimum jerk/MATLAB Function1</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Clock</sigName>
+				<xpcsigName>trajectory planning/minimum jerk/Clock</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Gain</sigName>
+				<xpcsigName>trajectory planning/minimum jerk/Gain</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>tag des pos1</sigName>
+				<xpcsigName>trajectory planning/minimum jerk/tag des pos1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>tag des pos2</sigName>
+				<xpcsigName>trajectory planning/minimum jerk/tag des pos2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Saturation1</sigName>
+				<xpcsigName>trajectory planning/minimum jerk/Saturation1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Saturation2</sigName>
+				<xpcsigName>trajectory planning/minimum jerk/Saturation2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum1</sigName>
+				<xpcsigName>trajectory planning/minimum jerk/Sum1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum2</sigName>
+				<xpcsigName>trajectory planning/minimum jerk/Sum2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<SubSystem>
+			<Name>Embedded
+MATLAB Function1</Name>
+			<xPCName>guitar2/trajectory planning/Embedded MATLAB Function1</xPCName>
+		</SubSystem>
+		<SubSystem>
+			<Name>sin generator</Name>
+			<xPCName>guitar2/trajectory planning/sin generator</xPCName>
+		</SubSystem>
+		<block>
+			<blkName>Ampletude1</blkName>
+			<xpcblkName>trajectory planning/Ampletude1</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/Ampletude1</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Ampletude2</blkName>
+			<xpcblkName>trajectory planning/Ampletude2</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/Ampletude2</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Sin wave = 1
+minimu jerk = 2</blkName>
+			<xpcblkName>trajectory planning/Sin wave = 1 minimu jerk = 2</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/Sin wave = 1 minimu jerk = 2</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>durationBlue</blkName>
+			<xpcblkName>trajectory planning/durationBlue</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/durationBlue</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>durationGold</blkName>
+			<xpcblkName>trajectory planning/durationGold</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/durationGold</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>finalPosBlue</blkName>
+			<xpcblkName>trajectory planning/finalPosBlue</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/finalPosBlue</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>finalPosGold</blkName>
+			<xpcblkName>trajectory planning/finalPosGold</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/finalPosGold</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>frequency1</blkName>
+			<xpcblkName>trajectory planning/frequency1</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/frequency1</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>frequency2</blkName>
+			<xpcblkName>trajectory planning/frequency2</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/frequency2</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>hitTimeBlue</blkName>
+			<xpcblkName>trajectory planning/hitTimeBlue</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/hitTimeBlue</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>hitTimeGold</blkName>
+			<xpcblkName>trajectory planning/hitTimeGold</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/hitTimeGold</SLblockPath>
+			<isSrc>[1 0 1]</isSrc>
+			<parameter>
+				<paramName>Value</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Gain1</blkName>
+			<xpcblkName>trajectory planning/Gain1</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/Gain1</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Gain2</blkName>
+			<xpcblkName>trajectory planning/Gain2</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/Gain2</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<block>
+			<blkName>Gain3</blkName>
+			<xpcblkName>trajectory planning/Gain3</xpcblkName>
+			<SLblockPath>guitar2/trajectory planning/Gain3</SLblockPath>
+			<isSrc>[0 1 1]</isSrc>
+			<parameter>
+				<paramName>Gain</paramName>
+				<dim>[1, 1]</dim>
+			</parameter>
+		</block>
+		<signal>
+			<sigName>Embedded
+MATLAB Function1</sigName>
+			<xpcsigName>trajectory planning/Embedded MATLAB Function1</xpcsigName>
+			<sigWidth>6</sigWidth>
+			<sigDim>[6, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>sin generator</sigName>
+			<xpcsigName>trajectory planning/sin generator</xpcsigName>
+			<sigWidth>6</sigWidth>
+			<sigDim>[6, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Clock</sigName>
+			<xpcsigName>trajectory planning/Clock</xpcsigName>
+			<sigWidth>1</sigWidth>
+			<sigDim>[1, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Gain1</sigName>
+			<xpcsigName>trajectory planning/Gain1</xpcsigName>
+			<sigWidth>6</sigWidth>
+			<sigDim>[6, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Gain2</sigName>
+			<xpcsigName>trajectory planning/Gain2</xpcsigName>
+			<sigWidth>6</sigWidth>
+			<sigDim>[6, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Gain3</sigName>
+			<xpcsigName>trajectory planning/Gain3</xpcsigName>
+			<sigWidth>6</sigWidth>
+			<sigDim>[6, 1]</sigDim>
+		</signal>
+		<signal>
+			<sigName>Multiport
+Switch</sigName>
+			<xpcsigName>trajectory planning/Multiport Switch</xpcsigName>
+			<sigWidth>6</sigWidth>
+			<sigDim>[6, 1]</sigDim>
+		</signal>
+	</SubSystem>
+	<block>
+		<blkName>Constant</blkName>
+		<xpcblkName>Constant</xpcblkName>
+		<SLblockPath>guitar2/Constant</SLblockPath>
+		<isSrc>[1 0 1]</isSrc>
+		<parameter>
+			<paramName>Value</paramName>
+			<dim>[1, 1]</dim>
+		</parameter>
+	</block>
+	<signal>
+		<sigName>Constant</sigName>
+		<xpcsigName>Constant</xpcsigName>
+		<sigWidth>1</sigWidth>
+		<sigDim>[1, 1]</sigDim>
+	</signal>
+</Root>
