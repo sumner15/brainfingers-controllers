@@ -1184,6 +1184,390 @@ MATLAB Function4</sigName>
 				<sigDim>[3, 1]</sigDim>
 			</signal>
 		</SubSystem>
+		<SubSystem>
+			<Name>kalman3</Name>
+			<xPCName>guitar2/Kalman Filter/kalman3</xPCName>
+			<SubSystem>
+				<Name>Discrete Derivative</Name>
+				<xPCName>guitar2/Kalman Filter/kalman3/Discrete Derivative</xPCName>
+				<block>
+					<blkName>TSamp</blkName>
+					<xpcblkName>Kalman Filter/kalman3/Discrete Derivative/TSamp</xpcblkName>
+					<SLblockPath>guitar2/Kalman Filter/kalman3/Discrete Derivative/TSamp</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>WtEt</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<block>
+					<blkName>UD</blkName>
+					<xpcblkName>Kalman Filter/kalman3/Discrete Derivative/UD</xpcblkName>
+					<SLblockPath>guitar2/Kalman Filter/kalman3/Discrete Derivative/UD</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>InitialCondition</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>Diff</sigName>
+					<xpcsigName>Kalman Filter/kalman3/Discrete Derivative/Diff</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>TSamp</sigName>
+					<xpcsigName>Kalman Filter/kalman3/Discrete Derivative/TSamp</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>UD</sigName>
+					<xpcsigName>Kalman Filter/kalman3/Discrete Derivative/UD</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<block>
+				<blkName>A</blkName>
+				<xpcblkName>Kalman Filter/kalman3/A</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman3/A</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 3]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B</blkName>
+				<xpcblkName>Kalman Filter/kalman3/B</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman3/B</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B1</blkName>
+				<xpcblkName>Kalman Filter/kalman3/B1</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman3/B1</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B2</blkName>
+				<xpcblkName>Kalman Filter/kalman3/B2</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman3/B2</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B3</blkName>
+				<xpcblkName>Kalman Filter/kalman3/B3</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman3/B3</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>C</blkName>
+				<xpcblkName>Kalman Filter/kalman3/C</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman3/C</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 3]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>K</blkName>
+				<xpcblkName>Kalman Filter/kalman3/K</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman3/K</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Integrator</blkName>
+				<xpcblkName>Kalman Filter/kalman3/Integrator</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman3/Integrator</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>InitialCondition</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>A</sigName>
+				<xpcsigName>Kalman Filter/kalman3/A</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B</sigName>
+				<xpcsigName>Kalman Filter/kalman3/B</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B1</sigName>
+				<xpcsigName>Kalman Filter/kalman3/B1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B2</sigName>
+				<xpcsigName>Kalman Filter/kalman3/B2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B3</sigName>
+				<xpcsigName>Kalman Filter/kalman3/B3</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>C</sigName>
+				<xpcsigName>Kalman Filter/kalman3/C</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>K</sigName>
+				<xpcsigName>Kalman Filter/kalman3/K</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Integrator</sigName>
+				<xpcsigName>Kalman Filter/kalman3/Integrator</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum2</sigName>
+				<xpcsigName>Kalman Filter/kalman3/Sum2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum3</sigName>
+				<xpcsigName>Kalman Filter/kalman3/Sum3</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum4</sigName>
+				<xpcsigName>Kalman Filter/kalman3/Sum4</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+		</SubSystem>
+		<SubSystem>
+			<Name>kalman4</Name>
+			<xPCName>guitar2/Kalman Filter/kalman4</xPCName>
+			<SubSystem>
+				<Name>Discrete Derivative</Name>
+				<xPCName>guitar2/Kalman Filter/kalman4/Discrete Derivative</xPCName>
+				<block>
+					<blkName>TSamp</blkName>
+					<xpcblkName>Kalman Filter/kalman4/Discrete Derivative/TSamp</xpcblkName>
+					<SLblockPath>guitar2/Kalman Filter/kalman4/Discrete Derivative/TSamp</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>WtEt</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<block>
+					<blkName>UD</blkName>
+					<xpcblkName>Kalman Filter/kalman4/Discrete Derivative/UD</xpcblkName>
+					<SLblockPath>guitar2/Kalman Filter/kalman4/Discrete Derivative/UD</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>InitialCondition</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>Diff</sigName>
+					<xpcsigName>Kalman Filter/kalman4/Discrete Derivative/Diff</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>TSamp</sigName>
+					<xpcsigName>Kalman Filter/kalman4/Discrete Derivative/TSamp</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>UD</sigName>
+					<xpcsigName>Kalman Filter/kalman4/Discrete Derivative/UD</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<block>
+				<blkName>A</blkName>
+				<xpcblkName>Kalman Filter/kalman4/A</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman4/A</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 3]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B</blkName>
+				<xpcblkName>Kalman Filter/kalman4/B</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman4/B</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B1</blkName>
+				<xpcblkName>Kalman Filter/kalman4/B1</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman4/B1</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B2</blkName>
+				<xpcblkName>Kalman Filter/kalman4/B2</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman4/B2</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>B3</blkName>
+				<xpcblkName>Kalman Filter/kalman4/B3</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman4/B3</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>C</blkName>
+				<xpcblkName>Kalman Filter/kalman4/C</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman4/C</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 3]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>K</blkName>
+				<xpcblkName>Kalman Filter/kalman4/K</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman4/K</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>Integrator</blkName>
+				<xpcblkName>Kalman Filter/kalman4/Integrator</xpcblkName>
+				<SLblockPath>guitar2/Kalman Filter/kalman4/Integrator</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>InitialCondition</paramName>
+					<dim>[3, 1]</dim>
+				</parameter>
+			</block>
+			<signal>
+				<sigName>A</sigName>
+				<xpcsigName>Kalman Filter/kalman4/A</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B</sigName>
+				<xpcsigName>Kalman Filter/kalman4/B</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B1</sigName>
+				<xpcsigName>Kalman Filter/kalman4/B1</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B2</sigName>
+				<xpcsigName>Kalman Filter/kalman4/B2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>B3</sigName>
+				<xpcsigName>Kalman Filter/kalman4/B3</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>C</sigName>
+				<xpcsigName>Kalman Filter/kalman4/C</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>K</sigName>
+				<xpcsigName>Kalman Filter/kalman4/K</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Integrator</sigName>
+				<xpcsigName>Kalman Filter/kalman4/Integrator</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum2</sigName>
+				<xpcsigName>Kalman Filter/kalman4/Sum2</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum3</sigName>
+				<xpcsigName>Kalman Filter/kalman4/Sum3</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum4</sigName>
+				<xpcsigName>Kalman Filter/kalman4/Sum4</xpcsigName>
+				<sigWidth>3</sigWidth>
+				<sigDim>[3, 1]</sigDim>
+			</signal>
+		</SubSystem>
 		<block>
 			<blkName>Gain</blkName>
 			<xpcblkName>Kalman Filter/Gain</xpcblkName>
