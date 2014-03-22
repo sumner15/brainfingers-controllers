@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.1195"
+    ComputedModelVersion    "1.1196"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -25,170 +25,50 @@ Model {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
     $ClassName		    "Simulink.BDWindowsInfo"
-    Array {
-      Type		      "Simulink.WindowInfo"
-      Dimension		      4
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, -8.0, 1936.0, 1056.0]
       Object {
-	$ObjectID		2
-	IsActive		[0]
-	Location		[-8.0, -8.0, 1936.0, 1056.0]
-	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  3
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [9]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  4
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [1]
-	}
-	Array {
-	  Type			  "Simulink.EditorInfo"
-	  Dimension		  3
-	  Object {
-	    $ObjectID		    5
-	    IsActive		    [1]
-	    ViewObjType		    "SimulinkTopLevel"
-	    LoadSaveID		    "0"
-	    Extents		    [1884.0, 877.0]
-	    ZoomFactor		    [1.0]
-	    Offset		    [0.0, 0.0]
-	  }
-	  Object {
-	    $ObjectID		    6
-	    IsActive		    [0]
-	    ViewObjType		    "SimulinkSubsys"
-	    LoadSaveID		    "160"
-	    Extents		    [1884.0, 877.0]
-	    ZoomFactor		    [1.0]
-	    Offset		    [0.0, 0.0]
-	  }
-	  Object {
-	    $ObjectID		    7
-	    IsActive		    [0]
-	    ViewObjType		    "SimulinkSubsys"
-	    LoadSaveID		    "2"
-	    Extents		    [1884.0, 877.0]
-	    ZoomFactor		    [1.0]
-	    Offset		    [-442.0, -90.0]
-	  }
-	  PropName		  "EditorsInfo"
-	}
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
       }
       Object {
-	$ObjectID		8
-	IsActive		[0]
-	Location		[16.0, 52.0, 1316.0, 973.0]
-	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  9
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [9]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  10
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [1]
-	}
-	Object {
-	  $PropName		  "EditorsInfo"
-	  $ObjectID		  11
-	  $ClassName		  "Simulink.EditorInfo"
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "15"
-	  Extents		  [1264.0, 797.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
       }
       Object {
-	$ObjectID		12
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	Location		[16.0, 52.0, 1455.0, 973.0]
-	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  13
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [9]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  14
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [1]
-	}
-	Object {
-	  $PropName		  "EditorsInfo"
-	  $ObjectID		  15
-	  $ClassName		  "Simulink.EditorInfo"
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "134"
-	  Extents		  [1403.0, 797.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"134"
+	Extents			[1884.0, 880.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 0.0]
       }
-      Object {
-	$ObjectID		16
-	IsActive		[0]
-	Location		[16.0, 52.0, 1623.0, 973.0]
-	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  17
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [9]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  18
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [1]
-	}
-	Object {
-	  $PropName		  "EditorsInfo"
-	  $ObjectID		  19
-	  $ClassName		  "Simulink.EditorInfo"
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "182"
-	  Extents		  [1571.0, 797.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
-      }
-      PropName		      "WindowsInfo"
     }
   }
   Created		  "Fri May 20 14:55:10 2011"
   Creator		  "research account"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "Robotics Lab"
+  LastModifiedBy	  "Admin"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Jan 22 19:30:27 2013"
-  RTWModifiedTimeStamp	  280772949
-  ModelVersionFormat	  "1.%<AutoIncrement:1195>"
+  LastModifiedDate	  "Fri Mar 21 17:48:04 2014"
+  RTWModifiedTimeStamp	  317324672
+  ModelVersionFormat	  "1.%<AutoIncrement:1196>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  on
@@ -223,7 +103,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    20
+    $ObjectID		    6
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "guitar2"
     Array {
@@ -281,13 +161,13 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      21
+      $ObjectID		      7
       Version		      "1.12.1"
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  22
+	  $ObjectID		  8
 	  Version		  "1.12.1"
 	  StartTime		  "0.0"
 	  StopTime		  "inf"
@@ -322,7 +202,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  23
+	  $ObjectID		  9
 	  Version		  "1.12.1"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -354,7 +234,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  24
+	  $ObjectID		  10
 	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
@@ -410,7 +290,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  25
+	  $ObjectID		  11
 	  Version		  "1.12.1"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -500,7 +380,7 @@ Model {
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  26
+	  $ObjectID		  12
 	  Version		  "1.12.1"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -537,7 +417,7 @@ Model {
 	  ProdEqTarget		  on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  27
+	  $ObjectID		  13
 	  Version		  "1.12.1"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -552,7 +432,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  28
+	  $ObjectID		  14
 	  Version		  "1.12.1"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -567,7 +447,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  29
+	  $ObjectID		  15
 	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
@@ -639,7 +519,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      30
+	      $ObjectID		      16
 	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
@@ -707,7 +587,7 @@ Model {
 	    }
 	    xpctarget.xpcTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      31
+	      $ObjectID		      17
 	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
@@ -799,10 +679,17 @@ Model {
 	  }
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  32
+	  $ObjectID		  18
 	  Version		  "1.12.1"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
 	}
 	PropName		"Components"
       }
@@ -815,11 +702,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    21
+    $ObjectID		    7
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    33
+    $ObjectID		    19
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1117,8 +1004,8 @@ Model {
   }
   System {
     Name		    "guitar2"
-    Location		    [16, 52, 1471, 1025]
-    Open		    on
+    Location		    [-8, -8, 1928, 1048]
+    Open		    off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1131,7 +1018,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "435"
+    SIDHighWatermark	    "477"
     Block {
       BlockType		      Constant
       Name		      "Constant"
@@ -1157,8 +1044,8 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Controller"
-	Location		[16, 52, 1471, 1025]
-	Open			on
+	Location		[-8, -8, 1928, 1048]
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1216,7 +1103,7 @@ Model {
 	  SFBlockType		  "Chart"
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    34
+	    $ObjectID		    20
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Stateflow"
 	    Description		    "Stateflow diagram"
@@ -1540,8 +1427,8 @@ Model {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "PID"
-	    Location		    [16, 52, 1471, 1025]
-	    Open		    on
+	    Location		    [16, 52, 1332, 1025]
+	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2132,7 +2019,7 @@ Model {
 		  SFBlockType		  "MATLAB Function"
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    35
+		    $ObjectID		    21
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Stateflow"
 		    Description		    "Embedded MATLAB block"
@@ -2394,7 +2281,7 @@ Model {
 		  SFBlockType		  "MATLAB Function"
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    36
+		    $ObjectID		    22
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Stateflow"
 		    Description		    "Embedded MATLAB block"
@@ -2671,7 +2558,7 @@ Model {
 		  SFBlockType		  "MATLAB Function"
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    37
+		    $ObjectID		    23
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Stateflow"
 		    Description		    "Embedded MATLAB block"
@@ -2950,7 +2837,7 @@ Model {
 		  SFBlockType		  "MATLAB Function"
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    38
+		    $ObjectID		    24
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Stateflow"
 		    Description		    "Embedded MATLAB block"
@@ -3228,7 +3115,7 @@ Model {
 		  SFBlockType		  "MATLAB Function"
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    39
+		    $ObjectID		    25
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Stateflow"
 		    Description		    "Embedded MATLAB block"
@@ -3504,7 +3391,7 @@ Model {
 		  SFBlockType		  "MATLAB Function"
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    40
+		    $ObjectID		    26
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Stateflow"
 		    Description		    "Embedded MATLAB block"
@@ -3966,14 +3853,13 @@ Model {
 	    Line {
 	      SrcBlock		      "Gain2"
 	      SrcPort		      1
-	      Points		      [15, 0; 0, 0]
+	      Points		      [15, 0]
 	      Branch {
 		Points			[0, -155]
 		DstBlock		"Product6"
 		DstPort			2
 	      }
 	      Branch {
-		Points			[0, 0]
 		DstBlock		"gain goto1"
 		DstPort			1
 	      }
@@ -3981,14 +3867,13 @@ Model {
 	    Line {
 	      SrcBlock		      "Gain3"
 	      SrcPort		      1
-	      Points		      [5, 0; 0, 0]
+	      Points		      [5, 0]
 	      Branch {
 		Points			[0, -45]
 		DstBlock		"Product4"
 		DstPort			2
 	      }
 	      Branch {
-		Points			[0, 0]
 		DstBlock		"gain goto3"
 		DstPort			1
 	      }
@@ -4031,7 +3916,7 @@ Model {
 	      SrcPort		      1
 	      Points		      [15, 0]
 	      Branch {
-		Points			[0, 0; 0, 40]
+		Points			[0, 40]
 		DstBlock		"Product5"
 		DstPort			1
 	      }
@@ -4132,7 +4017,6 @@ Model {
 	    Line {
 	      SrcBlock		      "Gain4"
 	      SrcPort		      1
-	      Points		      [0, 0]
 	      DstBlock		      "Sum1"
 	      DstPort		      2
 	    }
@@ -4606,7 +4490,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		41
+	$ObjectID		27
 	$ClassName		"Simulink.Mask"
 	Display			"disp('Controller Parameters')"
       }
@@ -4894,7 +4778,7 @@ Model {
 	  SFBlockType		  "MATLAB Function"
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    42
+	    $ObjectID		    28
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Stateflow"
 	    Description		    "Embedded MATLAB block"
@@ -5021,7 +4905,7 @@ Model {
 	  SFBlockType		  "MATLAB Function"
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    43
+	    $ObjectID		    29
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Stateflow"
 	    Description		    "Embedded MATLAB block"
@@ -5148,7 +5032,7 @@ Model {
 	  SFBlockType		  "MATLAB Function"
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    44
+	    $ObjectID		    30
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Stateflow"
 	    Description		    "Embedded MATLAB block"
@@ -5275,7 +5159,7 @@ Model {
 	  SFBlockType		  "MATLAB Function"
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    45
+	    $ObjectID		    31
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Stateflow"
 	    Description		    "Embedded MATLAB block"
@@ -5930,7 +5814,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Kalman Filter"
-	Location		[16, 52, 1471, 1025]
+	Location		[-8, -8, 1928, 1048]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -5993,8 +5877,8 @@ Model {
 	  Name			  "kalman1"
 	  SID			  "140"
 	  Ports			  [2, 1]
-	  Position		  [320, 146, 485, 199]
-	  ZOrder		  -5
+	  Position		  [365, 541, 530, 594]
+	  ZOrder		  1
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -6004,7 +5888,7 @@ Model {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "kalman1"
-	    Location		    [16, 52, 1332, 1025]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -6380,8 +6264,8 @@ Model {
 	  Name			  "kalman2"
 	  SID			  "160"
 	  Ports			  [2, 1]
-	  Position		  [320, 256, 485, 309]
-	  ZOrder		  -6
+	  Position		  [600, 541, 765, 594]
+	  ZOrder		  2
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -6391,8 +6275,8 @@ Model {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "kalman2"
-	    Location		    [16, 52, 1471, 1025]
-	    Open		    on
+	    Location		    [-8, -8, 1928, 1048]
+	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -6764,6 +6648,809 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  SubSystem
+	  Name			  "kalman3"
+	  SID			  "436"
+	  Ports			  [2, 1]
+	  Position		  [325, 126, 490, 179]
+	  ZOrder		  3
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "kalman3"
+	    Location		    [-8, -8, 1928, 1048]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "position"
+	      SID		      "437"
+	      Position		      [160, 323, 190, 337]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "acc"
+	      SID		      "438"
+	      Position		      [280, 208, 310, 222]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "A"
+	      SID		      "439"
+	      Position		      [610, 265, 640, 295]
+	      ZOrder		      -3
+	      BlockMirror	      on
+	      Gain		      "[0 0 0;0 0 1;-70 0 0]"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "B"
+	      SID		      "440"
+	      Position		      [385, 200, 415, 230]
+	      ZOrder		      -4
+	      Gain		      "[0;0;70]"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "B1"
+	      SID		      "441"
+	      Position		      [295, 315, 325, 345]
+	      ZOrder		      -5
+	      Gain		      "-1"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "B2"
+	      SID		      "442"
+	      Position		      [920, 355, 950, 385]
+	      ZOrder		      -6
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "B3"
+	      SID		      "443"
+	      Position		      [920, 434, 950, 466]
+	      ZOrder		      -7
+	      Gain		      "-1"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "C"
+	      SID		      "444"
+	      Position		      [610, 325, 640, 355]
+	      ZOrder		      -8
+	      BlockMirror	      on
+	      Gain		      "[0 1 0]"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "445"
+	      Ports		      [1, 3]
+	      Position		      [735, 361, 740, 399]
+	      ZOrder		      -9
+	      ShowName		      off
+	      Outputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Discrete Derivative"
+	      SID		      "446"
+	      Ports		      [1, 1]
+	      Position		      [530, 522, 590, 558]
+	      ZOrder		      1
+	      LibraryVersion	      "1.281"
+	      SourceBlock	      "simulink/Discrete/Discrete Derivative"
+	      SourceType	      "Discrete Derivative"
+	      gainval		      "1.0"
+	      ICPrevScaledInput	      "0.0"
+	      InputProcessing	      "Inherited"
+	      OutMin		      "[]"
+	      OutMax		      "[]"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutputDataTypeScalingMode	"Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^-10"
+	      LockScale		      off
+	      RndMeth		      "Floor"
+	      DoSatur		      off
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      SID		      "447"
+	      Ports		      [1, 1]
+	      Position		      [605, 200, 635, 230]
+	      ZOrder		      -10
+	      InitialCondition	      "[1.5;0;0]"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "K"
+	      SID		      "448"
+	      Position		      [455, 265, 485, 295]
+	      ZOrder		      -11
+	      Gain		      "[-316;101;5050]"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "449"
+	      Ports		      [2, 1]
+	      Position		      [1055, 196, 1060, 234]
+	      ZOrder		      -12
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      SID		      "450"
+	      Ports		      [2, 1]
+	      Position		      [415, 270, 435, 290]
+	      ZOrder		      -14
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      SID		      "451"
+	      Ports		      [2, 1]
+	      Position		      [480, 205, 500, 225]
+	      ZOrder		      -15
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum4"
+	      SID		      "452"
+	      Ports		      [2, 1]
+	      Position		      [530, 205, 550, 225]
+	      ZOrder		      -16
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator"
+	      SID		      "453"
+	      Position		      [860, 330, 880, 350]
+	      ZOrder		      -17
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator1"
+	      SID		      "454"
+	      Position		      [980, 360, 1000, 380]
+	      ZOrder		      -18
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator2"
+	      SID		      "455"
+	      Position		      [980, 440, 1000, 460]
+	      ZOrder		      2
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "position/est_vel"
+	      SID		      "456"
+	      Position		      [1190, 208, 1220, 222]
+	      ZOrder		      -19
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      Points		      [70, 0; 0, 65]
+	      Branch {
+		DstBlock		"A"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 60; -5, 0]
+		Branch {
+		  DstBlock		  "C"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 40]
+		  DstBlock		  "Demux"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "C"
+	      SrcPort		      1
+	      Points		      [-180, 0]
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      DstBlock		      "K"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "B"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "K"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum3"
+	      SrcPort		      1
+	      DstBlock		      "Sum4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "A"
+	      SrcPort		      1
+	      Points		      [-65, 0]
+	      DstBlock		      "Sum4"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum4"
+	      SrcPort		      1
+	      DstBlock		      "Integrator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      Points		      [160, 0]
+	      DstBlock		      "B2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      Points		      [160, 0]
+	      DstBlock		      "B3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      Points		      [50, 0; 0, -25; 50, 0]
+	      DstBlock		      "Terminator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "B1"
+	      SrcPort		      1
+	      Points		      [70, 0]
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "B2"
+	      SrcPort		      1
+	      DstBlock		      "Terminator1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "position/est_vel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "acc"
+	      SrcPort		      1
+	      DstBlock		      "B"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "position"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		Points			[0, 210]
+		DstBlock		"Discrete Derivative"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -146; 820, 0]
+		DstBlock		"Mux"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"B1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Discrete Derivative"
+	      SrcPort		      1
+	      Points		      [439, 0; 0, -315]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "B3"
+	      SrcPort		      1
+	      DstBlock		      "Terminator2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "kalman4"
+	  SID			  "457"
+	  Ports			  [2, 1]
+	  Position		  [325, 261, 490, 314]
+	  ZOrder		  4
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "kalman4"
+	    Location		    [-8, -8, 1928, 1048]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "position"
+	      SID		      "458"
+	      Position		      [160, 323, 190, 337]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "acc"
+	      SID		      "459"
+	      Position		      [280, 208, 310, 222]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "A"
+	      SID		      "460"
+	      Position		      [610, 265, 640, 295]
+	      ZOrder		      -3
+	      BlockMirror	      on
+	      Gain		      "[0 0 0;0 0 1;-65 0 0]"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "B"
+	      SID		      "461"
+	      Position		      [385, 200, 415, 230]
+	      ZOrder		      -4
+	      Gain		      "[0;0;65]"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "B1"
+	      SID		      "462"
+	      Position		      [295, 315, 325, 345]
+	      ZOrder		      -5
+	      Gain		      "-1"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "B2"
+	      SID		      "463"
+	      Position		      [920, 355, 950, 385]
+	      ZOrder		      -6
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "B3"
+	      SID		      "464"
+	      Position		      [920, 434, 950, 466]
+	      ZOrder		      -7
+	      Gain		      "-1"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "C"
+	      SID		      "465"
+	      Position		      [610, 325, 640, 355]
+	      ZOrder		      -8
+	      BlockMirror	      on
+	      Gain		      "[0 1 0]"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "466"
+	      Ports		      [1, 3]
+	      Position		      [735, 361, 740, 399]
+	      ZOrder		      -9
+	      ShowName		      off
+	      Outputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Discrete Derivative"
+	      SID		      "467"
+	      Ports		      [1, 1]
+	      Position		      [320, 482, 380, 518]
+	      ZOrder		      1
+	      LibraryVersion	      "1.281"
+	      SourceBlock	      "simulink/Discrete/Discrete Derivative"
+	      SourceType	      "Discrete Derivative"
+	      gainval		      "1.0"
+	      ICPrevScaledInput	      "0.0"
+	      InputProcessing	      "Inherited"
+	      OutMin		      "[]"
+	      OutMax		      "[]"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutputDataTypeScalingMode	"Inherit via internal rule"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^-10"
+	      LockScale		      off
+	      RndMeth		      "Floor"
+	      DoSatur		      off
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      SID		      "468"
+	      Ports		      [1, 1]
+	      Position		      [605, 200, 635, 230]
+	      ZOrder		      -10
+	      InitialCondition	      "[1.5;0;0]"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "K"
+	      SID		      "469"
+	      Position		      [455, 265, 485, 295]
+	      ZOrder		      -11
+	      Gain		      "[-316;101;5050]"
+	      Multiplication	      "Matrix(K*u)"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "470"
+	      Ports		      [2, 1]
+	      Position		      [1055, 196, 1060, 234]
+	      ZOrder		      -12
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      SID		      "471"
+	      Ports		      [2, 1]
+	      Position		      [390, 270, 410, 290]
+	      ZOrder		      -14
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      SID		      "472"
+	      Ports		      [2, 1]
+	      Position		      [480, 205, 500, 225]
+	      ZOrder		      -15
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum4"
+	      SID		      "473"
+	      Ports		      [2, 1]
+	      Position		      [530, 205, 550, 225]
+	      ZOrder		      -16
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator"
+	      SID		      "474"
+	      Position		      [860, 330, 880, 350]
+	      ZOrder		      -17
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator1"
+	      SID		      "475"
+	      Position		      [980, 360, 1000, 380]
+	      ZOrder		      -18
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator2"
+	      SID		      "476"
+	      Position		      [990, 440, 1010, 460]
+	      ZOrder		      2
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "position/est_vel"
+	      SID		      "477"
+	      Position		      [1120, 123, 1150, 137]
+	      ZOrder		      -19
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "acc"
+	      SrcPort		      1
+	      DstBlock		      "B"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -85]
+	      DstBlock		      "position/est_vel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "B2"
+	      SrcPort		      1
+	      DstBlock		      "Terminator1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "B1"
+	      SrcPort		      1
+	      Points		      [45, 0; 0, -55]
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      Points		      [50, 0; 0, -25; 50, 0]
+	      DstBlock		      "Terminator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      Points		      [160, 0]
+	      DstBlock		      "B3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      Points		      [160, 0]
+	      DstBlock		      "B2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum4"
+	      SrcPort		      1
+	      DstBlock		      "Integrator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "A"
+	      SrcPort		      1
+	      Points		      [-65, 0]
+	      DstBlock		      "Sum4"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum3"
+	      SrcPort		      1
+	      DstBlock		      "Sum4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "K"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "B"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      DstBlock		      "K"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "C"
+	      SrcPort		      1
+	      Points		      [-205, 0]
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      Points		      [70, 0; 0, 65]
+	      Branch {
+		Points			[0, 60; -5, 0]
+		Branch {
+		  Points		  [0, 40]
+		  DstBlock		  "Demux"
+		  DstPort		  1
+		}
+		Branch {
+		  DstBlock		  "C"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"A"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "position"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		Points			[0, 170]
+		DstBlock		"Discrete Derivative"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -146; 601, 0; 0, 21]
+		DstBlock		"Mux"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"B1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Discrete Derivative"
+	      SrcPort		      1
+	      Points		      [649, 0; 0, -275]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "B3"
+	      SrcPort		      1
+	      DstBlock		      "Terminator2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
 	  BlockType		  Outport
 	  Name			  "Out1"
 	  SID			  "180"
@@ -6774,29 +7461,29 @@ Model {
 	Line {
 	  SrcBlock		  "Demux"
 	  SrcPort		  1
-	  Points		  [45, 0; 0, -55]
-	  DstBlock		  "kalman1"
+	  Points		  [13, 0; 0, -75]
+	  DstBlock		  "kalman3"
 	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "Demux"
 	  SrcPort		  2
-	  Points		  [45, 0; 0, 35]
-	  DstBlock		  "kalman2"
+	  Points		  [72, 0; 0, 40]
+	  DstBlock		  "kalman4"
 	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "Demux"
 	  SrcPort		  3
-	  Points		  [95, 0]
-	  DstBlock		  "kalman1"
+	  Points		  [29, 0; 0, -90]
+	  DstBlock		  "kalman3"
 	  DstPort		  2
 	}
 	Line {
 	  SrcBlock		  "Demux"
 	  SrcPort		  4
-	  Points		  [35, 0; 0, 20]
-	  DstBlock		  "kalman2"
+	  Points		  [55, 0; 0, 25]
+	  DstBlock		  "kalman4"
 	  DstPort		  2
 	}
 	Line {
@@ -6807,16 +7494,16 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "kalman1"
+	  SrcBlock		  "kalman3"
 	  SrcPort		  1
-	  Points		  [45, 0; 0, 40]
+	  Points		  [40, 0; 0, 60]
 	  DstBlock		  "Mux"
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "kalman2"
+	  SrcBlock		  "kalman4"
 	  SrcPort		  1
-	  Points		  [45, 0; 0, -50]
+	  Points		  [40, 0; 0, -55]
 	  DstBlock		  "Mux"
 	  DstPort		  2
 	}
@@ -6856,7 +7543,7 @@ Model {
       System {
 	Name			"Robot"
 	Location		[16, 52, 1639, 1025]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -7250,7 +7937,7 @@ Model {
 	  SFBlockType		  "MATLAB Function"
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    46
+	    $ObjectID		    32
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Stateflow"
 	    Description		    "Embedded MATLAB block"
@@ -7775,7 +8462,7 @@ Model {
 	      SFBlockType	      "MATLAB Function"
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		47
+		$ObjectID		33
 		$ClassName		"Simulink.Mask"
 		Type			"Stateflow"
 		Description		"Embedded MATLAB block"
@@ -7944,7 +8631,7 @@ Model {
 	      SFBlockType	      "MATLAB Function"
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		48
+		$ObjectID		34
 		$ClassName		"Simulink.Mask"
 		Type			"Stateflow"
 		Description		"Embedded MATLAB block"
@@ -8449,7 +9136,7 @@ Model {
 	  SFBlockType		  "MATLAB Function"
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    49
+	    $ObjectID		    35
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Stateflow"
 	    Description		    "Embedded MATLAB block"
@@ -8842,7 +9529,7 @@ Model {
 }
 # Finite State Machines
 #
-#    Stateflow Version 7.6 (R2012b) dated Jul 26 2012, 21:43:43
+#    Stateflow Version 7.6 (R2012b) dated Jul 26 2012, 22:31:44
 #
 #
 
@@ -10852,10 +11539,7 @@ Stateflow {
     firstTransition	    114
     firstJunction	    113
     viewObj		    106
-    visible		    1
     machine		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    8
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -11046,10 +11730,7 @@ Stateflow {
     firstTransition	    121
     firstJunction	    120
     viewObj		    116
-    visible		    1
     machine		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    5
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -11405,10 +12086,7 @@ Stateflow {
     firstTransition	    142
     firstJunction	    141
     viewObj		    137
-    visible		    1
     machine		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    5
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
