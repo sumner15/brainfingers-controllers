@@ -28,6 +28,26 @@ To Constant</Name>
 				</signal>
 			</SubSystem>
 			<SubSystem>
+				<Name>Oscillator</Name>
+				<xPCName>guitar2/Controller/PID/Oscillator</xPCName>
+				<SubSystem>
+					<Name>MATLAB Function</Name>
+					<xPCName>guitar2/Controller/PID/Oscillator/MATLAB Function</xPCName>
+				</SubSystem>
+				<signal>
+					<sigName>MATLAB Function</sigName>
+					<xpcsigName>Controller/PID/Oscillator/MATLAB Function</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Clock</sigName>
+					<xpcsigName>Controller/PID/Oscillator/Clock</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<SubSystem>
 				<Name>Scope (xPC) 1</Name>
 				<xPCName>guitar2/Controller/PID/Scope (xPC) 1</xPCName>
 			</SubSystem>
@@ -239,6 +259,98 @@ To Constant</Name>
 					<sigDim>[4, 1]</sigDim>
 				</signal>
 			</SubSystem>
+			<SubSystem>
+				<Name>gain transition5</Name>
+				<xPCName>guitar2/Controller/PID/gain transition5</xPCName>
+				<SubSystem>
+					<Name>gainramp</Name>
+					<xPCName>guitar2/Controller/PID/gain transition5/gainramp</xPCName>
+				</SubSystem>
+				<block>
+					<blkName>Constant</blkName>
+					<xpcblkName>Controller/PID/gain transition5/Constant</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/gain transition5/Constant</SLblockPath>
+					<isSrc>[1 0 1]</isSrc>
+					<parameter>
+						<paramName>Value</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<block>
+					<blkName>Memory</blkName>
+					<xpcblkName>Controller/PID/gain transition5/Memory</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/gain transition5/Memory</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>X0</paramName>
+						<dim>[1, 4]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>gainramp/p1</sigName>
+					<xpcsigName>Controller/PID/gain transition5/gainramp/p1</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>gainramp/p2</sigName>
+					<xpcsigName>Controller/PID/gain transition5/gainramp/p2</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Memory</sigName>
+					<xpcsigName>Controller/PID/gain transition5/Memory</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+			</SubSystem>
+			<SubSystem>
+				<Name>gain transition6</Name>
+				<xPCName>guitar2/Controller/PID/gain transition6</xPCName>
+				<SubSystem>
+					<Name>gainramp</Name>
+					<xPCName>guitar2/Controller/PID/gain transition6/gainramp</xPCName>
+				</SubSystem>
+				<block>
+					<blkName>Constant</blkName>
+					<xpcblkName>Controller/PID/gain transition6/Constant</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/gain transition6/Constant</SLblockPath>
+					<isSrc>[1 0 1]</isSrc>
+					<parameter>
+						<paramName>Value</paramName>
+						<dim>[1, 1]</dim>
+					</parameter>
+				</block>
+				<block>
+					<blkName>Memory</blkName>
+					<xpcblkName>Controller/PID/gain transition6/Memory</xpcblkName>
+					<SLblockPath>guitar2/Controller/PID/gain transition6/Memory</SLblockPath>
+					<isSrc>[0 1 1]</isSrc>
+					<parameter>
+						<paramName>X0</paramName>
+						<dim>[1, 4]</dim>
+					</parameter>
+				</block>
+				<signal>
+					<sigName>gainramp/p1</sigName>
+					<xpcsigName>Controller/PID/gain transition6/gainramp/p1</xpcsigName>
+					<sigWidth>1</sigWidth>
+					<sigDim>[1, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>gainramp/p2</sigName>
+					<xpcsigName>Controller/PID/gain transition6/gainramp/p2</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+				<signal>
+					<sigName>Memory</sigName>
+					<xpcsigName>Controller/PID/gain transition6/Memory</xpcsigName>
+					<sigWidth>4</sigWidth>
+					<sigDim>[4, 1]</sigDim>
+				</signal>
+			</SubSystem>
 			<block>
 				<blkName>Kd2 gain</blkName>
 				<xpcblkName>Controller/PID/Kd2 gain</xpcblkName>
@@ -270,6 +382,16 @@ To Constant</Name>
 				</parameter>
 			</block>
 			<block>
+				<blkName>f</blkName>
+				<xpcblkName>Controller/PID/f</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/f</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
 				<blkName>kd1 gain</blkName>
 				<xpcblkName>Controller/PID/kd1 gain</xpcblkName>
 				<SLblockPath>guitar2/Controller/PID/kd1 gain</SLblockPath>
@@ -283,6 +405,16 @@ To Constant</Name>
 				<blkName>kp1 gain</blkName>
 				<xpcblkName>Controller/PID/kp1 gain</xpcblkName>
 				<SLblockPath>guitar2/Controller/PID/kp1 gain</SLblockPath>
+				<isSrc>[1 0 1]</isSrc>
+				<parameter>
+					<paramName>Value</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
+			<block>
+				<blkName>oscBool1</blkName>
+				<xpcblkName>Controller/PID/oscBool1</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/oscBool1</SLblockPath>
 				<isSrc>[1 0 1]</isSrc>
 				<parameter>
 					<paramName>Value</paramName>
@@ -369,6 +501,16 @@ To Constant</Name>
 					<dim>[1, 1]</dim>
 				</parameter>
 			</block>
+			<block>
+				<blkName>Gain6</blkName>
+				<xpcblkName>Controller/PID/Gain6</xpcblkName>
+				<SLblockPath>guitar2/Controller/PID/Gain6</SLblockPath>
+				<isSrc>[0 1 1]</isSrc>
+				<parameter>
+					<paramName>Gain</paramName>
+					<dim>[1, 1]</dim>
+				</parameter>
+			</block>
 			<signal>
 				<sigName>Clock</sigName>
 				<xpcsigName>Controller/PID/Clock</xpcsigName>
@@ -412,6 +554,12 @@ To Constant</Name>
 				<sigDim>[1, 1]</sigDim>
 			</signal>
 			<signal>
+				<sigName>Gain6</sigName>
+				<xpcsigName>Controller/PID/Gain6</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
 				<sigName>Product1</sigName>
 				<xpcsigName>Controller/PID/Product1</xpcsigName>
 				<sigWidth>1</sigWidth>
@@ -444,6 +592,12 @@ To Constant</Name>
 			<signal>
 				<sigName>Product6</sigName>
 				<xpcsigName>Controller/PID/Product6</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum</sigName>
+				<xpcsigName>Controller/PID/Sum</xpcsigName>
 				<sigWidth>1</sigWidth>
 				<sigDim>[1, 1]</sigDim>
 			</signal>
@@ -492,6 +646,12 @@ To Constant</Name>
 			<signal>
 				<sigName>Sum8</sigName>
 				<xpcsigName>Controller/PID/Sum8</xpcsigName>
+				<sigWidth>1</sigWidth>
+				<sigDim>[1, 1]</sigDim>
+			</signal>
+			<signal>
+				<sigName>Sum9</sigName>
+				<xpcsigName>Controller/PID/Sum9</xpcsigName>
 				<sigWidth>1</sigWidth>
 				<sigDim>[1, 1]</sigDim>
 			</signal>

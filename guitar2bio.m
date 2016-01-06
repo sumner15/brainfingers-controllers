@@ -431,1016 +431,1126 @@ bio(43).ndims=2;
 bio(43).size=[];
 
 
-bio(44).blkName='Controller/PID/Product1';
+bio(44).blkName='Controller/PID/Gain6';
 bio(44).sigName='';
 bio(44).portIdx=0;
 bio(44).dim=[1,1];
 bio(44).sigWidth=1;
-bio(44).sigAddress='&guitar2_B.Product1';
+bio(44).sigAddress='&guitar2_B.Gain6';
 bio(44).ndims=2;
 bio(44).size=[];
 
 
-bio(45).blkName='Controller/PID/Product2';
+bio(45).blkName='Controller/PID/Product1';
 bio(45).sigName='';
 bio(45).portIdx=0;
 bio(45).dim=[1,1];
 bio(45).sigWidth=1;
-bio(45).sigAddress='&guitar2_B.Product2';
+bio(45).sigAddress='&guitar2_B.Product1';
 bio(45).ndims=2;
 bio(45).size=[];
 
 
-bio(46).blkName='Controller/PID/Product3';
+bio(46).blkName='Controller/PID/Product2';
 bio(46).sigName='';
 bio(46).portIdx=0;
 bio(46).dim=[1,1];
 bio(46).sigWidth=1;
-bio(46).sigAddress='&guitar2_B.Product3';
+bio(46).sigAddress='&guitar2_B.Product2';
 bio(46).ndims=2;
 bio(46).size=[];
 
 
-bio(47).blkName='Controller/PID/Product4';
+bio(47).blkName='Controller/PID/Product3';
 bio(47).sigName='';
 bio(47).portIdx=0;
 bio(47).dim=[1,1];
 bio(47).sigWidth=1;
-bio(47).sigAddress='&guitar2_B.Product4';
+bio(47).sigAddress='&guitar2_B.Product3';
 bio(47).ndims=2;
 bio(47).size=[];
 
 
-bio(48).blkName='Controller/PID/Product5';
+bio(48).blkName='Controller/PID/Product4';
 bio(48).sigName='';
 bio(48).portIdx=0;
 bio(48).dim=[1,1];
 bio(48).sigWidth=1;
-bio(48).sigAddress='&guitar2_B.Product5';
+bio(48).sigAddress='&guitar2_B.Product4';
 bio(48).ndims=2;
 bio(48).size=[];
 
 
-bio(49).blkName='Controller/PID/Product6';
+bio(49).blkName='Controller/PID/Product5';
 bio(49).sigName='';
 bio(49).portIdx=0;
 bio(49).dim=[1,1];
 bio(49).sigWidth=1;
-bio(49).sigAddress='&guitar2_B.Product6';
+bio(49).sigAddress='&guitar2_B.Product5';
 bio(49).ndims=2;
 bio(49).size=[];
 
 
-bio(50).blkName='Controller/PID/Sum1';
+bio(50).blkName='Controller/PID/Product6';
 bio(50).sigName='';
 bio(50).portIdx=0;
 bio(50).dim=[1,1];
 bio(50).sigWidth=1;
-bio(50).sigAddress='&guitar2_B.Sum1_e';
+bio(50).sigAddress='&guitar2_B.Product6';
 bio(50).ndims=2;
 bio(50).size=[];
 
 
-bio(51).blkName='Controller/PID/Sum2';
+bio(51).blkName='Controller/PID/Sum';
 bio(51).sigName='';
 bio(51).portIdx=0;
 bio(51).dim=[1,1];
 bio(51).sigWidth=1;
-bio(51).sigAddress='&guitar2_B.Sum2_p';
+bio(51).sigAddress='&guitar2_B.Sum_d';
 bio(51).ndims=2;
 bio(51).size=[];
 
 
-bio(52).blkName='Controller/PID/Sum3';
+bio(52).blkName='Controller/PID/Sum1';
 bio(52).sigName='';
 bio(52).portIdx=0;
 bio(52).dim=[1,1];
 bio(52).sigWidth=1;
-bio(52).sigAddress='&guitar2_B.Sum3_ir';
+bio(52).sigAddress='&guitar2_B.Sum1_e';
 bio(52).ndims=2;
 bio(52).size=[];
 
 
-bio(53).blkName='Controller/PID/Sum4';
+bio(53).blkName='Controller/PID/Sum2';
 bio(53).sigName='';
 bio(53).portIdx=0;
 bio(53).dim=[1,1];
 bio(53).sigWidth=1;
-bio(53).sigAddress='&guitar2_B.Sum4';
+bio(53).sigAddress='&guitar2_B.Sum2_p';
 bio(53).ndims=2;
 bio(53).size=[];
 
 
-bio(54).blkName='Controller/PID/Sum5';
+bio(54).blkName='Controller/PID/Sum3';
 bio(54).sigName='';
 bio(54).portIdx=0;
 bio(54).dim=[1,1];
 bio(54).sigWidth=1;
-bio(54).sigAddress='&guitar2_B.Sum5';
+bio(54).sigAddress='&guitar2_B.Sum3_ir';
 bio(54).ndims=2;
 bio(54).size=[];
 
 
-bio(55).blkName='Controller/PID/Sum6';
+bio(55).blkName='Controller/PID/Sum4';
 bio(55).sigName='';
 bio(55).portIdx=0;
 bio(55).dim=[1,1];
 bio(55).sigWidth=1;
-bio(55).sigAddress='&guitar2_B.Sum6';
+bio(55).sigAddress='&guitar2_B.Sum4';
 bio(55).ndims=2;
 bio(55).size=[];
 
 
-bio(56).blkName='Controller/PID/Sum7';
+bio(56).blkName='Controller/PID/Sum5';
 bio(56).sigName='';
 bio(56).portIdx=0;
 bio(56).dim=[1,1];
 bio(56).sigWidth=1;
-bio(56).sigAddress='&guitar2_B.Sum7';
+bio(56).sigAddress='&guitar2_B.Sum5';
 bio(56).ndims=2;
 bio(56).size=[];
 
 
-bio(57).blkName='Controller/PID/Sum8';
+bio(57).blkName='Controller/PID/Sum6';
 bio(57).sigName='';
 bio(57).portIdx=0;
 bio(57).dim=[1,1];
 bio(57).sigWidth=1;
-bio(57).sigAddress='&guitar2_B.Sum8';
+bio(57).sigAddress='&guitar2_B.Sum6';
 bio(57).ndims=2;
 bio(57).size=[];
 
 
-bio(58).blkName='Controller/start/Saturation';
+bio(58).blkName='Controller/PID/Sum7';
 bio(58).sigName='';
 bio(58).portIdx=0;
 bio(58).dim=[1,1];
 bio(58).sigWidth=1;
-bio(58).sigAddress='&guitar2_B.Saturation';
+bio(58).sigAddress='&guitar2_B.Sum7';
 bio(58).ndims=2;
 bio(58).size=[];
 
 
-bio(59).blkName='Controller/stop/Gain';
+bio(59).blkName='Controller/PID/Sum8';
 bio(59).sigName='';
 bio(59).portIdx=0;
 bio(59).dim=[1,1];
 bio(59).sigWidth=1;
-bio(59).sigAddress='&guitar2_B.Gain_m';
+bio(59).sigAddress='&guitar2_B.Sum8';
 bio(59).ndims=2;
 bio(59).size=[];
 
 
-bio(60).blkName='Controller/stop/Gain1';
+bio(60).blkName='Controller/PID/Sum9';
 bio(60).sigName='';
 bio(60).portIdx=0;
 bio(60).dim=[1,1];
 bio(60).sigWidth=1;
-bio(60).sigAddress='&guitar2_B.Gain1_c';
+bio(60).sigAddress='&guitar2_B.Sum9';
 bio(60).ndims=2;
 bio(60).size=[];
 
 
-bio(61).blkName='Host file/Subsystem/Sum';
+bio(61).blkName='Controller/start/Saturation';
 bio(61).sigName='';
 bio(61).portIdx=0;
 bio(61).dim=[1,1];
 bio(61).sigWidth=1;
-bio(61).sigAddress='&guitar2_B.Sum';
+bio(61).sigAddress='&guitar2_B.Saturation';
 bio(61).ndims=2;
 bio(61).size=[];
 
 
-bio(62).blkName='Host file/Subsystem/Sum1';
+bio(62).blkName='Controller/stop/Gain';
 bio(62).sigName='';
 bio(62).portIdx=0;
 bio(62).dim=[1,1];
 bio(62).sigWidth=1;
-bio(62).sigAddress='&guitar2_B.Sum1';
+bio(62).sigAddress='&guitar2_B.Gain_m';
 bio(62).ndims=2;
 bio(62).size=[];
 
 
-bio(63).blkName='Kalman Filter/kalman1/A';
+bio(63).blkName='Controller/stop/Gain1';
 bio(63).sigName='';
 bio(63).portIdx=0;
-bio(63).dim=[3,1];
-bio(63).sigWidth=3;
-bio(63).sigAddress='&guitar2_B.A_m[0]';
+bio(63).dim=[1,1];
+bio(63).sigWidth=1;
+bio(63).sigAddress='&guitar2_B.Gain1_c';
 bio(63).ndims=2;
 bio(63).size=[];
 
 
-bio(64).blkName='Kalman Filter/kalman1/B';
+bio(64).blkName='Host file/Subsystem/Sum';
 bio(64).sigName='';
 bio(64).portIdx=0;
-bio(64).dim=[3,1];
-bio(64).sigWidth=3;
-bio(64).sigAddress='&guitar2_B.B_p[0]';
+bio(64).dim=[1,1];
+bio(64).sigWidth=1;
+bio(64).sigAddress='&guitar2_B.Sum';
 bio(64).ndims=2;
 bio(64).size=[];
 
 
-bio(65).blkName='Kalman Filter/kalman1/B1';
+bio(65).blkName='Host file/Subsystem/Sum1';
 bio(65).sigName='';
 bio(65).portIdx=0;
 bio(65).dim=[1,1];
 bio(65).sigWidth=1;
-bio(65).sigAddress='&guitar2_B.B1_aw';
+bio(65).sigAddress='&guitar2_B.Sum1';
 bio(65).ndims=2;
 bio(65).size=[];
 
 
-bio(66).blkName='Kalman Filter/kalman1/B2';
+bio(66).blkName='Kalman Filter/kalman1/A';
 bio(66).sigName='';
 bio(66).portIdx=0;
-bio(66).dim=[1,1];
-bio(66).sigWidth=1;
-bio(66).sigAddress='&guitar2_B.B2_c';
+bio(66).dim=[3,1];
+bio(66).sigWidth=3;
+bio(66).sigAddress='&guitar2_B.A_m[0]';
 bio(66).ndims=2;
 bio(66).size=[];
 
 
-bio(67).blkName='Kalman Filter/kalman1/B3';
+bio(67).blkName='Kalman Filter/kalman1/B';
 bio(67).sigName='';
 bio(67).portIdx=0;
-bio(67).dim=[1,1];
-bio(67).sigWidth=1;
-bio(67).sigAddress='&guitar2_B.B3_a';
+bio(67).dim=[3,1];
+bio(67).sigWidth=3;
+bio(67).sigAddress='&guitar2_B.B_p[0]';
 bio(67).ndims=2;
 bio(67).size=[];
 
 
-bio(68).blkName='Kalman Filter/kalman1/C';
+bio(68).blkName='Kalman Filter/kalman1/B1';
 bio(68).sigName='';
 bio(68).portIdx=0;
 bio(68).dim=[1,1];
 bio(68).sigWidth=1;
-bio(68).sigAddress='&guitar2_B.C_e';
+bio(68).sigAddress='&guitar2_B.B1_aw';
 bio(68).ndims=2;
 bio(68).size=[];
 
 
-bio(69).blkName='Kalman Filter/kalman1/K';
+bio(69).blkName='Kalman Filter/kalman1/B2';
 bio(69).sigName='';
 bio(69).portIdx=0;
-bio(69).dim=[3,1];
-bio(69).sigWidth=3;
-bio(69).sigAddress='&guitar2_B.K_k[0]';
+bio(69).dim=[1,1];
+bio(69).sigWidth=1;
+bio(69).sigAddress='&guitar2_B.B2_c';
 bio(69).ndims=2;
 bio(69).size=[];
 
 
-bio(70).blkName='Kalman Filter/kalman1/Integrator';
+bio(70).blkName='Kalman Filter/kalman1/B3';
 bio(70).sigName='';
 bio(70).portIdx=0;
-bio(70).dim=[3,1];
-bio(70).sigWidth=3;
-bio(70).sigAddress='&guitar2_B.Integrator_a[0]';
+bio(70).dim=[1,1];
+bio(70).sigWidth=1;
+bio(70).sigAddress='&guitar2_B.B3_a';
 bio(70).ndims=2;
 bio(70).size=[];
 
 
-bio(71).blkName='Kalman Filter/kalman1/Sum2';
+bio(71).blkName='Kalman Filter/kalman1/C';
 bio(71).sigName='';
 bio(71).portIdx=0;
 bio(71).dim=[1,1];
 bio(71).sigWidth=1;
-bio(71).sigAddress='&guitar2_B.Sum2_b';
+bio(71).sigAddress='&guitar2_B.C_e';
 bio(71).ndims=2;
 bio(71).size=[];
 
 
-bio(72).blkName='Kalman Filter/kalman1/Sum3';
+bio(72).blkName='Kalman Filter/kalman1/K';
 bio(72).sigName='';
 bio(72).portIdx=0;
 bio(72).dim=[3,1];
 bio(72).sigWidth=3;
-bio(72).sigAddress='&guitar2_B.Sum3_i[0]';
+bio(72).sigAddress='&guitar2_B.K_k[0]';
 bio(72).ndims=2;
 bio(72).size=[];
 
 
-bio(73).blkName='Kalman Filter/kalman1/Sum4';
+bio(73).blkName='Kalman Filter/kalman1/Integrator';
 bio(73).sigName='';
 bio(73).portIdx=0;
 bio(73).dim=[3,1];
 bio(73).sigWidth=3;
-bio(73).sigAddress='&guitar2_B.Sum4_f[0]';
+bio(73).sigAddress='&guitar2_B.Integrator_a[0]';
 bio(73).ndims=2;
 bio(73).size=[];
 
 
-bio(74).blkName='Kalman Filter/kalman2/A';
+bio(74).blkName='Kalman Filter/kalman1/Sum2';
 bio(74).sigName='';
 bio(74).portIdx=0;
-bio(74).dim=[3,1];
-bio(74).sigWidth=3;
-bio(74).sigAddress='&guitar2_B.A_f[0]';
+bio(74).dim=[1,1];
+bio(74).sigWidth=1;
+bio(74).sigAddress='&guitar2_B.Sum2_b';
 bio(74).ndims=2;
 bio(74).size=[];
 
 
-bio(75).blkName='Kalman Filter/kalman2/B';
+bio(75).blkName='Kalman Filter/kalman1/Sum3';
 bio(75).sigName='';
 bio(75).portIdx=0;
 bio(75).dim=[3,1];
 bio(75).sigWidth=3;
-bio(75).sigAddress='&guitar2_B.B_k[0]';
+bio(75).sigAddress='&guitar2_B.Sum3_i[0]';
 bio(75).ndims=2;
 bio(75).size=[];
 
 
-bio(76).blkName='Kalman Filter/kalman2/B1';
+bio(76).blkName='Kalman Filter/kalman1/Sum4';
 bio(76).sigName='';
 bio(76).portIdx=0;
-bio(76).dim=[1,1];
-bio(76).sigWidth=1;
-bio(76).sigAddress='&guitar2_B.B1_d';
+bio(76).dim=[3,1];
+bio(76).sigWidth=3;
+bio(76).sigAddress='&guitar2_B.Sum4_f[0]';
 bio(76).ndims=2;
 bio(76).size=[];
 
 
-bio(77).blkName='Kalman Filter/kalman2/B2';
+bio(77).blkName='Kalman Filter/kalman2/A';
 bio(77).sigName='';
 bio(77).portIdx=0;
-bio(77).dim=[1,1];
-bio(77).sigWidth=1;
-bio(77).sigAddress='&guitar2_B.B2_am';
+bio(77).dim=[3,1];
+bio(77).sigWidth=3;
+bio(77).sigAddress='&guitar2_B.A_f[0]';
 bio(77).ndims=2;
 bio(77).size=[];
 
 
-bio(78).blkName='Kalman Filter/kalman2/B3';
+bio(78).blkName='Kalman Filter/kalman2/B';
 bio(78).sigName='';
 bio(78).portIdx=0;
-bio(78).dim=[1,1];
-bio(78).sigWidth=1;
-bio(78).sigAddress='&guitar2_B.B3_k';
+bio(78).dim=[3,1];
+bio(78).sigWidth=3;
+bio(78).sigAddress='&guitar2_B.B_k[0]';
 bio(78).ndims=2;
 bio(78).size=[];
 
 
-bio(79).blkName='Kalman Filter/kalman2/C';
+bio(79).blkName='Kalman Filter/kalman2/B1';
 bio(79).sigName='';
 bio(79).portIdx=0;
 bio(79).dim=[1,1];
 bio(79).sigWidth=1;
-bio(79).sigAddress='&guitar2_B.C_a';
+bio(79).sigAddress='&guitar2_B.B1_d';
 bio(79).ndims=2;
 bio(79).size=[];
 
 
-bio(80).blkName='Kalman Filter/kalman2/K';
+bio(80).blkName='Kalman Filter/kalman2/B2';
 bio(80).sigName='';
 bio(80).portIdx=0;
-bio(80).dim=[3,1];
-bio(80).sigWidth=3;
-bio(80).sigAddress='&guitar2_B.K_o[0]';
+bio(80).dim=[1,1];
+bio(80).sigWidth=1;
+bio(80).sigAddress='&guitar2_B.B2_am';
 bio(80).ndims=2;
 bio(80).size=[];
 
 
-bio(81).blkName='Kalman Filter/kalman2/Integrator';
+bio(81).blkName='Kalman Filter/kalman2/B3';
 bio(81).sigName='';
 bio(81).portIdx=0;
-bio(81).dim=[3,1];
-bio(81).sigWidth=3;
-bio(81).sigAddress='&guitar2_B.Integrator_hp[0]';
+bio(81).dim=[1,1];
+bio(81).sigWidth=1;
+bio(81).sigAddress='&guitar2_B.B3_k';
 bio(81).ndims=2;
 bio(81).size=[];
 
 
-bio(82).blkName='Kalman Filter/kalman2/Sum2';
+bio(82).blkName='Kalman Filter/kalman2/C';
 bio(82).sigName='';
 bio(82).portIdx=0;
 bio(82).dim=[1,1];
 bio(82).sigWidth=1;
-bio(82).sigAddress='&guitar2_B.Sum2_e';
+bio(82).sigAddress='&guitar2_B.C_a';
 bio(82).ndims=2;
 bio(82).size=[];
 
 
-bio(83).blkName='Kalman Filter/kalman2/Sum3';
+bio(83).blkName='Kalman Filter/kalman2/K';
 bio(83).sigName='';
 bio(83).portIdx=0;
 bio(83).dim=[3,1];
 bio(83).sigWidth=3;
-bio(83).sigAddress='&guitar2_B.Sum3_i1[0]';
+bio(83).sigAddress='&guitar2_B.K_o[0]';
 bio(83).ndims=2;
 bio(83).size=[];
 
 
-bio(84).blkName='Kalman Filter/kalman2/Sum4';
+bio(84).blkName='Kalman Filter/kalman2/Integrator';
 bio(84).sigName='';
 bio(84).portIdx=0;
 bio(84).dim=[3,1];
 bio(84).sigWidth=3;
-bio(84).sigAddress='&guitar2_B.Sum4_h[0]';
+bio(84).sigAddress='&guitar2_B.Integrator_hp[0]';
 bio(84).ndims=2;
 bio(84).size=[];
 
 
-bio(85).blkName='Kalman Filter/kalman3/A';
+bio(85).blkName='Kalman Filter/kalman2/Sum2';
 bio(85).sigName='';
 bio(85).portIdx=0;
-bio(85).dim=[3,1];
-bio(85).sigWidth=3;
-bio(85).sigAddress='&guitar2_B.A[0]';
+bio(85).dim=[1,1];
+bio(85).sigWidth=1;
+bio(85).sigAddress='&guitar2_B.Sum2_e';
 bio(85).ndims=2;
 bio(85).size=[];
 
 
-bio(86).blkName='Kalman Filter/kalman3/B';
+bio(86).blkName='Kalman Filter/kalman2/Sum3';
 bio(86).sigName='';
 bio(86).portIdx=0;
 bio(86).dim=[3,1];
 bio(86).sigWidth=3;
-bio(86).sigAddress='&guitar2_B.B[0]';
+bio(86).sigAddress='&guitar2_B.Sum3_i1[0]';
 bio(86).ndims=2;
 bio(86).size=[];
 
 
-bio(87).blkName='Kalman Filter/kalman3/B1';
+bio(87).blkName='Kalman Filter/kalman2/Sum4';
 bio(87).sigName='';
 bio(87).portIdx=0;
-bio(87).dim=[1,1];
-bio(87).sigWidth=1;
-bio(87).sigAddress='&guitar2_B.B1';
+bio(87).dim=[3,1];
+bio(87).sigWidth=3;
+bio(87).sigAddress='&guitar2_B.Sum4_h[0]';
 bio(87).ndims=2;
 bio(87).size=[];
 
 
-bio(88).blkName='Kalman Filter/kalman3/B2';
+bio(88).blkName='Kalman Filter/kalman3/A';
 bio(88).sigName='';
 bio(88).portIdx=0;
-bio(88).dim=[1,1];
-bio(88).sigWidth=1;
-bio(88).sigAddress='&guitar2_B.B2';
+bio(88).dim=[3,1];
+bio(88).sigWidth=3;
+bio(88).sigAddress='&guitar2_B.A[0]';
 bio(88).ndims=2;
 bio(88).size=[];
 
 
-bio(89).blkName='Kalman Filter/kalman3/B3';
+bio(89).blkName='Kalman Filter/kalman3/B';
 bio(89).sigName='';
 bio(89).portIdx=0;
-bio(89).dim=[1,1];
-bio(89).sigWidth=1;
-bio(89).sigAddress='&guitar2_B.B3';
+bio(89).dim=[3,1];
+bio(89).sigWidth=3;
+bio(89).sigAddress='&guitar2_B.B[0]';
 bio(89).ndims=2;
 bio(89).size=[];
 
 
-bio(90).blkName='Kalman Filter/kalman3/C';
+bio(90).blkName='Kalman Filter/kalman3/B1';
 bio(90).sigName='';
 bio(90).portIdx=0;
 bio(90).dim=[1,1];
 bio(90).sigWidth=1;
-bio(90).sigAddress='&guitar2_B.C';
+bio(90).sigAddress='&guitar2_B.B1';
 bio(90).ndims=2;
 bio(90).size=[];
 
 
-bio(91).blkName='Kalman Filter/kalman3/K';
+bio(91).blkName='Kalman Filter/kalman3/B2';
 bio(91).sigName='';
 bio(91).portIdx=0;
-bio(91).dim=[3,1];
-bio(91).sigWidth=3;
-bio(91).sigAddress='&guitar2_B.K[0]';
+bio(91).dim=[1,1];
+bio(91).sigWidth=1;
+bio(91).sigAddress='&guitar2_B.B2';
 bio(91).ndims=2;
 bio(91).size=[];
 
 
-bio(92).blkName='Kalman Filter/kalman3/Integrator';
+bio(92).blkName='Kalman Filter/kalman3/B3';
 bio(92).sigName='';
 bio(92).portIdx=0;
-bio(92).dim=[3,1];
-bio(92).sigWidth=3;
-bio(92).sigAddress='&guitar2_B.Integrator[0]';
+bio(92).dim=[1,1];
+bio(92).sigWidth=1;
+bio(92).sigAddress='&guitar2_B.B3';
 bio(92).ndims=2;
 bio(92).size=[];
 
 
-bio(93).blkName='Kalman Filter/kalman3/Sum2';
+bio(93).blkName='Kalman Filter/kalman3/C';
 bio(93).sigName='';
 bio(93).portIdx=0;
 bio(93).dim=[1,1];
 bio(93).sigWidth=1;
-bio(93).sigAddress='&guitar2_B.Sum2_h';
+bio(93).sigAddress='&guitar2_B.C';
 bio(93).ndims=2;
 bio(93).size=[];
 
 
-bio(94).blkName='Kalman Filter/kalman3/Sum3';
+bio(94).blkName='Kalman Filter/kalman3/K';
 bio(94).sigName='';
 bio(94).portIdx=0;
 bio(94).dim=[3,1];
 bio(94).sigWidth=3;
-bio(94).sigAddress='&guitar2_B.Sum3[0]';
+bio(94).sigAddress='&guitar2_B.K[0]';
 bio(94).ndims=2;
 bio(94).size=[];
 
 
-bio(95).blkName='Kalman Filter/kalman3/Sum4';
+bio(95).blkName='Kalman Filter/kalman3/Integrator';
 bio(95).sigName='';
 bio(95).portIdx=0;
 bio(95).dim=[3,1];
 bio(95).sigWidth=3;
-bio(95).sigAddress='&guitar2_B.Sum4_c[0]';
+bio(95).sigAddress='&guitar2_B.Integrator[0]';
 bio(95).ndims=2;
 bio(95).size=[];
 
 
-bio(96).blkName='Kalman Filter/kalman4/A';
+bio(96).blkName='Kalman Filter/kalman3/Sum2';
 bio(96).sigName='';
 bio(96).portIdx=0;
-bio(96).dim=[3,1];
-bio(96).sigWidth=3;
-bio(96).sigAddress='&guitar2_B.A_d[0]';
+bio(96).dim=[1,1];
+bio(96).sigWidth=1;
+bio(96).sigAddress='&guitar2_B.Sum2_h';
 bio(96).ndims=2;
 bio(96).size=[];
 
 
-bio(97).blkName='Kalman Filter/kalman4/B';
+bio(97).blkName='Kalman Filter/kalman3/Sum3';
 bio(97).sigName='';
 bio(97).portIdx=0;
 bio(97).dim=[3,1];
 bio(97).sigWidth=3;
-bio(97).sigAddress='&guitar2_B.B_o[0]';
+bio(97).sigAddress='&guitar2_B.Sum3[0]';
 bio(97).ndims=2;
 bio(97).size=[];
 
 
-bio(98).blkName='Kalman Filter/kalman4/B1';
+bio(98).blkName='Kalman Filter/kalman3/Sum4';
 bio(98).sigName='';
 bio(98).portIdx=0;
-bio(98).dim=[1,1];
-bio(98).sigWidth=1;
-bio(98).sigAddress='&guitar2_B.B1_a';
+bio(98).dim=[3,1];
+bio(98).sigWidth=3;
+bio(98).sigAddress='&guitar2_B.Sum4_c[0]';
 bio(98).ndims=2;
 bio(98).size=[];
 
 
-bio(99).blkName='Kalman Filter/kalman4/B2';
+bio(99).blkName='Kalman Filter/kalman4/A';
 bio(99).sigName='';
 bio(99).portIdx=0;
-bio(99).dim=[1,1];
-bio(99).sigWidth=1;
-bio(99).sigAddress='&guitar2_B.B2_a';
+bio(99).dim=[3,1];
+bio(99).sigWidth=3;
+bio(99).sigAddress='&guitar2_B.A_d[0]';
 bio(99).ndims=2;
 bio(99).size=[];
 
 
-bio(100).blkName='Kalman Filter/kalman4/B3';
+bio(100).blkName='Kalman Filter/kalman4/B';
 bio(100).sigName='';
 bio(100).portIdx=0;
-bio(100).dim=[1,1];
-bio(100).sigWidth=1;
-bio(100).sigAddress='&guitar2_B.B3_p';
+bio(100).dim=[3,1];
+bio(100).sigWidth=3;
+bio(100).sigAddress='&guitar2_B.B_o[0]';
 bio(100).ndims=2;
 bio(100).size=[];
 
 
-bio(101).blkName='Kalman Filter/kalman4/C';
+bio(101).blkName='Kalman Filter/kalman4/B1';
 bio(101).sigName='';
 bio(101).portIdx=0;
 bio(101).dim=[1,1];
 bio(101).sigWidth=1;
-bio(101).sigAddress='&guitar2_B.C_l';
+bio(101).sigAddress='&guitar2_B.B1_a';
 bio(101).ndims=2;
 bio(101).size=[];
 
 
-bio(102).blkName='Kalman Filter/kalman4/K';
+bio(102).blkName='Kalman Filter/kalman4/B2';
 bio(102).sigName='';
 bio(102).portIdx=0;
-bio(102).dim=[3,1];
-bio(102).sigWidth=3;
-bio(102).sigAddress='&guitar2_B.K_a[0]';
+bio(102).dim=[1,1];
+bio(102).sigWidth=1;
+bio(102).sigAddress='&guitar2_B.B2_a';
 bio(102).ndims=2;
 bio(102).size=[];
 
 
-bio(103).blkName='Kalman Filter/kalman4/Integrator';
+bio(103).blkName='Kalman Filter/kalman4/B3';
 bio(103).sigName='';
 bio(103).portIdx=0;
-bio(103).dim=[3,1];
-bio(103).sigWidth=3;
-bio(103).sigAddress='&guitar2_B.Integrator_h[0]';
+bio(103).dim=[1,1];
+bio(103).sigWidth=1;
+bio(103).sigAddress='&guitar2_B.B3_p';
 bio(103).ndims=2;
 bio(103).size=[];
 
 
-bio(104).blkName='Kalman Filter/kalman4/Sum2';
+bio(104).blkName='Kalman Filter/kalman4/C';
 bio(104).sigName='';
 bio(104).portIdx=0;
 bio(104).dim=[1,1];
 bio(104).sigWidth=1;
-bio(104).sigAddress='&guitar2_B.Sum2_k';
+bio(104).sigAddress='&guitar2_B.C_l';
 bio(104).ndims=2;
 bio(104).size=[];
 
 
-bio(105).blkName='Kalman Filter/kalman4/Sum3';
+bio(105).blkName='Kalman Filter/kalman4/K';
 bio(105).sigName='';
 bio(105).portIdx=0;
 bio(105).dim=[3,1];
 bio(105).sigWidth=3;
-bio(105).sigAddress='&guitar2_B.Sum3_p[0]';
+bio(105).sigAddress='&guitar2_B.K_a[0]';
 bio(105).ndims=2;
 bio(105).size=[];
 
 
-bio(106).blkName='Kalman Filter/kalman4/Sum4';
+bio(106).blkName='Kalman Filter/kalman4/Integrator';
 bio(106).sigName='';
 bio(106).portIdx=0;
 bio(106).dim=[3,1];
 bio(106).sigWidth=3;
-bio(106).sigAddress='&guitar2_B.Sum4_p[0]';
+bio(106).sigAddress='&guitar2_B.Integrator_h[0]';
 bio(106).ndims=2;
 bio(106).size=[];
 
 
-bio(107).blkName='trajectory planning/minimum jerk/MATLAB Function';
-bio(107).sigName='des';
+bio(107).blkName='Kalman Filter/kalman4/Sum2';
+bio(107).sigName='';
 bio(107).portIdx=0;
-bio(107).dim=[3,1];
-bio(107).sigWidth=3;
-bio(107).sigAddress='&guitar2_B.sf_MATLABFunction.des[0]';
+bio(107).dim=[1,1];
+bio(107).sigWidth=1;
+bio(107).sigAddress='&guitar2_B.Sum2_k';
 bio(107).ndims=2;
 bio(107).size=[];
 
 
-bio(108).blkName='trajectory planning/minimum jerk/MATLAB Function1';
-bio(108).sigName='des';
+bio(108).blkName='Kalman Filter/kalman4/Sum3';
+bio(108).sigName='';
 bio(108).portIdx=0;
 bio(108).dim=[3,1];
 bio(108).sigWidth=3;
-bio(108).sigAddress='&guitar2_B.sf_MATLABFunction1.des[0]';
+bio(108).sigAddress='&guitar2_B.Sum3_p[0]';
 bio(108).ndims=2;
 bio(108).size=[];
 
 
-bio(109).blkName='trajectory planning/minimum jerk/Clock';
+bio(109).blkName='Kalman Filter/kalman4/Sum4';
 bio(109).sigName='';
 bio(109).portIdx=0;
-bio(109).dim=[1,1];
-bio(109).sigWidth=1;
-bio(109).sigAddress='&guitar2_B.Clock_l';
+bio(109).dim=[3,1];
+bio(109).sigWidth=3;
+bio(109).sigAddress='&guitar2_B.Sum4_p[0]';
 bio(109).ndims=2;
 bio(109).size=[];
 
 
-bio(110).blkName='trajectory planning/minimum jerk/Gain';
-bio(110).sigName='';
+bio(110).blkName='trajectory planning/minimum jerk/MATLAB Function';
+bio(110).sigName='des';
 bio(110).portIdx=0;
-bio(110).dim=[1,1];
-bio(110).sigWidth=1;
-bio(110).sigAddress='&guitar2_B.Gain_g';
+bio(110).dim=[3,1];
+bio(110).sigWidth=3;
+bio(110).sigAddress='&guitar2_B.sf_MATLABFunction.des[0]';
 bio(110).ndims=2;
 bio(110).size=[];
 
 
-bio(111).blkName='trajectory planning/minimum jerk/tag des pos1';
-bio(111).sigName='';
+bio(111).blkName='trajectory planning/minimum jerk/MATLAB Function1';
+bio(111).sigName='des';
 bio(111).portIdx=0;
-bio(111).dim=[1,1];
-bio(111).sigWidth=1;
-bio(111).sigAddress='&guitar2_B.tagdespos1';
+bio(111).dim=[3,1];
+bio(111).sigWidth=3;
+bio(111).sigAddress='&guitar2_B.sf_MATLABFunction1.des[0]';
 bio(111).ndims=2;
 bio(111).size=[];
 
 
-bio(112).blkName='trajectory planning/minimum jerk/tag des pos2';
+bio(112).blkName='trajectory planning/minimum jerk/Clock';
 bio(112).sigName='';
 bio(112).portIdx=0;
 bio(112).dim=[1,1];
 bio(112).sigWidth=1;
-bio(112).sigAddress='&guitar2_B.tagdespos2';
+bio(112).sigAddress='&guitar2_B.Clock_l';
 bio(112).ndims=2;
 bio(112).size=[];
 
 
-bio(113).blkName='trajectory planning/minimum jerk/Saturation1';
+bio(113).blkName='trajectory planning/minimum jerk/Gain';
 bio(113).sigName='';
 bio(113).portIdx=0;
 bio(113).dim=[1,1];
 bio(113).sigWidth=1;
-bio(113).sigAddress='&guitar2_B.Saturation1';
+bio(113).sigAddress='&guitar2_B.Gain_g';
 bio(113).ndims=2;
 bio(113).size=[];
 
 
-bio(114).blkName='trajectory planning/minimum jerk/Saturation2';
+bio(114).blkName='trajectory planning/minimum jerk/tag des pos1';
 bio(114).sigName='';
 bio(114).portIdx=0;
 bio(114).dim=[1,1];
 bio(114).sigWidth=1;
-bio(114).sigAddress='&guitar2_B.Saturation2';
+bio(114).sigAddress='&guitar2_B.tagdespos1';
 bio(114).ndims=2;
 bio(114).size=[];
 
 
-bio(115).blkName='trajectory planning/minimum jerk/Sum1';
+bio(115).blkName='trajectory planning/minimum jerk/tag des pos2';
 bio(115).sigName='';
 bio(115).portIdx=0;
 bio(115).dim=[1,1];
 bio(115).sigWidth=1;
-bio(115).sigAddress='&guitar2_B.Sum1_j';
+bio(115).sigAddress='&guitar2_B.tagdespos2';
 bio(115).ndims=2;
 bio(115).size=[];
 
 
-bio(116).blkName='trajectory planning/minimum jerk/Sum2';
+bio(116).blkName='trajectory planning/minimum jerk/Saturation1';
 bio(116).sigName='';
 bio(116).portIdx=0;
 bio(116).dim=[1,1];
 bio(116).sigWidth=1;
-bio(116).sigAddress='&guitar2_B.Sum2';
+bio(116).sigAddress='&guitar2_B.Saturation1';
 bio(116).ndims=2;
 bio(116).size=[];
 
 
-bio(117).blkName='Controller/PID/Compare To Constant/Compare';
+bio(117).blkName='trajectory planning/minimum jerk/Saturation2';
 bio(117).sigName='';
 bio(117).portIdx=0;
 bio(117).dim=[1,1];
 bio(117).sigWidth=1;
-bio(117).sigAddress='&guitar2_B.Compare';
+bio(117).sigAddress='&guitar2_B.Saturation2';
 bio(117).ndims=2;
 bio(117).size=[];
 
 
-bio(118).blkName='Controller/PID/gain file/file readable outputs';
-bio(118).sigName='y';
+bio(118).blkName='trajectory planning/minimum jerk/Sum1';
+bio(118).sigName='';
 bio(118).portIdx=0;
-bio(118).dim=[4,1];
-bio(118).sigWidth=4;
-bio(118).sigAddress='&guitar2_B.y[0]';
+bio(118).dim=[1,1];
+bio(118).sigWidth=1;
+bio(118).sigAddress='&guitar2_B.Sum1_j';
 bio(118).ndims=2;
 bio(118).size=[];
 
 
-bio(119).blkName='Controller/PID/gain transition/gainramp/p1';
-bio(119).sigName='val';
+bio(119).blkName='trajectory planning/minimum jerk/Sum2';
+bio(119).sigName='';
 bio(119).portIdx=0;
 bio(119).dim=[1,1];
 bio(119).sigWidth=1;
-bio(119).sigAddress='&guitar2_B.sf_gainramp_e.val';
+bio(119).sigAddress='&guitar2_B.Sum2';
 bio(119).ndims=2;
 bio(119).size=[];
 
 
-bio(120).blkName='Controller/PID/gain transition/gainramp/p2';
-bio(120).sigName='state1';
-bio(120).portIdx=1;
-bio(120).dim=[4,1];
-bio(120).sigWidth=4;
-bio(120).sigAddress='&guitar2_B.sf_gainramp_e.state1[0]';
+bio(120).blkName='Controller/PID/Compare To Constant/Compare';
+bio(120).sigName='';
+bio(120).portIdx=0;
+bio(120).dim=[1,1];
+bio(120).sigWidth=1;
+bio(120).sigAddress='&guitar2_B.Compare';
 bio(120).ndims=2;
 bio(120).size=[];
 
 
-bio(121).blkName='Controller/PID/gain transition/Memory';
-bio(121).sigName='';
+bio(121).blkName='Controller/PID/Oscillator/MATLAB Function';
+bio(121).sigName='y';
 bio(121).portIdx=0;
-bio(121).dim=[4,1];
-bio(121).sigWidth=4;
-bio(121).sigAddress='&guitar2_B.Memory_d[0]';
+bio(121).dim=[1,1];
+bio(121).sigWidth=1;
+bio(121).sigAddress='&guitar2_B.y_f';
 bio(121).ndims=2;
 bio(121).size=[];
 
 
-bio(122).blkName='Controller/PID/gain transition1/gainramp/p1';
-bio(122).sigName='val';
+bio(122).blkName='Controller/PID/Oscillator/Clock';
+bio(122).sigName='';
 bio(122).portIdx=0;
 bio(122).dim=[1,1];
 bio(122).sigWidth=1;
-bio(122).sigAddress='&guitar2_B.sf_gainramp_a.val';
+bio(122).sigAddress='&guitar2_B.Clock_n';
 bio(122).ndims=2;
 bio(122).size=[];
 
 
-bio(123).blkName='Controller/PID/gain transition1/gainramp/p2';
-bio(123).sigName='state1';
-bio(123).portIdx=1;
+bio(123).blkName='Controller/PID/gain file/file readable outputs';
+bio(123).sigName='y';
+bio(123).portIdx=0;
 bio(123).dim=[4,1];
 bio(123).sigWidth=4;
-bio(123).sigAddress='&guitar2_B.sf_gainramp_a.state1[0]';
+bio(123).sigAddress='&guitar2_B.y[0]';
 bio(123).ndims=2;
 bio(123).size=[];
 
 
-bio(124).blkName='Controller/PID/gain transition1/Memory';
-bio(124).sigName='';
+bio(124).blkName='Controller/PID/gain transition/gainramp/p1';
+bio(124).sigName='val';
 bio(124).portIdx=0;
-bio(124).dim=[4,1];
-bio(124).sigWidth=4;
-bio(124).sigAddress='&guitar2_B.Memory_i[0]';
+bio(124).dim=[1,1];
+bio(124).sigWidth=1;
+bio(124).sigAddress='&guitar2_B.sf_gainramp_e.val';
 bio(124).ndims=2;
 bio(124).size=[];
 
 
-bio(125).blkName='Controller/PID/gain transition2/gainramp/p1';
-bio(125).sigName='val';
-bio(125).portIdx=0;
-bio(125).dim=[1,1];
-bio(125).sigWidth=1;
-bio(125).sigAddress='&guitar2_B.sf_gainramp.val';
+bio(125).blkName='Controller/PID/gain transition/gainramp/p2';
+bio(125).sigName='state1';
+bio(125).portIdx=1;
+bio(125).dim=[4,1];
+bio(125).sigWidth=4;
+bio(125).sigAddress='&guitar2_B.sf_gainramp_e.state1[0]';
 bio(125).ndims=2;
 bio(125).size=[];
 
 
-bio(126).blkName='Controller/PID/gain transition2/gainramp/p2';
-bio(126).sigName='state1';
-bio(126).portIdx=1;
+bio(126).blkName='Controller/PID/gain transition/Memory';
+bio(126).sigName='';
+bio(126).portIdx=0;
 bio(126).dim=[4,1];
 bio(126).sigWidth=4;
-bio(126).sigAddress='&guitar2_B.sf_gainramp.state1[0]';
+bio(126).sigAddress='&guitar2_B.Memory_d[0]';
 bio(126).ndims=2;
 bio(126).size=[];
 
 
-bio(127).blkName='Controller/PID/gain transition2/Memory';
-bio(127).sigName='';
+bio(127).blkName='Controller/PID/gain transition1/gainramp/p1';
+bio(127).sigName='val';
 bio(127).portIdx=0;
-bio(127).dim=[4,1];
-bio(127).sigWidth=4;
-bio(127).sigAddress='&guitar2_B.Memory[0]';
+bio(127).dim=[1,1];
+bio(127).sigWidth=1;
+bio(127).sigAddress='&guitar2_B.sf_gainramp_a.val';
 bio(127).ndims=2;
 bio(127).size=[];
 
 
-bio(128).blkName='Controller/PID/gain transition3/gainramp/p1';
-bio(128).sigName='val';
-bio(128).portIdx=0;
-bio(128).dim=[1,1];
-bio(128).sigWidth=1;
-bio(128).sigAddress='&guitar2_B.sf_gainramp_h.val';
+bio(128).blkName='Controller/PID/gain transition1/gainramp/p2';
+bio(128).sigName='state1';
+bio(128).portIdx=1;
+bio(128).dim=[4,1];
+bio(128).sigWidth=4;
+bio(128).sigAddress='&guitar2_B.sf_gainramp_a.state1[0]';
 bio(128).ndims=2;
 bio(128).size=[];
 
 
-bio(129).blkName='Controller/PID/gain transition3/gainramp/p2';
-bio(129).sigName='state1';
-bio(129).portIdx=1;
+bio(129).blkName='Controller/PID/gain transition1/Memory';
+bio(129).sigName='';
+bio(129).portIdx=0;
 bio(129).dim=[4,1];
 bio(129).sigWidth=4;
-bio(129).sigAddress='&guitar2_B.sf_gainramp_h.state1[0]';
+bio(129).sigAddress='&guitar2_B.Memory_i[0]';
 bio(129).ndims=2;
 bio(129).size=[];
 
 
-bio(130).blkName='Controller/PID/gain transition3/Memory';
-bio(130).sigName='';
+bio(130).blkName='Controller/PID/gain transition2/gainramp/p1';
+bio(130).sigName='val';
 bio(130).portIdx=0;
-bio(130).dim=[4,1];
-bio(130).sigWidth=4;
-bio(130).sigAddress='&guitar2_B.Memory_j[0]';
+bio(130).dim=[1,1];
+bio(130).sigWidth=1;
+bio(130).sigAddress='&guitar2_B.sf_gainramp.val';
 bio(130).ndims=2;
 bio(130).size=[];
 
 
-bio(131).blkName='Controller/PID/gain transition4/gainramp/p1';
-bio(131).sigName='val';
-bio(131).portIdx=0;
-bio(131).dim=[1,1];
-bio(131).sigWidth=1;
-bio(131).sigAddress='&guitar2_B.sf_gainramp_i.val';
+bio(131).blkName='Controller/PID/gain transition2/gainramp/p2';
+bio(131).sigName='state1';
+bio(131).portIdx=1;
+bio(131).dim=[4,1];
+bio(131).sigWidth=4;
+bio(131).sigAddress='&guitar2_B.sf_gainramp.state1[0]';
 bio(131).ndims=2;
 bio(131).size=[];
 
 
-bio(132).blkName='Controller/PID/gain transition4/gainramp/p2';
-bio(132).sigName='state1';
-bio(132).portIdx=1;
+bio(132).blkName='Controller/PID/gain transition2/Memory';
+bio(132).sigName='';
+bio(132).portIdx=0;
 bio(132).dim=[4,1];
 bio(132).sigWidth=4;
-bio(132).sigAddress='&guitar2_B.sf_gainramp_i.state1[0]';
+bio(132).sigAddress='&guitar2_B.Memory[0]';
 bio(132).ndims=2;
 bio(132).size=[];
 
 
-bio(133).blkName='Controller/PID/gain transition4/Memory';
-bio(133).sigName='';
+bio(133).blkName='Controller/PID/gain transition3/gainramp/p1';
+bio(133).sigName='val';
 bio(133).portIdx=0;
-bio(133).dim=[4,1];
-bio(133).sigWidth=4;
-bio(133).sigAddress='&guitar2_B.Memory_o[0]';
+bio(133).dim=[1,1];
+bio(133).sigWidth=1;
+bio(133).sigAddress='&guitar2_B.sf_gainramp_h.val';
 bio(133).ndims=2;
 bio(133).size=[];
 
 
-bio(134).blkName='Controller/start/Ramp/Clock';
-bio(134).sigName='';
-bio(134).portIdx=0;
-bio(134).dim=[1,1];
-bio(134).sigWidth=1;
-bio(134).sigAddress='&guitar2_B.Clock';
+bio(134).blkName='Controller/PID/gain transition3/gainramp/p2';
+bio(134).sigName='state1';
+bio(134).portIdx=1;
+bio(134).dim=[4,1];
+bio(134).sigWidth=4;
+bio(134).sigAddress='&guitar2_B.sf_gainramp_h.state1[0]';
 bio(134).ndims=2;
 bio(134).size=[];
 
 
-bio(135).blkName='Controller/start/Ramp/Product';
+bio(135).blkName='Controller/PID/gain transition3/Memory';
 bio(135).sigName='';
 bio(135).portIdx=0;
-bio(135).dim=[1,1];
-bio(135).sigWidth=1;
-bio(135).sigAddress='&guitar2_B.Product';
+bio(135).dim=[4,1];
+bio(135).sigWidth=4;
+bio(135).sigAddress='&guitar2_B.Memory_j[0]';
 bio(135).ndims=2;
 bio(135).size=[];
 
 
-bio(136).blkName='Controller/start/Ramp/Step';
-bio(136).sigName='';
+bio(136).blkName='Controller/PID/gain transition4/gainramp/p1';
+bio(136).sigName='val';
 bio(136).portIdx=0;
 bio(136).dim=[1,1];
 bio(136).sigWidth=1;
-bio(136).sigAddress='&guitar2_B.Step';
+bio(136).sigAddress='&guitar2_B.sf_gainramp_i.val';
 bio(136).ndims=2;
 bio(136).size=[];
 
 
-bio(137).blkName='Controller/start/Ramp/Output';
-bio(137).sigName='';
-bio(137).portIdx=0;
-bio(137).dim=[1,1];
-bio(137).sigWidth=1;
-bio(137).sigAddress='&guitar2_B.Output';
+bio(137).blkName='Controller/PID/gain transition4/gainramp/p2';
+bio(137).sigName='state1';
+bio(137).portIdx=1;
+bio(137).dim=[4,1];
+bio(137).sigWidth=4;
+bio(137).sigAddress='&guitar2_B.sf_gainramp_i.state1[0]';
 bio(137).ndims=2;
 bio(137).size=[];
 
 
-bio(138).blkName='Controller/start/Ramp/Sum';
+bio(138).blkName='Controller/PID/gain transition4/Memory';
 bio(138).sigName='';
 bio(138).portIdx=0;
-bio(138).dim=[1,1];
-bio(138).sigWidth=1;
-bio(138).sigAddress='&guitar2_B.Sum_j';
+bio(138).dim=[4,1];
+bio(138).sigWidth=4;
+bio(138).sigAddress='&guitar2_B.Memory_o[0]';
 bio(138).ndims=2;
 bio(138).size=[];
 
 
-bio(139).blkName='Kalman Filter/kalman3/Discrete Derivative/Diff';
-bio(139).sigName='';
+bio(139).blkName='Controller/PID/gain transition5/gainramp/p1';
+bio(139).sigName='val';
 bio(139).portIdx=0;
 bio(139).dim=[1,1];
 bio(139).sigWidth=1;
-bio(139).sigAddress='&guitar2_B.Diff';
+bio(139).sigAddress='&guitar2_B.sf_gainramp_f.val';
 bio(139).ndims=2;
 bio(139).size=[];
 
 
-bio(140).blkName='Kalman Filter/kalman3/Discrete Derivative/TSamp';
-bio(140).sigName='';
-bio(140).portIdx=0;
-bio(140).dim=[1,1];
-bio(140).sigWidth=1;
-bio(140).sigAddress='&guitar2_B.TSamp';
+bio(140).blkName='Controller/PID/gain transition5/gainramp/p2';
+bio(140).sigName='state1';
+bio(140).portIdx=1;
+bio(140).dim=[4,1];
+bio(140).sigWidth=4;
+bio(140).sigAddress='&guitar2_B.sf_gainramp_f.state1[0]';
 bio(140).ndims=2;
 bio(140).size=[];
 
 
-bio(141).blkName='Kalman Filter/kalman3/Discrete Derivative/UD';
-bio(141).sigName='U(k-1)';
+bio(141).blkName='Controller/PID/gain transition5/Memory';
+bio(141).sigName='';
 bio(141).portIdx=0;
-bio(141).dim=[1,1];
-bio(141).sigWidth=1;
-bio(141).sigAddress='&guitar2_B.Uk1';
+bio(141).dim=[4,1];
+bio(141).sigWidth=4;
+bio(141).sigAddress='&guitar2_B.Memory_n[0]';
 bio(141).ndims=2;
 bio(141).size=[];
 
 
-bio(142).blkName='Kalman Filter/kalman4/Discrete Derivative/Diff';
-bio(142).sigName='';
+bio(142).blkName='Controller/PID/gain transition6/gainramp/p1';
+bio(142).sigName='val';
 bio(142).portIdx=0;
 bio(142).dim=[1,1];
 bio(142).sigWidth=1;
-bio(142).sigAddress='&guitar2_B.Diff_l';
+bio(142).sigAddress='&guitar2_B.val';
 bio(142).ndims=2;
 bio(142).size=[];
 
 
-bio(143).blkName='Kalman Filter/kalman4/Discrete Derivative/TSamp';
-bio(143).sigName='';
-bio(143).portIdx=0;
-bio(143).dim=[1,1];
-bio(143).sigWidth=1;
-bio(143).sigAddress='&guitar2_B.TSamp_o';
+bio(143).blkName='Controller/PID/gain transition6/gainramp/p2';
+bio(143).sigName='state1';
+bio(143).portIdx=1;
+bio(143).dim=[4,1];
+bio(143).sigWidth=4;
+bio(143).sigAddress='&guitar2_B.state1[0]';
 bio(143).ndims=2;
 bio(143).size=[];
 
 
-bio(144).blkName='Kalman Filter/kalman4/Discrete Derivative/UD';
-bio(144).sigName='U(k-1)';
+bio(144).blkName='Controller/PID/gain transition6/Memory';
+bio(144).sigName='';
 bio(144).portIdx=0;
-bio(144).dim=[1,1];
-bio(144).sigWidth=1;
-bio(144).sigAddress='&guitar2_B.Uk1_b';
+bio(144).dim=[4,1];
+bio(144).sigWidth=4;
+bio(144).sigAddress='&guitar2_B.Memory_j3[0]';
 bio(144).ndims=2;
 bio(144).size=[];
 
 
+bio(145).blkName='Controller/start/Ramp/Clock';
+bio(145).sigName='';
+bio(145).portIdx=0;
+bio(145).dim=[1,1];
+bio(145).sigWidth=1;
+bio(145).sigAddress='&guitar2_B.Clock';
+bio(145).ndims=2;
+bio(145).size=[];
+
+
+bio(146).blkName='Controller/start/Ramp/Product';
+bio(146).sigName='';
+bio(146).portIdx=0;
+bio(146).dim=[1,1];
+bio(146).sigWidth=1;
+bio(146).sigAddress='&guitar2_B.Product';
+bio(146).ndims=2;
+bio(146).size=[];
+
+
+bio(147).blkName='Controller/start/Ramp/Step';
+bio(147).sigName='';
+bio(147).portIdx=0;
+bio(147).dim=[1,1];
+bio(147).sigWidth=1;
+bio(147).sigAddress='&guitar2_B.Step';
+bio(147).ndims=2;
+bio(147).size=[];
+
+
+bio(148).blkName='Controller/start/Ramp/Output';
+bio(148).sigName='';
+bio(148).portIdx=0;
+bio(148).dim=[1,1];
+bio(148).sigWidth=1;
+bio(148).sigAddress='&guitar2_B.Output';
+bio(148).ndims=2;
+bio(148).size=[];
+
+
+bio(149).blkName='Controller/start/Ramp/Sum';
+bio(149).sigName='';
+bio(149).portIdx=0;
+bio(149).dim=[1,1];
+bio(149).sigWidth=1;
+bio(149).sigAddress='&guitar2_B.Sum_j';
+bio(149).ndims=2;
+bio(149).size=[];
+
+
+bio(150).blkName='Kalman Filter/kalman3/Discrete Derivative/Diff';
+bio(150).sigName='';
+bio(150).portIdx=0;
+bio(150).dim=[1,1];
+bio(150).sigWidth=1;
+bio(150).sigAddress='&guitar2_B.Diff';
+bio(150).ndims=2;
+bio(150).size=[];
+
+
+bio(151).blkName='Kalman Filter/kalman3/Discrete Derivative/TSamp';
+bio(151).sigName='';
+bio(151).portIdx=0;
+bio(151).dim=[1,1];
+bio(151).sigWidth=1;
+bio(151).sigAddress='&guitar2_B.TSamp';
+bio(151).ndims=2;
+bio(151).size=[];
+
+
+bio(152).blkName='Kalman Filter/kalman3/Discrete Derivative/UD';
+bio(152).sigName='U(k-1)';
+bio(152).portIdx=0;
+bio(152).dim=[1,1];
+bio(152).sigWidth=1;
+bio(152).sigAddress='&guitar2_B.Uk1';
+bio(152).ndims=2;
+bio(152).size=[];
+
+
+bio(153).blkName='Kalman Filter/kalman4/Discrete Derivative/Diff';
+bio(153).sigName='';
+bio(153).portIdx=0;
+bio(153).dim=[1,1];
+bio(153).sigWidth=1;
+bio(153).sigAddress='&guitar2_B.Diff_l';
+bio(153).ndims=2;
+bio(153).size=[];
+
+
+bio(154).blkName='Kalman Filter/kalman4/Discrete Derivative/TSamp';
+bio(154).sigName='';
+bio(154).portIdx=0;
+bio(154).dim=[1,1];
+bio(154).sigWidth=1;
+bio(154).sigAddress='&guitar2_B.TSamp_o';
+bio(154).ndims=2;
+bio(154).size=[];
+
+
+bio(155).blkName='Kalman Filter/kalman4/Discrete Derivative/UD';
+bio(155).sigName='U(k-1)';
+bio(155).portIdx=0;
+bio(155).dim=[1,1];
+bio(155).sigWidth=1;
+bio(155).sigAddress='&guitar2_B.Uk1_b';
+bio(155).ndims=2;
+bio(155).size=[];
+
+
 function len = getlenBIO
-len = 144;
+len = 155;
 
