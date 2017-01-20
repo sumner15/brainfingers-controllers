@@ -508,6 +508,7 @@ EAER/FingerEAERCtrlbio.m
 EAER/FingerEAERCtrl_sfun.mexw64
 EAER/FingerEAERCtrl.xml
 *.autosave
+EAER/FingerEAERCtrl_slrt_rtw/*
 syntax: regexp
 EAER/FingerEAERCtrl_xpc_rtw/
 EAER/slprj/
