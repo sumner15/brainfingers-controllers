@@ -1,265 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?><Root>
 
           <SubSystem>
-    <Name>Detect
-Change</Name>
-    <xPCName>FingerStrokeAssistance/Detect Change</xPCName>
+    <Name>HL Controller</Name>
+    <xPCName>FingerStrokeAssistance/HL Controller</xPCName>
     
     
-
  
             <block>
-            <blkName>Delay Input1</blkName>
-            <xpcblkName>Detect Change/Delay Input1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Detect Change/Delay Input1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
+            <blkName>Constant</blkName>
+            <xpcblkName>HL Controller/Constant</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
           <parameter>
-          <paramName>vinit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>FixPt
-Relational
-Operator</sigName>
-              <xpcsigName>Detect Change/FixPt Relational Operator</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Delay Input1</sigName>
-              <xpcsigName>Detect Change/Delay Input1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                
-            </signal>
-
-    </SubSystem>
-    <SubSystem>
-    <Name>Feedback</Name>
-    <xPCName>FingerStrokeAssistance/Feedback</xPCName>
-        <SubSystem>
-    <Name>Discrete Derivative</Name>
-    <xPCName>FingerStrokeAssistance/Feedback/Discrete Derivative</xPCName>
-    
-    
-
-
- 
-            <block>
-            <blkName>TSamp</blkName>
-            <xpcblkName>Feedback/Discrete Derivative/TSamp</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Feedback/Discrete Derivative/TSamp</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>WtEt</paramName>
+          <paramName>Value</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
 
  
             <block>
-            <blkName>UD</blkName>
-            <xpcblkName>Feedback/Discrete Derivative/UD</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Feedback/Discrete Derivative/UD</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
+            <blkName>Constant1</blkName>
+            <xpcblkName>HL Controller/Constant1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
           <parameter>
-          <paramName>ICPrevScaledInput</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Diff</sigName>
-              <xpcsigName>Feedback/Discrete Derivative/Diff</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>TSamp</sigName>
-              <xpcsigName>Feedback/Discrete Derivative/TSamp</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>UD</sigName>
-              <xpcsigName>Feedback/Discrete Derivative/UD</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                
-            </signal>
-
-    </SubSystem>
-    <SubSystem>
-    <Name>Discrete Derivative1</Name>
-    <xPCName>FingerStrokeAssistance/Feedback/Discrete Derivative1</xPCName>
-    
-    
-
-
- 
-            <block>
-            <blkName>TSamp</blkName>
-            <xpcblkName>Feedback/Discrete Derivative1/TSamp</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Feedback/Discrete Derivative1/TSamp</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>WtEt</paramName>
+          <paramName>Value</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
 
  
             <block>
-            <blkName>UD</blkName>
-            <xpcblkName>Feedback/Discrete Derivative1/UD</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Feedback/Discrete Derivative1/UD</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
+            <blkName>Constant2</blkName>
+            <xpcblkName>HL Controller/Constant2</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
           <parameter>
-          <paramName>ICPrevScaledInput</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Diff</sigName>
-              <xpcsigName>Feedback/Discrete Derivative1/Diff</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>TSamp</sigName>
-              <xpcsigName>Feedback/Discrete Derivative1/TSamp</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>UD</sigName>
-              <xpcsigName>Feedback/Discrete Derivative1/UD</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                
-            </signal>
-
-    </SubSystem>
-
-    
- 
-            <block>
-            <blkName>Discrete Derivative</blkName>
-            <xpcblkName>Feedback/Discrete Derivative</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Feedback/Discrete Derivative</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>ICPrevScaledInput</paramName>
+          <paramName>Value</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
 
  
             <block>
-            <blkName>Discrete Derivative1</blkName>
-            <xpcblkName>Feedback/Discrete Derivative1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Feedback/Discrete Derivative1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
+            <blkName>Constant3</blkName>
+            <xpcblkName>HL Controller/Constant3</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
           <parameter>
-          <paramName>ICPrevScaledInput</paramName>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Force On</blkName>
+            <xpcblkName>HL Controller/Force On</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Force On</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
@@ -268,11 +69,63 @@ Operator</sigName>
             <block>
             <blkName>Discrete-Time
 Integrator</blkName>
-            <xpcblkName>Feedback/Discrete-Time Integrator</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Feedback/Discrete-Time Integrator</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
+            <xpcblkName>HL Controller/Discrete-Time Integrator</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Discrete-Time Integrator</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
           <parameter>
           <paramName>gainval</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>UpperSaturationLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>LowerSaturationLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>HL Controller/Gain1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Manual Switch3</blkName>
+            <xpcblkName>HL Controller/Manual Switch3</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Manual Switch3</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>CurrentSetting</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Delay</blkName>
+            <xpcblkName>HL Controller/Delay</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>DelayLength</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
  
@@ -284,13 +137,12 @@ Integrator</blkName>
 
  
             <block>
-            <blkName>Discrete-Time
-Integrator1</blkName>
-            <xpcblkName>Feedback/Discrete-Time Integrator1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Feedback/Discrete-Time Integrator1</SLblockPath>
+            <blkName>Delay1</blkName>
+            <xpcblkName>HL Controller/Delay1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Delay1</SLblockPath>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
-          <paramName>gainval</paramName>
+          <paramName>DelayLength</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
  
@@ -299,6 +151,58 @@ Integrator1</blkName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
+
+ 
+            <block>
+            <blkName>Discrete Filter</blkName>
+            <xpcblkName>HL Controller/Discrete Filter</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Discrete Filter</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Numerator</paramName>
+          <dim>[1, 2]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Denominator</paramName>
+          <dim>[1, 2]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialStates</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
 
 
     
@@ -313,7 +217,7 @@ Integrator1</blkName>
               <signal>
               <sigName>Discrete-Time
 Integrator</sigName>
-              <xpcsigName>Feedback/Discrete-Time Integrator</xpcsigName>
+              <xpcsigName>HL Controller/Discrete-Time Integrator</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -329,11 +233,644 @@ Integrator</sigName>
               
        
               <signal>
-              <sigName>Discrete-Time
-Integrator1</sigName>
-              <xpcsigName>Feedback/Discrete-Time Integrator1</xpcsigName>
+              <sigName>Gain1</sigName>
+              <xpcsigName>HL Controller/Gain1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Multiport
+Switch</sigName>
+              <xpcsigName>HL Controller/Multiport Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Manual Switch3</sigName>
+              <xpcsigName>HL Controller/Manual Switch3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Delay</sigName>
+              <xpcsigName>HL Controller/Delay</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Delay1</sigName>
+              <xpcsigName>HL Controller/Delay1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Discrete Filter</sigName>
+              <xpcsigName>HL Controller/Discrete Filter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>LL Controller</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller</xPCName>
+        <SubSystem>
+    <Name>Discrete PID Controller</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/Discrete PID Controller</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Filter</blkName>
+            <xpcblkName>LL Controller/Discrete PID Controller/Filter</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Discrete PID Controller/Filter</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>gainval</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Integrator</blkName>
+            <xpcblkName>LL Controller/Discrete PID Controller/Integrator</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Discrete PID Controller/Integrator</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>gainval</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Derivative Gain</blkName>
+            <xpcblkName>LL Controller/Discrete PID Controller/Derivative Gain</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Discrete PID Controller/Derivative Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>D</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Filter Coefficient</blkName>
+            <xpcblkName>LL Controller/Discrete PID Controller/Filter Coefficient</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Discrete PID Controller/Filter Coefficient</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Integral Gain</blkName>
+            <xpcblkName>LL Controller/Discrete PID Controller/Integral Gain</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Discrete PID Controller/Integral Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>I</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Proportional Gain</blkName>
+            <xpcblkName>LL Controller/Discrete PID Controller/Proportional Gain</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Discrete PID Controller/Proportional Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>P</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Filter</sigName>
+              <xpcsigName>LL Controller/Discrete PID Controller/Filter</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Integrator</sigName>
+              <xpcsigName>LL Controller/Discrete PID Controller/Integrator</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Derivative Gain</sigName>
+              <xpcsigName>LL Controller/Discrete PID Controller/Derivative Gain</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Filter Coefficient</sigName>
+              <xpcsigName>LL Controller/Discrete PID Controller/Filter Coefficient</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Integral Gain</sigName>
+              <xpcsigName>LL Controller/Discrete PID Controller/Integral Gain</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Proportional Gain</sigName>
+              <xpcsigName>LL Controller/Discrete PID Controller/Proportional Gain</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>LL Controller/Discrete PID Controller/Sum</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>SumD</sigName>
+              <xpcsigName>LL Controller/Discrete PID Controller/SumD</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>gain transition</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/gain transition</xPCName>
+        <SubSystem>
+    <Name>gainramp</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/gain transition/gainramp</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+ 
+            <block>
+            <blkName>Memory</blkName>
+            <xpcblkName>LL Controller/gain transition/Memory</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/gain transition/Memory</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>X0</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>gainramp/p1</sigName>
+              <xpcsigName>LL Controller/gain transition/gainramp/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>gainramp/p2</sigName>
+              <xpcsigName>LL Controller/gain transition/gainramp/p2</xpcsigName>
+              <sigWidth>4</sigWidth>
+              <sigDim>[4, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Memory</sigName>
+              <xpcsigName>LL Controller/gain transition/Memory</xpcsigName>
+              <sigWidth>4</sigWidth>
+              <sigDim>[4, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>initial ramp</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/initial ramp</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/initial ramp/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>ramp</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/initial ramp/ramp</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+ 
+            <block>
+            <blkName>Saturation1</blkName>
+            <xpcblkName>LL Controller/initial ramp/Saturation1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/initial ramp/Saturation1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>UpperLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>LowerLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>LL Controller/initial ramp/MATLAB Function</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>ramp</sigName>
+              <xpcsigName>LL Controller/initial ramp/ramp</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Saturation1</sigName>
+              <xpcsigName>LL Controller/initial ramp/Saturation1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>Discrete PID Controller</blkName>
+            <xpcblkName>LL Controller/Discrete PID Controller</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Discrete PID Controller</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>P</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>I</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>D</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>LL Controller/Gain</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>LL Controller/Gain1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Saturation</blkName>
+            <xpcblkName>LL Controller/Saturation</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Saturation</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>UpperLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>LowerLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>LL Controller/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>LL Controller/Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Product</sigName>
+              <xpcsigName>LL Controller/Product</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Saturation</sigName>
+              <xpcsigName>LL Controller/Saturation</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>LL Controller/Sum</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
             </signal>
 
     </SubSystem>
@@ -1216,554 +1753,6 @@ Integrator1</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>controller</Name>
-    <xPCName>FingerStrokeAssistance/controller</xPCName>
-        <SubSystem>
-    <Name>Discrete PID Controller</Name>
-    <xPCName>FingerStrokeAssistance/controller/Discrete PID Controller</xPCName>
-    
-    
- 
-            <block>
-            <blkName>Filter</blkName>
-            <xpcblkName>controller/Discrete PID Controller/Filter</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/Discrete PID Controller/Filter</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>gainval</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>InitialCondition</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Integrator</blkName>
-            <xpcblkName>controller/Discrete PID Controller/Integrator</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/Discrete PID Controller/Integrator</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>gainval</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>InitialCondition</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Derivative Gain</blkName>
-            <xpcblkName>controller/Discrete PID Controller/Derivative Gain</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/Discrete PID Controller/Derivative Gain</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>D</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Filter Coefficient</blkName>
-            <xpcblkName>controller/Discrete PID Controller/Filter Coefficient</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/Discrete PID Controller/Filter Coefficient</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>N</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Integral Gain</blkName>
-            <xpcblkName>controller/Discrete PID Controller/Integral Gain</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/Discrete PID Controller/Integral Gain</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>I</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Proportional Gain</blkName>
-            <xpcblkName>controller/Discrete PID Controller/Proportional Gain</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/Discrete PID Controller/Proportional Gain</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>P</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Filter</sigName>
-              <xpcsigName>controller/Discrete PID Controller/Filter</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Integrator</sigName>
-              <xpcsigName>controller/Discrete PID Controller/Integrator</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Derivative Gain</sigName>
-              <xpcsigName>controller/Discrete PID Controller/Derivative Gain</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Filter Coefficient</sigName>
-              <xpcsigName>controller/Discrete PID Controller/Filter Coefficient</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Integral Gain</sigName>
-              <xpcsigName>controller/Discrete PID Controller/Integral Gain</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Proportional Gain</sigName>
-              <xpcsigName>controller/Discrete PID Controller/Proportional Gain</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Sum</sigName>
-              <xpcsigName>controller/Discrete PID Controller/Sum</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>SumD</sigName>
-              <xpcsigName>controller/Discrete PID Controller/SumD</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-    </SubSystem>
-    <SubSystem>
-    <Name>gain transition</Name>
-    <xPCName>FingerStrokeAssistance/controller/gain transition</xPCName>
-        <SubSystem>
-    <Name>gainramp</Name>
-    <xPCName>FingerStrokeAssistance/controller/gain transition/gainramp</xPCName>
-    
-    
-    </SubSystem>
-
-    
-
- 
-            <block>
-            <blkName>Memory</blkName>
-            <xpcblkName>controller/gain transition/Memory</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/gain transition/Memory</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>X0</paramName>
-          <dim>[1, 4]</dim>  
-          </parameter>
-          </block>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>gainramp/p1</sigName>
-              <xpcsigName>controller/gain transition/gainramp/p1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>gainramp/p2</sigName>
-              <xpcsigName>controller/gain transition/gainramp/p2</xpcsigName>
-              <sigWidth>4</sigWidth>
-              <sigDim>[4, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Memory</sigName>
-              <xpcsigName>controller/gain transition/Memory</xpcsigName>
-              <sigWidth>4</sigWidth>
-              <sigDim>[4, 1]</sigDim>
-            </signal>
-
-    </SubSystem>
-    <SubSystem>
-    <Name>initial ramp</Name>
-    <xPCName>FingerStrokeAssistance/controller/initial ramp</xPCName>
-        <SubSystem>
-    <Name>MATLAB Function</Name>
-    <xPCName>FingerStrokeAssistance/controller/initial ramp/MATLAB Function</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>ramp</Name>
-    <xPCName>FingerStrokeAssistance/controller/initial ramp/ramp</xPCName>
-    
-    
-    </SubSystem>
-
-    
-
-
- 
-            <block>
-            <blkName>Saturation1</blkName>
-            <xpcblkName>controller/initial ramp/Saturation1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/initial ramp/Saturation1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>UpperLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>LowerLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>MATLAB Function</sigName>
-              <xpcsigName>controller/initial ramp/MATLAB Function</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>ramp</sigName>
-              <xpcsigName>controller/initial ramp/ramp</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Saturation1</sigName>
-              <xpcsigName>controller/initial ramp/Saturation1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-    </SubSystem>
-
-    
- 
-            <block>
-            <blkName>Discrete PID Controller</blkName>
-            <xpcblkName>controller/Discrete PID Controller</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/Discrete PID Controller</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>P</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>I</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>D</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>N</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-
- 
-            <block>
-            <blkName>Gain</blkName>
-            <xpcblkName>controller/Gain</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/Gain</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain1</blkName>
-            <xpcblkName>controller/Gain1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/Gain1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
- 
-            <block>
-            <blkName>Saturation</blkName>
-            <xpcblkName>controller/Saturation</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/controller/Saturation</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>UpperLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>LowerLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain</sigName>
-              <xpcsigName>controller/Gain</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain1</sigName>
-              <xpcsigName>controller/Gain1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Product</sigName>
-              <xpcsigName>controller/Product</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Saturation</sigName>
-              <xpcsigName>controller/Saturation</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Sum</sigName>
-              <xpcsigName>controller/Sum</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-    </SubSystem>
-    <SubSystem>
     <Name>parameters</Name>
     <xPCName>FingerStrokeAssistance/parameters</xPCName>
         <SubSystem>
@@ -2469,6 +2458,7 @@ Integrator1</sigName>
           </block>
 
 
+
     
     
 
@@ -2831,6 +2821,11 @@ Integrator1</sigName>
               <sigDim>[1, 1]</sigDim>
             </signal>
 
+
+    
+    
+
+
     </SubSystem>
     <SubSystem>
     <Name>signals</Name>
@@ -2892,54 +2887,6 @@ Integrator1</sigName>
 
  
             <block>
-            <blkName>sigForce1</blkName>
-            <xpcblkName>signals/sigForce1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/signals/sigForce1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>sigForce1Clean</blkName>
-            <xpcblkName>signals/sigForce1Clean</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/signals/sigForce1Clean</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>sigForce2</blkName>
-            <xpcblkName>signals/sigForce2</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/signals/sigForce2</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>sigForce2Clean</blkName>
-            <xpcblkName>signals/sigForce2Clean</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/signals/sigForce2Clean</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
             <blkName>sigGravAccel</blkName>
             <xpcblkName>signals/sigGravAccel</xpcblkName>
             <SLblockPath>FingerStrokeAssistance/signals/sigGravAccel</SLblockPath>
@@ -2990,74 +2937,6 @@ Integrator1</sigName>
               
        
               <signal>
-              <sigName>sigForce1</sigName>
-              <xpcsigName>signals/sigForce1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>sigForce1Clean</sigName>
-              <xpcsigName>signals/sigForce1Clean</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>sigForce2</sigName>
-              <xpcsigName>signals/sigForce2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>sigForce2Clean</sigName>
-              <xpcsigName>signals/sigForce2Clean</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
               <sigName>sigGravAccel</sigName>
               <xpcsigName>signals/sigGravAccel</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -3084,536 +2963,10 @@ Integrator1</sigName>
     </SubSystem>
 
       
- 
-            <block>
-            <blkName>Detect
-Change</blkName>
-            <xpcblkName>Detect Change</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Detect Change</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>vinit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
 
 
 
 
-
-
- 
-            <block>
-            <blkName>Bias</blkName>
-            <xpcblkName>Bias</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Bias</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Bias</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Constant</blkName>
-            <xpcblkName>Constant</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Constant</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Constant1</blkName>
-            <xpcblkName>Constant1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Constant1</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Constant2</blkName>
-            <xpcblkName>Constant2</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Constant2</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Constant3</blkName>
-            <xpcblkName>Constant3</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Constant3</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Force On</blkName>
-            <xpcblkName>Force On</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Force On</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
- 
-            <block>
-            <blkName>Discrete-Time
-Integrator</blkName>
-            <xpcblkName>Discrete-Time Integrator</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Discrete-Time Integrator</SLblockPath>
-            <isSrc>[0 2 1]</isSrc>
-          <parameter>
-          <paramName>gainval</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>InitialCondition</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>UpperSaturationLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>LowerSaturationLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain</blkName>
-            <xpcblkName>Gain</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Gain</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain1</blkName>
-            <xpcblkName>Gain1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Gain1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
- 
-            <block>
-            <blkName>Saturation</blkName>
-            <xpcblkName>Saturation</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Saturation</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>UpperLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>LowerLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Sine Wave</blkName>
-            <xpcblkName>Sine Wave</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Sine Wave</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Amplitude</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>Bias</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>Frequency</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>SinH</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>CosH</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>SinPhi</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>CosPhi</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Manual Switch1</blkName>
-            <xpcblkName>Manual Switch1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Manual Switch1</SLblockPath>
-            <isSrc>[0 2 1]</isSrc>
-          <parameter>
-          <paramName>CurrentSetting</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Manual Switch2</blkName>
-            <xpcblkName>Manual Switch2</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Manual Switch2</SLblockPath>
-            <isSrc>[0 2 1]</isSrc>
-          <parameter>
-          <paramName>CurrentSetting</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Manual Switch3</blkName>
-            <xpcblkName>Manual Switch3</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Manual Switch3</SLblockPath>
-            <isSrc>[0 2 1]</isSrc>
-          <parameter>
-          <paramName>CurrentSetting</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Delay</blkName>
-            <xpcblkName>Delay</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Delay</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>DelayLength</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>InitialCondition</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Discrete Filter</blkName>
-            <xpcblkName>Discrete Filter</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Discrete Filter</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Numerator</paramName>
-          <dim>[1, 2]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>Denominator</paramName>
-          <dim>[1, 2]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>InitialStates</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Bias</sigName>
-              <xpcsigName>Bias</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Data Type Conversion</sigName>
-              <xpcsigName>Data Type Conversion</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Discrete-Time
-Integrator</sigName>
-              <xpcsigName>Discrete-Time Integrator</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain</sigName>
-              <xpcsigName>Gain</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain1</sigName>
-              <xpcsigName>Gain1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Multiport
-Switch</sigName>
-              <xpcsigName>Multiport Switch</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Saturation</sigName>
-              <xpcsigName>Saturation</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Sine Wave</sigName>
-              <xpcsigName>Sine Wave</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Manual Switch1</sigName>
-              <xpcsigName>Manual Switch1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Manual Switch2</sigName>
-              <xpcsigName>Manual Switch2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Manual Switch3</sigName>
-              <xpcsigName>Manual Switch3</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Delay</sigName>
-              <xpcsigName>Delay</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Discrete Filter</sigName>
-              <xpcsigName>Discrete Filter</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
 
 <block>
    <blkName>Model Parameters</blkName>
