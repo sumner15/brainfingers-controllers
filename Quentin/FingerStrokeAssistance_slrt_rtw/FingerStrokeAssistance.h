@@ -3,9 +3,9 @@
  *
  * Code generation for model "FingerStrokeAssistance".
  *
- * Model version              : 1.770
+ * Model version              : 1.871
  * Simulink Coder version : 8.10 (R2016a) 10-Feb-2016
- * C source code generated on : Mon Feb 13 12:47:36 2017
+ * C source code generated on : Thu Feb 16 18:07:07 2017
  *
  * Target selection: slrt.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -36,6 +36,7 @@
 
 /* Shared type includes */
 #include "multiword_types.h"
+#include "rt_zcfcn.h"
 #include "rt_nonfinite.h"
 #include "rt_defines.h"
 
@@ -805,146 +806,163 @@
 /* user code (top of export header file) */
 #include "xpcdatatypes.h"
 
-/* Block signals for system '<S7>/gainramp' */
+/* Block signals for system '<S13>/MATLAB Function' */
 typedef struct {
-  real_T val;                          /* '<S7>/gainramp' */
-  real_T state1[4];                    /* '<S7>/gainramp' */
-} B_gainramp_FingerStrokeAssist_T;
-
-/* Block signals for system '<S12>/MATLAB Function' */
-typedef struct {
-  real_T output1;                      /* '<S12>/MATLAB Function' */
-  real_T output2;                      /* '<S12>/MATLAB Function' */
+  real_T output1;                      /* '<S13>/MATLAB Function' */
+  real_T output2;                      /* '<S13>/MATLAB Function' */
 } B_MATLABFunction_FingerStroke_T;
+
+/* Block signals for system '<S23>/gainramp' */
+typedef struct {
+  real_T val;                          /* '<S23>/gainramp' */
+  real_T state1[4];                    /* '<S23>/gainramp' */
+} B_gainramp_FingerStrokeAssist_T;
 
 /* Block signals (auto storage) */
 typedef struct {
-  real_T Delay[2];                     /* '<S1>/Delay' */
-  real_T Delay1;                       /* '<S1>/Delay1' */
-  real_T DiscreteFilter;               /* '<S1>/Discrete Filter' */
-  real_T ManualSwitch3;                /* '<S1>/Manual Switch3' */
-  real_T DiscreteTimeIntegrator;       /* '<S1>/Discrete-Time Integrator' */
-  real_T Gain1;                        /* '<S1>/Gain1' */
-  real_T MultiportSwitch;              /* '<S1>/Multiport Switch' */
-  real_T PCI6221ENC;                   /* '<S3>/PCI 6221 ENC ' */
-  real_T PCI6221ENC1;                  /* '<S3>/PCI 6221 ENC 1' */
-  real_T parLeftMode;                  /* '<S4>/parLeftMode' */
-  real_T Saturation;                   /* '<S4>/Saturation' */
-  real_T DigitalClock;                 /* '<S17>/Digital Clock' */
-  real_T Memory1[2];                   /* '<S17>/Memory1' */
+  real_T UnitDelay2;                   /* '<Root>/Unit Delay2' */
+  real_T Uk1;                          /* '<S1>/Delay Input1' */
+  real_T DataTypeConversion;           /* '<Root>/Data Type Conversion' */
+  real_T DiscreteTimeIntegrator;       /* '<Root>/Discrete-Time Integrator' */
+  real_T UnitDelay;                    /* '<Root>/Unit Delay' */
+  real_T MainSwitch;                   /* '<Root>/Main Switch' */
+  real_T PCI6221ENC;                   /* '<S5>/PCI 6221 ENC ' */
+  real_T PCI6221ENC1;                  /* '<S5>/PCI 6221 ENC 1' */
+  real_T parLeftMode;                  /* '<S6>/parLeftMode' */
+  real_T Saturation;                   /* '<S6>/Saturation' */
+  real_T Gain[2];                      /* '<S5>/Gain' */
+  real_T UnitDelay_g[2];               /* '<S5>/Unit Delay' */
+  real_T Sum[2];                       /* '<S5>/Sum' */
+  real_T TSamp[2];                     /* '<S11>/TSamp' */
+  real_T Uk1_d[2];                     /* '<S11>/UD' */
+  real_T Diff[2];                      /* '<S11>/Diff' */
+  real_T UnitDelay3[2];                /* '<Root>/Unit Delay3' */
+  real_T Gain_b;                       /* '<S3>/Gain' */
+  real_T Switch[2];                    /* '<S9>/Switch' */
+  real_T Switch2[2];                   /* '<S9>/Switch2' */
+  real_T Switch_g[2];                  /* '<S10>/Switch' */
+  real_T Switch2_d[2];                 /* '<S10>/Switch2' */
+  real_T Sum_h[2];                     /* '<S3>/Sum' */
+  real_T DerivativeGain[2];            /* '<S8>/Derivative Gain' */
+  real_T Filter[2];                    /* '<S8>/Filter' */
+  real_T SumD[2];                      /* '<S8>/SumD' */
+  real_T FilterCoefficient[2];         /* '<S8>/Filter Coefficient' */
+  real_T IntegralGain[2];              /* '<S8>/Integral Gain' */
+  real_T Integrator[2];                /* '<S8>/Integrator' */
+  real_T ProportionalGain[2];          /* '<S8>/Proportional Gain' */
+  real_T Sum_a[2];                     /* '<S8>/Sum' */
+  real_T LowPass100Hz;                 /* '<S17>/Low Pass 100 Hz' */
+  real_T LowPass100Hz1;                /* '<S17>/Low Pass 100 Hz1' */
   real_T Memory;                       /* '<S17>/Memory' */
-  real_T Gain;                         /* '<S3>/Gain' */
-  real_T Gain1_o;                      /* '<S3>/Gain1' */
-  real_T Sum[2];                       /* '<S2>/Sum' */
-  real_T DerivativeGain[2];            /* '<S6>/Derivative Gain' */
-  real_T Filter[2];                    /* '<S6>/Filter' */
-  real_T SumD[2];                      /* '<S6>/SumD' */
-  real_T FilterCoefficient[2];         /* '<S6>/Filter Coefficient' */
-  real_T IntegralGain[2];              /* '<S6>/Integral Gain' */
-  real_T Integrator[2];                /* '<S6>/Integrator' */
-  real_T ProportionalGain[2];          /* '<S6>/Proportional Gain' */
-  real_T Sum_a[2];                     /* '<S6>/Sum' */
-  real_T parChangeRate;                /* '<S4>/parChangeRate' */
-  real_T Saturation_m;                 /* '<S2>/Saturation' */
-  real_T Memory_c[4];                  /* '<S7>/Memory' */
-  real_T Product[2];                   /* '<S2>/Product' */
-  real_T Gain_d;                       /* '<S2>/Gain' */
-  real_T Gain1_a;                      /* '<S2>/Gain1' */
-  real_T DigitalClock_f;               /* '<S5>/Digital Clock' */
-  real_T sigTargetTime;                /* '<S5>/sigTargetTime' */
-  real_T Saturation1;                  /* '<S8>/Saturation1' */
-  real_T PCI6221AD1_o1;                /* '<S3>/PCI-6221 AD1' */
-  real_T PCI6221AD1_o2;                /* '<S3>/PCI-6221 AD1' */
-  real_T PCI6221AD1_o3;                /* '<S3>/PCI-6221 AD1' */
-  real_T PCI6221AD1_o4;                /* '<S3>/PCI-6221 AD1' */
-  real_T PCI6221AD1_o5;                /* '<S3>/PCI-6221 AD1' */
-  real_T PCI6221AD1_o6;                /* '<S3>/PCI-6221 AD1' */
-  real_T PCI6221AD1_o7;                /* '<S3>/PCI-6221 AD1' */
-  real_T PCI6221AD1_o8;                /* '<S3>/PCI-6221 AD1' */
+  real_T Memory1;                      /* '<S17>/Memory1' */
+  real_T PCI6221AD1_o1;                /* '<S5>/PCI-6221 AD1' */
+  real_T PCI6221AD1_o2;                /* '<S5>/PCI-6221 AD1' */
+  real_T PCI6221AD1_o3;                /* '<S5>/PCI-6221 AD1' */
+  real_T PCI6221AD1_o4;                /* '<S5>/PCI-6221 AD1' */
+  real_T PCI6221AD1_o5;                /* '<S5>/PCI-6221 AD1' */
+  real_T PCI6221AD1_o6;                /* '<S5>/PCI-6221 AD1' */
+  real_T PCI6221AD1_o7;                /* '<S5>/PCI-6221 AD1' */
+  real_T PCI6221AD1_o8;                /* '<S5>/PCI-6221 AD1' */
   real_T Sum_m;                        /* '<S18>/Sum' */
   real_T gain;                         /* '<S18>/gain' */
-  real_T LowPass100Hz;                 /* '<S16>/Low Pass 100 Hz' */
-  real_T LowPass100Hz1;                /* '<S16>/Low Pass 100 Hz1' */
-  real_T Memory_n;                     /* '<S16>/Memory' */
-  real_T Memory1_j;                    /* '<S16>/Memory1' */
-  real_T parTrajMode;                  /* '<S4>/parTrajMode' */
-  real_T RoundingFunction;             /* '<S4>/Rounding Function' */
-  real_T Saturation1_n;                /* '<S4>/Saturation1' */
-  real_T parFixedDur;                  /* '<S4>/parFixedDur' */
-  real_T Saturation2;                  /* '<S4>/Saturation2' */
-  real_T Memory_g[4];                  /* '<S24>/Memory' */
-  real_T parKp1;                       /* '<S4>/parKp1' */
-  real_T Memory_i[4];                  /* '<S25>/Memory' */
-  real_T parKp2;                       /* '<S4>/parKp2' */
-  real_T Memory_e[4];                  /* '<S26>/Memory' */
-  real_T parKd1;                       /* '<S4>/parKd1' */
-  real_T Memory_o[4];                  /* '<S27>/Memory' */
-  real_T parKd2;                       /* '<S4>/parKd2' */
-  real_T Memory_nk[4];                 /* '<S28>/Memory' */
-  real_T parKdV1;                      /* '<S4>/parKdV1' */
-  real_T Memory_os[4];                 /* '<S29>/Memory' */
-  real_T parKdV2;                      /* '<S4>/parKdV2' */
-  real_T parFThresh;                   /* '<S4>/parFThresh' */
-  real_T parForceTrigger;              /* '<S4>/parForceTrigger' */
-  real_T parMarker;                    /* '<S4>/parMarker' */
-  real_T parMaxTrajDur;                /* '<S4>/parMaxTrajDur' */
-  real_T parPStop;                     /* '<S4>/parPStop' */
-  real_T parVThresh;                   /* '<S4>/parVThresh' */
-  real_T parWiggleAmp;                 /* '<S4>/parWiggleAmp' */
-  real_T sigGravAccel;                 /* '<S5>/sigGravAccel' */
-  real_T encoder1;                     /* '<S17>/MATLAB Function' */
-  real_T encoder2;                     /* '<S17>/MATLAB Function' */
-  real_T summedVals[2];                /* '<S17>/MATLAB Function' */
-  real_T nSamples;                     /* '<S17>/MATLAB Function' */
-  real_T TmpSignalConversionAtSFunctionI[5];/* '<S13>/MATLAB Function' */
-  real_T output[5];                    /* '<S13>/MATLAB Function' */
-  real_T y;                            /* '<S8>/ramp' */
-  real_T TmpSignalConversionAtSFunctio_f[2];/* '<S8>/MATLAB Function' */
-  real_T Force[2];                     /* '<S8>/MATLAB Function' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_a;/* '<S29>/gainramp' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_f;/* '<S28>/gainramp' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_b;/* '<S27>/gainramp' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_id;/* '<S26>/gainramp' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_i;/* '<S25>/gainramp' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_o;/* '<S24>/gainramp' */
-  B_MATLABFunction_FingerStroke_T sf_MATLABFunction_n;/* '<S15>/MATLAB Function' */
-  B_MATLABFunction_FingerStroke_T sf_MATLABFunction;/* '<S14>/MATLAB Function' */
-  B_MATLABFunction_FingerStroke_T sf_MATLABFunction_my;/* '<S12>/MATLAB Function' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp;/* '<S7>/gainramp' */
+  real_T UnitDelay1;                   /* '<Root>/Unit Delay1' */
+  real_T Delay[2];                     /* '<S2>/Delay' */
+  real_T Delay1;                       /* '<S2>/Delay1' */
+  real_T DiscreteFilter;               /* '<S2>/Discrete Filter' */
+  real_T ManualSwitch3;                /* '<S2>/Manual Switch3' */
+  real_T DiscreteTimeIntegrator_i;     /* '<S2>/Discrete-Time Integrator' */
+  real_T Gain1;                        /* '<S2>/Gain1' */
+  real_T MultiportSwitch;              /* '<S2>/Multiport Switch' */
+  real_T Constant;                     /* '<S2>/Constant' */
+  real_T parTrajMode;                  /* '<S6>/parTrajMode' */
+  real_T RoundingFunction;             /* '<S6>/Rounding Function' */
+  real_T Saturation1;                  /* '<S6>/Saturation1' */
+  real_T parFixedDur;                  /* '<S6>/parFixedDur' */
+  real_T Saturation2;                  /* '<S6>/Saturation2' */
+  real_T Memory_g[4];                  /* '<S23>/Memory' */
+  real_T parChangeRate;                /* '<S6>/parChangeRate' */
+  real_T parKp1;                       /* '<S6>/parKp1' */
+  real_T Memory_i[4];                  /* '<S24>/Memory' */
+  real_T parKp2;                       /* '<S6>/parKp2' */
+  real_T Memory_e[4];                  /* '<S25>/Memory' */
+  real_T parKd1;                       /* '<S6>/parKd1' */
+  real_T Memory_o[4];                  /* '<S26>/Memory' */
+  real_T parKd2;                       /* '<S6>/parKd2' */
+  real_T Memory_n[4];                  /* '<S27>/Memory' */
+  real_T parKdV1;                      /* '<S6>/parKdV1' */
+  real_T Memory_os[4];                 /* '<S28>/Memory' */
+  real_T parKdV2;                      /* '<S6>/parKdV2' */
+  real_T parFThresh;                   /* '<S6>/parFThresh' */
+  real_T parForceTrigger;              /* '<S6>/parForceTrigger' */
+  real_T parMarker;                    /* '<S6>/parMarker' */
+  real_T parMaxTrajDur;                /* '<S6>/parMaxTrajDur' */
+  real_T parPStop;                     /* '<S6>/parPStop' */
+  real_T parVThresh;                   /* '<S6>/parVThresh' */
+  real_T parWiggleAmp;                 /* '<S6>/parWiggleAmp' */
+  real_T DigitalClock;                 /* '<S7>/Digital Clock' */
+  real_T sigTargetTime;                /* '<S7>/sigTargetTime' */
+  real_T sigGravAccel;                 /* '<S7>/sigGravAccel' */
+  real_T TmpSignalConversionAtSFunctionI[5];/* '<S14>/MATLAB Function' */
+  real_T output[5];                    /* '<S14>/MATLAB Function' */
+  real_T In1[2];                       /* '<S12>/In1' */
+  real_T state;                        /* '<Root>/MATLAB Function' */
+  real_T f_ref1;                       /* '<Root>/MATLAB Function' */
+  real_T f_ref2;                       /* '<Root>/MATLAB Function' */
+  real_T ramp_switch;                  /* '<Root>/MATLAB Function' */
+  real_T f_ref_lim;                    /* '<Root>/MATLAB Function' */
+  real_T enc_trigger;                  /* '<Root>/MATLAB Function' */
+  real_T pos_ref[2];                   /* '<Root>/MATLAB Function' */
+  real_T pos_ref_Ulim;                 /* '<Root>/MATLAB Function' */
+  real_T pos_ref_Llim;                 /* '<Root>/MATLAB Function' */
+  boolean_T FixPtRelationalOperator;   /* '<S1>/FixPt Relational Operator' */
+  boolean_T LowerRelop1[2];            /* '<S9>/LowerRelop1' */
+  boolean_T UpperRelop[2];             /* '<S9>/UpperRelop' */
+  boolean_T LowerRelop1_f[2];          /* '<S10>/LowerRelop1' */
+  boolean_T UpperRelop_o[2];           /* '<S10>/UpperRelop' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp_a;/* '<S28>/gainramp' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp_f;/* '<S27>/gainramp' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp_b;/* '<S26>/gainramp' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp_id;/* '<S25>/gainramp' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp_i;/* '<S24>/gainramp' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp;/* '<S23>/gainramp' */
+  B_MATLABFunction_FingerStroke_T sf_MATLABFunction_n;/* '<S16>/MATLAB Function' */
+  B_MATLABFunction_FingerStroke_T sf_MATLABFunction;/* '<S15>/MATLAB Function' */
+  B_MATLABFunction_FingerStroke_T sf_MATLABFunction_m;/* '<S13>/MATLAB Function' */
 } B_FingerStrokeAssistance_T;
 
 /* Block states (auto storage) for system '<Root>' */
 typedef struct {
-  real_T Delay_DSTATE[2];              /* '<S1>/Delay' */
-  real_T Delay1_DSTATE;                /* '<S1>/Delay1' */
-  real_T DiscreteFilter_states;        /* '<S1>/Discrete Filter' */
-  real_T DiscreteTimeIntegrator_DSTATE;/* '<S1>/Discrete-Time Integrator' */
-  real_T Filter_DSTATE[2];             /* '<S6>/Filter' */
-  real_T Integrator_DSTATE[2];         /* '<S6>/Integrator' */
-  real_T LowPass100Hz_DSTATE[2];       /* '<S16>/Low Pass 100 Hz' */
-  real_T LowPass100Hz1_DSTATE[2];      /* '<S16>/Low Pass 100 Hz1' */
-  real_T DiscreteFilter_tmp;           /* '<S1>/Discrete Filter' */
-  real_T Memory1_PreviousInput[2];     /* '<S17>/Memory1' */
+  real_T UnitDelay2_DSTATE;            /* '<Root>/Unit Delay2' */
+  real_T DelayInput1_DSTATE;           /* '<S1>/Delay Input1' */
+  real_T DiscreteTimeIntegrator_DSTATE;/* '<Root>/Discrete-Time Integrator' */
+  real_T UnitDelay_DSTATE;             /* '<Root>/Unit Delay' */
+  real_T UnitDelay_DSTATE_h[2];        /* '<S5>/Unit Delay' */
+  real_T UD_DSTATE[2];                 /* '<S11>/UD' */
+  real_T UnitDelay3_DSTATE[2];         /* '<Root>/Unit Delay3' */
+  real_T Filter_DSTATE[2];             /* '<S8>/Filter' */
+  real_T Integrator_DSTATE[2];         /* '<S8>/Integrator' */
+  real_T LowPass100Hz_DSTATE[2];       /* '<S17>/Low Pass 100 Hz' */
+  real_T LowPass100Hz1_DSTATE[2];      /* '<S17>/Low Pass 100 Hz1' */
+  real_T UnitDelay1_DSTATE;            /* '<Root>/Unit Delay1' */
+  real_T Delay_DSTATE[2];              /* '<S2>/Delay' */
+  real_T Delay1_DSTATE;                /* '<S2>/Delay1' */
+  real_T DiscreteFilter_states;        /* '<S2>/Discrete Filter' */
+  real_T DiscreteTimeIntegrator_DSTATE_i;/* '<S2>/Discrete-Time Integrator' */
   real_T Memory_PreviousInput;         /* '<S17>/Memory' */
-  real_T Memory_PreviousInput_i[4];    /* '<S7>/Memory' */
-  real_T Memory_PreviousInput_l;       /* '<S16>/Memory' */
-  real_T Memory1_PreviousInput_d;      /* '<S16>/Memory1' */
-  real_T Memory_PreviousInput_k[4];    /* '<S24>/Memory' */
-  real_T Memory_PreviousInput_n[4];    /* '<S25>/Memory' */
-  real_T Memory_PreviousInput_b[4];    /* '<S26>/Memory' */
-  real_T Memory_PreviousInput_j[4];    /* '<S27>/Memory' */
-  real_T Memory_PreviousInput_ix[4];   /* '<S28>/Memory' */
-  real_T Memory_PreviousInput_c[4];    /* '<S29>/Memory' */
-  real_T PCI6221DA_RWORK[6];           /* '<S3>/PCI-6221 DA' */
-  void *PCI6221ENC_PWORK;              /* '<S3>/PCI 6221 ENC ' */
-  void *PCI6221ENC1_PWORK;             /* '<S3>/PCI 6221 ENC 1' */
-  void *PCI6221AD1_PWORK;              /* '<S3>/PCI-6221 AD1' */
-  struct {
-    void *LoggedData;
-  } Scope_PWORK;                       /* '<S4>/Scope' */
-
-  int_T PCI6221AD1_IWORK[41];          /* '<S3>/PCI-6221 AD1' */
-  int_T PCI6221DA_IWORK[41];           /* '<S3>/PCI-6221 DA' */
+  real_T Memory1_PreviousInput;        /* '<S17>/Memory1' */
+  real_T DiscreteFilter_tmp;           /* '<S2>/Discrete Filter' */
+  real_T Memory_PreviousInput_k[4];    /* '<S23>/Memory' */
+  real_T Memory_PreviousInput_n[4];    /* '<S24>/Memory' */
+  real_T Memory_PreviousInput_b[4];    /* '<S25>/Memory' */
+  real_T Memory_PreviousInput_j[4];    /* '<S26>/Memory' */
+  real_T Memory_PreviousInput_i[4];    /* '<S27>/Memory' */
+  real_T Memory_PreviousInput_c[4];    /* '<S28>/Memory' */
+  real_T PCI6221DA_RWORK[6];           /* '<S5>/PCI-6221 DA' */
+  void *PCI6221ENC_PWORK;              /* '<S5>/PCI 6221 ENC ' */
+  void *PCI6221ENC1_PWORK;             /* '<S5>/PCI 6221 ENC 1' */
+  void *PCI6221AD1_PWORK;              /* '<S5>/PCI-6221 AD1' */
+  int_T PCI6221DA_IWORK[41];           /* '<S5>/PCI-6221 DA' */
+  int_T PCI6221AD1_IWORK[41];          /* '<S5>/PCI-6221 AD1' */
   struct {
     int_T AcquireOK;
   } SFunction_IWORK;                   /* '<S42>/S-Function' */
@@ -955,14 +973,21 @@ typedef struct {
 
   struct {
     int_T AcquireOK;
-  } SFunction_IWORK_l;                 /* '<S43>/S-Function' */
+  } SFunction_IWORK_hl;                /* '<S40>/S-Function' */
 
   struct {
     int_T AcquireOK;
-  } SFunction_IWORK_b;                 /* '<S40>/S-Function' */
+  } SFunction_IWORK_b;                 /* '<S39>/S-Function' */
 
-  int8_T DiscreteTimeIntegrator_PrevRese;/* '<S1>/Discrete-Time Integrator' */
+  int8_T DiscreteTimeIntegrator_PrevRese;/* '<Root>/Discrete-Time Integrator' */
+  int8_T TriggeredSubsystem_SubsysRanBC;/* '<S5>/Triggered Subsystem' */
+  int8_T DiscreteTimeIntegrator_PrevRe_i;/* '<S2>/Discrete-Time Integrator' */
 } DW_FingerStrokeAssistance_T;
+
+/* Zero-crossing (trigger) state */
+typedef struct {
+  ZCSigState TriggeredSubsystem_Trig_ZCE;/* '<S5>/Triggered Subsystem' */
+} PrevZCX_FingerStrokeAssistance_T;
 
 /* Backward compatible GRT Identifiers */
 #define rtB                            FingerStrokeAssistance_B
@@ -971,456 +996,476 @@ typedef struct {
 #define Parameters                     P_FingerStrokeAssistance_T
 #define rtDWork                        FingerStrokeAssistance_DW
 #define D_Work                         DW_FingerStrokeAssistance_T
+#define rtPrevZCSigState               FingerStrokeAssistance_PrevZCX
+#define PrevZCSigStates                PrevZCX_FingerStrokeAssistance_T
 
 /* Parameters (auto storage) */
 struct P_FingerStrokeAssistance_T_ {
   real_T Alow[4];                      /* Variable: Alow
                                         * Referenced by:
-                                        *   '<S16>/Low Pass 100 Hz'
-                                        *   '<S16>/Low Pass 100 Hz1'
+                                        *   '<S17>/Low Pass 100 Hz'
+                                        *   '<S17>/Low Pass 100 Hz1'
                                         */
   real_T Blow[2];                      /* Variable: Blow
                                         * Referenced by:
-                                        *   '<S16>/Low Pass 100 Hz'
-                                        *   '<S16>/Low Pass 100 Hz1'
+                                        *   '<S17>/Low Pass 100 Hz'
+                                        *   '<S17>/Low Pass 100 Hz1'
                                         */
   real_T Clow[2];                      /* Variable: Clow
                                         * Referenced by:
-                                        *   '<S16>/Low Pass 100 Hz'
-                                        *   '<S16>/Low Pass 100 Hz1'
+                                        *   '<S17>/Low Pass 100 Hz'
+                                        *   '<S17>/Low Pass 100 Hz1'
                                         */
   real_T Dlow;                         /* Variable: Dlow
                                         * Referenced by:
-                                        *   '<S16>/Low Pass 100 Hz'
-                                        *   '<S16>/Low Pass 100 Hz1'
+                                        *   '<S17>/Low Pass 100 Hz'
+                                        *   '<S17>/Low Pass 100 Hz1'
                                         */
   real_T x0low[2];                     /* Variable: x0low
                                         * Referenced by:
-                                        *   '<S16>/Low Pass 100 Hz'
-                                        *   '<S16>/Low Pass 100 Hz1'
+                                        *   '<S17>/Low Pass 100 Hz'
+                                        *   '<S17>/Low Pass 100 Hz1'
                                         */
   real_T DiscretePIDController_D;      /* Mask Parameter: DiscretePIDController_D
-                                        * Referenced by: '<S6>/Derivative Gain'
+                                        * Referenced by: '<S8>/Derivative Gain'
                                         */
   real_T DiscretePIDController_I;      /* Mask Parameter: DiscretePIDController_I
-                                        * Referenced by: '<S6>/Integral Gain'
+                                        * Referenced by: '<S8>/Integral Gain'
                                         */
+  real_T DiscreteDerivative_ICPrevScaled;/* Mask Parameter: DiscreteDerivative_ICPrevScaled
+                                          * Referenced by: '<S11>/UD'
+                                          */
   real_T DiscretePIDController_N;      /* Mask Parameter: DiscretePIDController_N
-                                        * Referenced by: '<S6>/Filter Coefficient'
+                                        * Referenced by: '<S8>/Filter Coefficient'
                                         */
   real_T DiscretePIDController_P;      /* Mask Parameter: DiscretePIDController_P
-                                        * Referenced by: '<S6>/Proportional Gain'
+                                        * Referenced by: '<S8>/Proportional Gain'
+                                        */
+  real_T DetectChange_vinit;           /* Mask Parameter: DetectChange_vinit
+                                        * Referenced by: '<S1>/Delay Input1'
+                                        */
+  real_T standbyON_Value;              /* Expression: 1
+                                        * Referenced by: '<Root>/standby-ON'
+                                        */
+  real_T standbyOFF_Value;             /* Expression: 0
+                                        * Referenced by: '<Root>/standby-OFF'
                                         */
   real_T Constant2_Value;              /* Expression: 0
-                                        * Referenced by: '<S1>/Constant2'
+                                        * Referenced by: '<S2>/Constant2'
                                         */
-  real_T Constant3_Value;              /* Expression: 1
-                                        * Referenced by: '<S1>/Constant3'
+  real_T Switch_On_Value;              /* Expression: 1
+                                        * Referenced by: '<S2>/Switch_On'
                                         */
-  real_T Constant1_Value;              /* Expression: 0
-                                        * Referenced by: '<S1>/Constant1'
+  real_T Switch_Off_Value;             /* Expression: 0
+                                        * Referenced by: '<S2>/Switch_Off'
                                         */
-  real_T ForceOn_Value;                /* Expression: 1
-                                        * Referenced by: '<S1>/Force On'
+  real_T Out1_Y0;                      /* Expression: [0]
+                                        * Referenced by: '<S12>/Out1'
                                         */
-  real_T Delay_InitialCondition;       /* Expression: 0
-                                        * Referenced by: '<S1>/Delay'
+  real_T Constant1_Value;              /* Expression: 0.1
+                                        * Referenced by: '<Root>/Constant1'
                                         */
-  real_T Delay1_InitialCondition;      /* Expression: 0
-                                        * Referenced by: '<S1>/Delay1'
+  real_T Constant3_Value;              /* Expression: -0.1
+                                        * Referenced by: '<Root>/Constant3'
                                         */
-  real_T DiscreteFilter_NumCoef[2];    /* Expression: [b_hp]
-                                        * Referenced by: '<S1>/Discrete Filter'
-                                        */
-  real_T DiscreteFilter_DenCoef[2];    /* Expression: [a_hp]
-                                        * Referenced by: '<S1>/Discrete Filter'
-                                        */
-  real_T DiscreteFilter_InitialStates; /* Expression: 0
-                                        * Referenced by: '<S1>/Discrete Filter'
+  real_T UnitDelay2_InitialCondition;  /* Expression: 0
+                                        * Referenced by: '<Root>/Unit Delay2'
                                         */
   real_T DiscreteTimeIntegrator_gainval;/* Computed Parameter: DiscreteTimeIntegrator_gainval
-                                         * Referenced by: '<S1>/Discrete-Time Integrator'
+                                         * Referenced by: '<Root>/Discrete-Time Integrator'
                                          */
   real_T DiscreteTimeIntegrator_IC;    /* Expression: 0
-                                        * Referenced by: '<S1>/Discrete-Time Integrator'
+                                        * Referenced by: '<Root>/Discrete-Time Integrator'
                                         */
-  real_T DiscreteTimeIntegrator_UpperSat;/* Expression: 0.9
-                                          * Referenced by: '<S1>/Discrete-Time Integrator'
-                                          */
-  real_T DiscreteTimeIntegrator_LowerSat;/* Expression: 0
-                                          * Referenced by: '<S1>/Discrete-Time Integrator'
-                                          */
-  real_T Gain1_Gain;                   /* Expression: -1
-                                        * Referenced by: '<S1>/Gain1'
-                                        */
-  real_T Constant_Value;               /* Expression: .8
-                                        * Referenced by: '<S1>/Constant'
+  real_T UnitDelay_InitialCondition;   /* Expression: 1
+                                        * Referenced by: '<Root>/Unit Delay'
                                         */
   real_T PCI6221ENC_P1_Size[2];        /* Computed Parameter: PCI6221ENC_P1_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P1;                /* Expression: device
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P2_Size[2];        /* Computed Parameter: PCI6221ENC_P2_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P2;                /* Expression: channel
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P3_Size[2];        /* Computed Parameter: PCI6221ENC_P3_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P3;                /* Expression: countMode
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P4_Size[2];        /* Computed Parameter: PCI6221ENC_P4_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P4;                /* Expression: initCount
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P5_Size[2];        /* Computed Parameter: PCI6221ENC_P5_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P5;                /* Expression: reload
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P6_Size[2];        /* Computed Parameter: PCI6221ENC_P6_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P6;                /* Expression: indexPhase
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P7_Size[2];        /* Computed Parameter: PCI6221ENC_P7_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P7;                /* Expression: filter
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P8_Size[2];        /* Computed Parameter: PCI6221ENC_P8_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P8;                /* Expression: outmask
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P9_Size[2];        /* Computed Parameter: PCI6221ENC_P9_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P9;                /* Expression: sampleTime
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P10_Size[2];       /* Computed Parameter: PCI6221ENC_P10_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC_P10;               /* Expression: slot
-                                        * Referenced by: '<S3>/PCI 6221 ENC '
+                                        * Referenced by: '<S5>/PCI 6221 ENC '
                                         */
   real_T PCI6221ENC1_P1_Size[2];       /* Computed Parameter: PCI6221ENC1_P1_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P1;               /* Expression: device
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P2_Size[2];       /* Computed Parameter: PCI6221ENC1_P2_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P2;               /* Expression: channel
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P3_Size[2];       /* Computed Parameter: PCI6221ENC1_P3_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P3;               /* Expression: countMode
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P4_Size[2];       /* Computed Parameter: PCI6221ENC1_P4_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P4;               /* Expression: initCount
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P5_Size[2];       /* Computed Parameter: PCI6221ENC1_P5_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P5;               /* Expression: reload
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P6_Size[2];       /* Computed Parameter: PCI6221ENC1_P6_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P6;               /* Expression: indexPhase
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P7_Size[2];       /* Computed Parameter: PCI6221ENC1_P7_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P7;               /* Expression: filter
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P8_Size[2];       /* Computed Parameter: PCI6221ENC1_P8_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P8;               /* Expression: outmask
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P9_Size[2];       /* Computed Parameter: PCI6221ENC1_P9_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P9;               /* Expression: sampleTime
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P10_Size[2];      /* Computed Parameter: PCI6221ENC1_P10_Size
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T PCI6221ENC1_P10;              /* Expression: slot
-                                        * Referenced by: '<S3>/PCI 6221 ENC 1'
+                                        * Referenced by: '<S5>/PCI 6221 ENC 1'
                                         */
   real_T paremeters_must_be_one_Value; /* Expression: 1
-                                        * Referenced by: '<S4>/paremeters_ must_be_one'
+                                        * Referenced by: '<S6>/paremeters_ must_be_one'
                                         */
   real_T parLeftMode_Gain;             /* Expression: 0
-                                        * Referenced by: '<S4>/parLeftMode'
+                                        * Referenced by: '<S6>/parLeftMode'
                                         */
   real_T Saturation_UpperSat;          /* Expression: 1
-                                        * Referenced by: '<S4>/Saturation'
+                                        * Referenced by: '<S6>/Saturation'
                                         */
   real_T Saturation_LowerSat;          /* Expression: 0
-                                        * Referenced by: '<S4>/Saturation'
+                                        * Referenced by: '<S6>/Saturation'
                                         */
-  real_T Memory1_X0[2];                /* Expression: [0,0]
-                                        * Referenced by: '<S17>/Memory1'
+  real_T Gain_Gain;                    /* Expression: 1/4500.0
+                                        * Referenced by: '<S5>/Gain'
+                                        */
+  real_T UnitDelay_InitialCondition_e; /* Expression: 0
+                                        * Referenced by: '<S5>/Unit Delay'
+                                        */
+  real_T TSamp_WtEt;                   /* Computed Parameter: TSamp_WtEt
+                                        * Referenced by: '<S11>/TSamp'
+                                        */
+  real_T UnitDelay3_InitialCondition;  /* Expression: 1
+                                        * Referenced by: '<Root>/Unit Delay3'
+                                        */
+  real_T Gain_Gain_o;                  /* Expression: -1
+                                        * Referenced by: '<S3>/Gain'
+                                        */
+  real_T Filter_gainval;               /* Computed Parameter: Filter_gainval
+                                        * Referenced by: '<S8>/Filter'
+                                        */
+  real_T Filter_IC;                    /* Expression: InitialConditionForFilter
+                                        * Referenced by: '<S8>/Filter'
+                                        */
+  real_T Integrator_gainval;           /* Computed Parameter: Integrator_gainval
+                                        * Referenced by: '<S8>/Integrator'
+                                        */
+  real_T Integrator_IC;                /* Expression: InitialConditionForIntegrator
+                                        * Referenced by: '<S8>/Integrator'
+                                        */
+  real_T PCI6221DA_P1_Size[2];         /* Computed Parameter: PCI6221DA_P1_Size
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P1[2];              /* Expression: channel
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P2_Size[2];         /* Computed Parameter: PCI6221DA_P2_Size
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P2[2];              /* Expression: range
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P3_Size[2];         /* Computed Parameter: PCI6221DA_P3_Size
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P3[2];              /* Expression: reset
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P4_Size[2];         /* Computed Parameter: PCI6221DA_P4_Size
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P4[2];              /* Expression: initValue
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P5_Size[2];         /* Computed Parameter: PCI6221DA_P5_Size
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P5;                 /* Expression: sampletime
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P6_Size[2];         /* Computed Parameter: PCI6221DA_P6_Size
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P6;                 /* Expression: slot
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P7_Size[2];         /* Computed Parameter: PCI6221DA_P7_Size
+                                        * Referenced by: '<S5>/PCI-6221 DA'
+                                        */
+  real_T PCI6221DA_P7;                 /* Expression: boardType
+                                        * Referenced by: '<S5>/PCI-6221 DA'
                                         */
   real_T Memory_X0;                    /* Expression: 0
                                         * Referenced by: '<S17>/Memory'
                                         */
-  real_T Gain_Gain;                    /* Expression: 1/4500.0
-                                        * Referenced by: '<S3>/Gain'
+  real_T Memory1_X0;                   /* Expression: 0
+                                        * Referenced by: '<S17>/Memory1'
                                         */
-  real_T Gain1_Gain_d;                 /* Expression: 1/4500.0
-                                        * Referenced by: '<S3>/Gain1'
-                                        */
-  real_T Filter_gainval;               /* Computed Parameter: Filter_gainval
-                                        * Referenced by: '<S6>/Filter'
-                                        */
-  real_T Filter_IC;                    /* Expression: InitialConditionForFilter
-                                        * Referenced by: '<S6>/Filter'
-                                        */
-  real_T Integrator_gainval;           /* Computed Parameter: Integrator_gainval
-                                        * Referenced by: '<S6>/Integrator'
-                                        */
-  real_T Integrator_IC;                /* Expression: InitialConditionForIntegrator
-                                        * Referenced by: '<S6>/Integrator'
-                                        */
-  real_T parChangeRate_Gain;           /* Expression: .05
-                                        * Referenced by: '<S4>/parChangeRate'
-                                        */
-  real_T Saturation_UpperSat_f;        /* Expression: 1
-                                        * Referenced by: '<S2>/Saturation'
-                                        */
-  real_T Saturation_LowerSat_o;        /* Expression: 0
-                                        * Referenced by: '<S2>/Saturation'
-                                        */
-  real_T Memory_X0_e[4];               /* Expression: zeros(1,4)
-                                        * Referenced by: '<S7>/Memory'
-                                        */
-  real_T Gain_Gain_m;                  /* Expression: 1
-                                        * Referenced by: '<S2>/Gain'
-                                        */
-  real_T Gain1_Gain_dk;                /* Expression: 1
-                                        * Referenced by: '<S2>/Gain1'
-                                        */
-  real_T sigTargetTime_Gain;           /* Expression: 1
-                                        * Referenced by: '<S5>/sigTargetTime'
-                                        */
-  real_T Saturation1_UpperSat;         /* Expression: 2.5
-                                        * Referenced by: '<S8>/Saturation1'
-                                        */
-  real_T Saturation1_LowerSat;         /* Expression: -2.5
-                                        * Referenced by: '<S8>/Saturation1'
-                                        */
-  real_T Constant_Value_k;             /* Expression: 1.5
+  real_T Constant_Value;               /* Expression: 1.5
                                         * Referenced by: '<S18>/Constant'
                                         */
   real_T PCI6221AD1_P1_Size[2];        /* Computed Parameter: PCI6221AD1_P1_Size
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P1[8];             /* Expression: channel
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P2_Size[2];        /* Computed Parameter: PCI6221AD1_P2_Size
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P2[8];             /* Expression: range
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P3_Size[2];        /* Computed Parameter: PCI6221AD1_P3_Size
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P3[8];             /* Expression: coupling
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P4_Size[2];        /* Computed Parameter: PCI6221AD1_P4_Size
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P4;                /* Expression: scantime
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P5_Size[2];        /* Computed Parameter: PCI6221AD1_P5_Size
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P5;                /* Expression: sampletime
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P6_Size[2];        /* Computed Parameter: PCI6221AD1_P6_Size
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P6;                /* Expression: slot
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P7_Size[2];        /* Computed Parameter: PCI6221AD1_P7_Size
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T PCI6221AD1_P7;                /* Expression: boardType
-                                        * Referenced by: '<S3>/PCI-6221 AD1'
+                                        * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T gain_Gain;                    /* Expression: .172
                                         * Referenced by: '<S18>/gain'
                                         */
-  real_T PCI6221DA_P1_Size[2];         /* Computed Parameter: PCI6221DA_P1_Size
-                                        * Referenced by: '<S3>/PCI-6221 DA'
+  real_T UnitDelay1_InitialCondition;  /* Expression: 0
+                                        * Referenced by: '<Root>/Unit Delay1'
                                         */
-  real_T PCI6221DA_P1[2];              /* Expression: channel
-                                        * Referenced by: '<S3>/PCI-6221 DA'
+  real_T Delay_InitialCondition;       /* Expression: 0
+                                        * Referenced by: '<S2>/Delay'
                                         */
-  real_T PCI6221DA_P2_Size[2];         /* Computed Parameter: PCI6221DA_P2_Size
-                                        * Referenced by: '<S3>/PCI-6221 DA'
+  real_T Delay1_InitialCondition;      /* Expression: 0
+                                        * Referenced by: '<S2>/Delay1'
                                         */
-  real_T PCI6221DA_P2[2];              /* Expression: range
-                                        * Referenced by: '<S3>/PCI-6221 DA'
+  real_T DiscreteFilter_NumCoef[2];    /* Expression: [b_hp]
+                                        * Referenced by: '<S2>/Discrete Filter'
                                         */
-  real_T PCI6221DA_P3_Size[2];         /* Computed Parameter: PCI6221DA_P3_Size
-                                        * Referenced by: '<S3>/PCI-6221 DA'
+  real_T DiscreteFilter_DenCoef[2];    /* Expression: [a_hp]
+                                        * Referenced by: '<S2>/Discrete Filter'
                                         */
-  real_T PCI6221DA_P3[2];              /* Expression: reset
-                                        * Referenced by: '<S3>/PCI-6221 DA'
+  real_T DiscreteFilter_InitialStates; /* Expression: 0
+                                        * Referenced by: '<S2>/Discrete Filter'
                                         */
-  real_T PCI6221DA_P4_Size[2];         /* Computed Parameter: PCI6221DA_P4_Size
-                                        * Referenced by: '<S3>/PCI-6221 DA'
+  real_T DiscreteTimeIntegrator_gainva_m;/* Computed Parameter: DiscreteTimeIntegrator_gainva_m
+                                          * Referenced by: '<S2>/Discrete-Time Integrator'
+                                          */
+  real_T DiscreteTimeIntegrator_IC_h;  /* Expression: 0
+                                        * Referenced by: '<S2>/Discrete-Time Integrator'
                                         */
-  real_T PCI6221DA_P4[2];              /* Expression: initValue
-                                        * Referenced by: '<S3>/PCI-6221 DA'
+  real_T DiscreteTimeIntegrator_UpperSat;/* Expression: 0.9
+                                          * Referenced by: '<S2>/Discrete-Time Integrator'
+                                          */
+  real_T DiscreteTimeIntegrator_LowerSat;/* Expression: 0
+                                          * Referenced by: '<S2>/Discrete-Time Integrator'
+                                          */
+  real_T Gain1_Gain;                   /* Expression: -1
+                                        * Referenced by: '<S2>/Gain1'
                                         */
-  real_T PCI6221DA_P5_Size[2];         /* Computed Parameter: PCI6221DA_P5_Size
-                                        * Referenced by: '<S3>/PCI-6221 DA'
-                                        */
-  real_T PCI6221DA_P5;                 /* Expression: sampletime
-                                        * Referenced by: '<S3>/PCI-6221 DA'
-                                        */
-  real_T PCI6221DA_P6_Size[2];         /* Computed Parameter: PCI6221DA_P6_Size
-                                        * Referenced by: '<S3>/PCI-6221 DA'
-                                        */
-  real_T PCI6221DA_P6;                 /* Expression: slot
-                                        * Referenced by: '<S3>/PCI-6221 DA'
-                                        */
-  real_T PCI6221DA_P7_Size[2];         /* Computed Parameter: PCI6221DA_P7_Size
-                                        * Referenced by: '<S3>/PCI-6221 DA'
-                                        */
-  real_T PCI6221DA_P7;                 /* Expression: boardType
-                                        * Referenced by: '<S3>/PCI-6221 DA'
-                                        */
-  real_T Memory_X0_h;                  /* Expression: 0
-                                        * Referenced by: '<S16>/Memory'
-                                        */
-  real_T Memory1_X0_a;                 /* Expression: 0
-                                        * Referenced by: '<S16>/Memory1'
+  real_T Constant_Value_h;             /* Expression: .8
+                                        * Referenced by: '<S2>/Constant'
                                         */
   real_T parTrajMode_Gain;             /* Expression: 1
-                                        * Referenced by: '<S4>/parTrajMode'
+                                        * Referenced by: '<S6>/parTrajMode'
                                         */
-  real_T Saturation1_UpperSat_k;       /* Expression: 4
-                                        * Referenced by: '<S4>/Saturation1'
+  real_T Saturation1_UpperSat;         /* Expression: 4
+                                        * Referenced by: '<S6>/Saturation1'
                                         */
-  real_T Saturation1_LowerSat_l;       /* Expression: 1
-                                        * Referenced by: '<S4>/Saturation1'
+  real_T Saturation1_LowerSat;         /* Expression: 1
+                                        * Referenced by: '<S6>/Saturation1'
                                         */
   real_T parFixedDur_Gain;             /* Expression: 3
-                                        * Referenced by: '<S4>/parFixedDur'
+                                        * Referenced by: '<S6>/parFixedDur'
                                         */
   real_T Saturation2_UpperSat;         /* Expression: 10
-                                        * Referenced by: '<S4>/Saturation2'
+                                        * Referenced by: '<S6>/Saturation2'
                                         */
   real_T Saturation2_LowerSat;         /* Expression: .25
-                                        * Referenced by: '<S4>/Saturation2'
+                                        * Referenced by: '<S6>/Saturation2'
                                         */
   real_T Memory_X0_g[4];               /* Expression: zeros(1,4)
-                                        * Referenced by: '<S24>/Memory'
+                                        * Referenced by: '<S23>/Memory'
+                                        */
+  real_T parChangeRate_Gain;           /* Expression: .05
+                                        * Referenced by: '<S6>/parChangeRate'
                                         */
   real_T parKp1_Gain;                  /* Expression: 0
-                                        * Referenced by: '<S4>/parKp1'
+                                        * Referenced by: '<S6>/parKp1'
                                         */
   real_T Memory_X0_a[4];               /* Expression: zeros(1,4)
-                                        * Referenced by: '<S25>/Memory'
+                                        * Referenced by: '<S24>/Memory'
                                         */
   real_T parKp2_Gain;                  /* Expression: 0
-                                        * Referenced by: '<S4>/parKp2'
+                                        * Referenced by: '<S6>/parKp2'
                                         */
   real_T Memory_X0_b[4];               /* Expression: zeros(1,4)
-                                        * Referenced by: '<S26>/Memory'
+                                        * Referenced by: '<S25>/Memory'
                                         */
   real_T parKd1_Gain;                  /* Expression: 0.0
-                                        * Referenced by: '<S4>/parKd1'
+                                        * Referenced by: '<S6>/parKd1'
                                         */
   real_T Memory_X0_g0[4];              /* Expression: zeros(1,4)
-                                        * Referenced by: '<S27>/Memory'
+                                        * Referenced by: '<S26>/Memory'
                                         */
   real_T parKd2_Gain;                  /* Expression: 0.0
-                                        * Referenced by: '<S4>/parKd2'
+                                        * Referenced by: '<S6>/parKd2'
                                         */
   real_T Memory_X0_bp[4];              /* Expression: zeros(1,4)
-                                        * Referenced by: '<S28>/Memory'
+                                        * Referenced by: '<S27>/Memory'
                                         */
   real_T parKdV1_Gain;                 /* Expression: 0.0
-                                        * Referenced by: '<S4>/parKdV1'
+                                        * Referenced by: '<S6>/parKdV1'
                                         */
-  real_T Memory_X0_eq[4];              /* Expression: zeros(1,4)
-                                        * Referenced by: '<S29>/Memory'
+  real_T Memory_X0_e[4];               /* Expression: zeros(1,4)
+                                        * Referenced by: '<S28>/Memory'
                                         */
   real_T parKdV2_Gain;                 /* Expression: 0.0
-                                        * Referenced by: '<S4>/parKdV2'
+                                        * Referenced by: '<S6>/parKdV2'
                                         */
   real_T parFThresh_Gain;              /* Expression: 0.25
-                                        * Referenced by: '<S4>/parFThresh'
+                                        * Referenced by: '<S6>/parFThresh'
                                         */
   real_T parForceTrigger_Gain;         /* Expression: 0
-                                        * Referenced by: '<S4>/parForceTrigger'
+                                        * Referenced by: '<S6>/parForceTrigger'
                                         */
   real_T parMarker_Gain;               /* Expression: 0
-                                        * Referenced by: '<S4>/parMarker'
+                                        * Referenced by: '<S6>/parMarker'
                                         */
   real_T parMaxTrajDur_Gain;           /* Expression: .4
-                                        * Referenced by: '<S4>/parMaxTrajDur'
+                                        * Referenced by: '<S6>/parMaxTrajDur'
                                         */
   real_T parPStop_Gain;                /* Expression: 0.75
-                                        * Referenced by: '<S4>/parPStop'
+                                        * Referenced by: '<S6>/parPStop'
                                         */
   real_T parVThresh_Gain;              /* Expression: .375
-                                        * Referenced by: '<S4>/parVThresh'
+                                        * Referenced by: '<S6>/parVThresh'
                                         */
   real_T parWiggleAmp_Gain;            /* Expression: .5
-                                        * Referenced by: '<S4>/parWiggleAmp'
+                                        * Referenced by: '<S6>/parWiggleAmp'
+                                        */
+  real_T sigTargetTime_Gain;           /* Expression: 1
+                                        * Referenced by: '<S7>/sigTargetTime'
                                         */
   real_T sigGravAccel_Gain;            /* Expression: 1
-                                        * Referenced by: '<S5>/sigGravAccel'
+                                        * Referenced by: '<S7>/sigGravAccel'
                                         */
   uint32_T Delay_DelayLength;          /* Computed Parameter: Delay_DelayLength
-                                        * Referenced by: '<S1>/Delay'
+                                        * Referenced by: '<S2>/Delay'
                                         */
   uint32_T Delay1_DelayLength;         /* Computed Parameter: Delay1_DelayLength
-                                        * Referenced by: '<S1>/Delay1'
+                                        * Referenced by: '<S2>/Delay1'
+                                        */
+  uint8_T MainSwitch_CurrentSetting;   /* Computed Parameter: MainSwitch_CurrentSetting
+                                        * Referenced by: '<Root>/Main Switch'
                                         */
   uint8_T ManualSwitch3_CurrentSetting;/* Computed Parameter: ManualSwitch3_CurrentSetting
-                                        * Referenced by: '<S1>/Manual Switch3'
+                                        * Referenced by: '<S2>/Manual Switch3'
                                         */
 };
 
@@ -1478,7 +1523,9 @@ struct tag_RTM_FingerStrokeAssistance_T {
       time_T sfcnPeriod[1];
       time_T sfcnOffset[1];
       int_T sfcnTsMap[1];
-      struct _ssPortOutputs outputPortInfo[8];
+      struct _ssPortInputs inputPortInfo[2];
+      real_T const *UPtrs0[1];
+      real_T const *UPtrs1[1];
       uint_T attribs[7];
       mxArray *params[7];
       struct _ssDWorkRecord dWork[2];
@@ -1489,9 +1536,7 @@ struct tag_RTM_FingerStrokeAssistance_T {
       time_T sfcnPeriod[1];
       time_T sfcnOffset[1];
       int_T sfcnTsMap[1];
-      struct _ssPortInputs inputPortInfo[2];
-      real_T const *UPtrs0[1];
-      real_T const *UPtrs1[1];
+      struct _ssPortOutputs outputPortInfo[8];
       uint_T attribs[7];
       mxArray *params[7];
       struct _ssDWorkRecord dWork[2];
@@ -1610,6 +1655,11 @@ extern B_FingerStrokeAssistance_T FingerStrokeAssistance_B;
 /* Block states (auto storage) */
 extern DW_FingerStrokeAssistance_T FingerStrokeAssistance_DW;
 
+/* External data declarations for dependent source files */
+
+/* Zero-crossing (trigger) state */
+extern PrevZCX_FingerStrokeAssistance_T FingerStrokeAssistance_PrevZCX;
+
 /*====================*
  * External functions *
  *====================*/
@@ -1644,48 +1694,47 @@ extern RT_MODEL_FingerStrokeAssistance_T *const FingerStrokeAssistance_M;
  * Here is the system hierarchy for this model
  *
  * '<Root>' : 'FingerStrokeAssistance'
- * '<S1>'   : 'FingerStrokeAssistance/HL Controller'
- * '<S2>'   : 'FingerStrokeAssistance/LL Controller'
- * '<S3>'   : 'FingerStrokeAssistance/Robot'
- * '<S4>'   : 'FingerStrokeAssistance/parameters'
- * '<S5>'   : 'FingerStrokeAssistance/signals'
- * '<S6>'   : 'FingerStrokeAssistance/LL Controller/Discrete PID Controller'
- * '<S7>'   : 'FingerStrokeAssistance/LL Controller/gain transition'
- * '<S8>'   : 'FingerStrokeAssistance/LL Controller/initial ramp'
- * '<S9>'   : 'FingerStrokeAssistance/LL Controller/gain transition/gainramp'
- * '<S10>'  : 'FingerStrokeAssistance/LL Controller/initial ramp/MATLAB Function'
- * '<S11>'  : 'FingerStrokeAssistance/LL Controller/initial ramp/ramp'
- * '<S12>'  : 'FingerStrokeAssistance/Robot/account for handedness'
- * '<S13>'  : 'FingerStrokeAssistance/Robot/account for handedness force'
- * '<S14>'  : 'FingerStrokeAssistance/Robot/account for handedness1'
- * '<S15>'  : 'FingerStrokeAssistance/Robot/account for handedness2'
- * '<S16>'  : 'FingerStrokeAssistance/Robot/filtered force output'
- * '<S17>'  : 'FingerStrokeAssistance/Robot/get offsets'
+ * '<S1>'   : 'FingerStrokeAssistance/Detect Change'
+ * '<S2>'   : 'FingerStrokeAssistance/HL Controller'
+ * '<S3>'   : 'FingerStrokeAssistance/LL Controller'
+ * '<S4>'   : 'FingerStrokeAssistance/MATLAB Function'
+ * '<S5>'   : 'FingerStrokeAssistance/Robot'
+ * '<S6>'   : 'FingerStrokeAssistance/parameters'
+ * '<S7>'   : 'FingerStrokeAssistance/signals'
+ * '<S8>'   : 'FingerStrokeAssistance/LL Controller/Discrete PID Controller'
+ * '<S9>'   : 'FingerStrokeAssistance/LL Controller/Saturation Dynamic'
+ * '<S10>'  : 'FingerStrokeAssistance/LL Controller/Saturation Dynamic1'
+ * '<S11>'  : 'FingerStrokeAssistance/Robot/Discrete Derivative'
+ * '<S12>'  : 'FingerStrokeAssistance/Robot/Triggered Subsystem'
+ * '<S13>'  : 'FingerStrokeAssistance/Robot/account for handedness'
+ * '<S14>'  : 'FingerStrokeAssistance/Robot/account for handedness force'
+ * '<S15>'  : 'FingerStrokeAssistance/Robot/account for handedness1'
+ * '<S16>'  : 'FingerStrokeAssistance/Robot/account for handedness2'
+ * '<S17>'  : 'FingerStrokeAssistance/Robot/filtered force output'
  * '<S18>'  : 'FingerStrokeAssistance/Robot/gravDir'
  * '<S19>'  : 'FingerStrokeAssistance/Robot/account for handedness/MATLAB Function'
  * '<S20>'  : 'FingerStrokeAssistance/Robot/account for handedness force/MATLAB Function'
  * '<S21>'  : 'FingerStrokeAssistance/Robot/account for handedness1/MATLAB Function'
  * '<S22>'  : 'FingerStrokeAssistance/Robot/account for handedness2/MATLAB Function'
- * '<S23>'  : 'FingerStrokeAssistance/Robot/get offsets/MATLAB Function'
- * '<S24>'  : 'FingerStrokeAssistance/parameters/gain transition'
- * '<S25>'  : 'FingerStrokeAssistance/parameters/gain transition1'
- * '<S26>'  : 'FingerStrokeAssistance/parameters/gain transition2'
- * '<S27>'  : 'FingerStrokeAssistance/parameters/gain transition3'
- * '<S28>'  : 'FingerStrokeAssistance/parameters/gain transition4'
- * '<S29>'  : 'FingerStrokeAssistance/parameters/gain transition5'
- * '<S30>'  : 'FingerStrokeAssistance/parameters/gain transition/gainramp'
- * '<S31>'  : 'FingerStrokeAssistance/parameters/gain transition1/gainramp'
- * '<S32>'  : 'FingerStrokeAssistance/parameters/gain transition2/gainramp'
- * '<S33>'  : 'FingerStrokeAssistance/parameters/gain transition3/gainramp'
- * '<S34>'  : 'FingerStrokeAssistance/parameters/gain transition4/gainramp'
- * '<S35>'  : 'FingerStrokeAssistance/parameters/gain transition5/gainramp'
- * '<S36>'  : 'FingerStrokeAssistance/signals/Scope (xPC) '
- * '<S37>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 1'
- * '<S38>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 2'
- * '<S39>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 3'
- * '<S40>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 4'
- * '<S41>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 5'
- * '<S42>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 6'
- * '<S43>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 7'
+ * '<S23>'  : 'FingerStrokeAssistance/parameters/gain transition'
+ * '<S24>'  : 'FingerStrokeAssistance/parameters/gain transition1'
+ * '<S25>'  : 'FingerStrokeAssistance/parameters/gain transition2'
+ * '<S26>'  : 'FingerStrokeAssistance/parameters/gain transition3'
+ * '<S27>'  : 'FingerStrokeAssistance/parameters/gain transition4'
+ * '<S28>'  : 'FingerStrokeAssistance/parameters/gain transition5'
+ * '<S29>'  : 'FingerStrokeAssistance/parameters/gain transition/gainramp'
+ * '<S30>'  : 'FingerStrokeAssistance/parameters/gain transition1/gainramp'
+ * '<S31>'  : 'FingerStrokeAssistance/parameters/gain transition2/gainramp'
+ * '<S32>'  : 'FingerStrokeAssistance/parameters/gain transition3/gainramp'
+ * '<S33>'  : 'FingerStrokeAssistance/parameters/gain transition4/gainramp'
+ * '<S34>'  : 'FingerStrokeAssistance/parameters/gain transition5/gainramp'
+ * '<S35>'  : 'FingerStrokeAssistance/signals/Scope (xPC) '
+ * '<S36>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 1'
+ * '<S37>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 2'
+ * '<S38>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 3'
+ * '<S39>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 4'
+ * '<S40>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 5'
+ * '<S41>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 6'
+ * '<S42>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 7'
  */
 #endif                                 /* RTW_HEADER_FingerStrokeAssistance_h_ */
