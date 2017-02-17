@@ -60,7 +60,7 @@ DEBUG_BUILD     = 0
 #  MEX_OPT_FILE    - Original file name of the mexopt.bat.
 
 MODEL           = FingerStrokeAssistance
-MODULES         = FingerStrokeAssistance_capi.c FingerStrokeAssistance_data.c FingerStrokeAssistance_tgtconn.c rtGetInf.c rtGetNaN.c rt_logging.c rt_logging_mmi.c rt_matrx.c rt_nonfinite.c rt_printf.c rtw_modelmap_utils.c xpc_datatype_ground.c 
+MODULES         = FingerStrokeAssistance_capi.c FingerStrokeAssistance_data.c FingerStrokeAssistance_tgtconn.c rtGetInf.c rtGetNaN.c rt_logging.c rt_logging_mmi.c rt_matrx.c rt_nonfinite.c rt_printf.c rt_zcfcn.c rtw_modelmap_utils.c xpc_datatype_ground.c 
 MAKEFILE        = FingerStrokeAssistance.mk
 MATLAB_ROOT     = C:\Program Files\MATLAB\R2016a
 ALT_MATLAB_ROOT = C:\PROGRA~1\MATLAB\R2016a
@@ -68,7 +68,7 @@ MATLAB_BIN      = C:\Program Files\MATLAB\R2016a\bin
 ALT_MATLAB_BIN  = C:\PROGRA~1\MATLAB\R2016a\bin
 MASTER_ANCHOR_DIR = 
 START_DIR       = C:\Users\Juno\Desktop\brainfingers-controllers\Quentin
-S_FUNCTIONS     = encnipcim.c adnipcim.c danipcim.c xpcionim.c
+S_FUNCTIONS     = encnipcim.c danipcim.c adnipcim.c xpcionim.c
 S_FUNCTIONS_LIB = 
 NUMST           = 1
 TID01EQ         = 0

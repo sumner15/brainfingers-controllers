@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?><Root>
 
           <SubSystem>
+    <Name>Detect
+Change</Name>
+    <xPCName>FingerStrokeAssistance/Detect Change</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Delay Input1</blkName>
+            <xpcblkName>Detect Change/Delay Input1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Detect Change/Delay Input1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>vinit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>FixPt
+Relational
+Operator</sigName>
+              <xpcsigName>Detect Change/FixPt Relational Operator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Delay Input1</sigName>
+              <xpcsigName>Detect Change/Delay Input1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>HL Controller</Name>
     <xPCName>FingerStrokeAssistance/HL Controller</xPCName>
     
@@ -10,18 +67,6 @@
             <blkName>Constant</blkName>
             <xpcblkName>HL Controller/Constant</xpcblkName>
             <SLblockPath>FingerStrokeAssistance/HL Controller/Constant</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Constant1</blkName>
-            <xpcblkName>HL Controller/Constant1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/HL Controller/Constant1</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -43,9 +88,9 @@
 
  
             <block>
-            <blkName>Constant3</blkName>
-            <xpcblkName>HL Controller/Constant3</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/HL Controller/Constant3</SLblockPath>
+            <blkName>Switch_Off</blkName>
+            <xpcblkName>HL Controller/Switch_Off</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Switch_Off</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -55,9 +100,9 @@
 
  
             <block>
-            <blkName>Force On</blkName>
-            <xpcblkName>HL Controller/Force On</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/HL Controller/Force On</SLblockPath>
+            <blkName>Switch_On</blkName>
+            <xpcblkName>HL Controller/Switch_On</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Switch_On</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -179,12 +224,17 @@ Integrator</blkName>
     
 
 
+  
+              
 
-
-    
-    
-
-
+              
+       
+              <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>HL Controller/Constant</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
 
 
     
@@ -556,28 +606,16 @@ Switch</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>gain transition</Name>
-    <xPCName>FingerStrokeAssistance/LL Controller/gain transition</xPCName>
-        <SubSystem>
-    <Name>gainramp</Name>
-    <xPCName>FingerStrokeAssistance/LL Controller/gain transition/gainramp</xPCName>
+    <Name>Saturation
+Dynamic</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/Saturation Dynamic</xPCName>
     
-    
-    </SubSystem>
-
     
 
- 
-            <block>
-            <blkName>Memory</blkName>
-            <xpcblkName>LL Controller/gain transition/Memory</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/LL Controller/gain transition/Memory</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>X0</paramName>
-          <dim>[1, 4]</dim>  
-          </parameter>
-          </block>
+
+
+
+
 
 
     
@@ -590,91 +628,8 @@ Switch</sigName>
               
        
               <signal>
-              <sigName>gainramp/p1</sigName>
-              <xpcsigName>LL Controller/gain transition/gainramp/p1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>gainramp/p2</sigName>
-              <xpcsigName>LL Controller/gain transition/gainramp/p2</xpcsigName>
-              <sigWidth>4</sigWidth>
-              <sigDim>[4, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Memory</sigName>
-              <xpcsigName>LL Controller/gain transition/Memory</xpcsigName>
-              <sigWidth>4</sigWidth>
-              <sigDim>[4, 1]</sigDim>
-            </signal>
-
-    </SubSystem>
-    <SubSystem>
-    <Name>initial ramp</Name>
-    <xPCName>FingerStrokeAssistance/LL Controller/initial ramp</xPCName>
-        <SubSystem>
-    <Name>MATLAB Function</Name>
-    <xPCName>FingerStrokeAssistance/LL Controller/initial ramp/MATLAB Function</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>ramp</Name>
-    <xPCName>FingerStrokeAssistance/LL Controller/initial ramp/ramp</xPCName>
-    
-    
-    </SubSystem>
-
-    
-
-
- 
-            <block>
-            <blkName>Saturation1</blkName>
-            <xpcblkName>LL Controller/initial ramp/Saturation1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/LL Controller/initial ramp/Saturation1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>UpperLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>LowerLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>MATLAB Function</sigName>
-              <xpcsigName>LL Controller/initial ramp/MATLAB Function</xpcsigName>
+              <sigName>LowerRelop1</sigName>
+              <xpcsigName>LL Controller/Saturation Dynamic/LowerRelop1</xpcsigName>
               <sigWidth>2</sigWidth>
               <sigDim>[2, 1]</sigDim>
             </signal>
@@ -690,10 +645,32 @@ Switch</sigName>
               
        
               <signal>
-              <sigName>ramp</sigName>
-              <xpcsigName>LL Controller/initial ramp/ramp</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
+              <sigName>UpperRelop</sigName>
+              <xpcsigName>LL Controller/Saturation Dynamic/UpperRelop</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>LL Controller/Saturation Dynamic/Switch</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
             </signal>
 
 
@@ -707,11 +684,107 @@ Switch</sigName>
               
        
               <signal>
-              <sigName>Saturation1</sigName>
-              <xpcsigName>LL Controller/initial ramp/Saturation1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
+              <sigName>Switch2</sigName>
+              <xpcsigName>LL Controller/Saturation Dynamic/Switch2</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
             </signal>
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Saturation
+Dynamic1</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/Saturation Dynamic1</xPCName>
+    
+    
+
+
+
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>LowerRelop1</sigName>
+              <xpcsigName>LL Controller/Saturation Dynamic1/LowerRelop1</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>UpperRelop</sigName>
+              <xpcsigName>LL Controller/Saturation Dynamic1/UpperRelop</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>LL Controller/Saturation Dynamic1/Switch</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Switch2</sigName>
+              <xpcsigName>LL Controller/Saturation Dynamic1/Switch2</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
 
     </SubSystem>
 
@@ -757,36 +830,6 @@ Switch</sigName>
           </parameter>
           </block>
 
- 
-            <block>
-            <blkName>Gain1</blkName>
-            <xpcblkName>LL Controller/Gain1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/LL Controller/Gain1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
- 
-            <block>
-            <blkName>Saturation</blkName>
-            <xpcblkName>LL Controller/Saturation</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/LL Controller/Saturation</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>UpperLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>LowerLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
 
 
     
@@ -816,57 +859,6 @@ Switch</sigName>
               
        
               <signal>
-              <sigName>Gain1</sigName>
-              <xpcsigName>LL Controller/Gain1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Product</sigName>
-              <xpcsigName>LL Controller/Product</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Saturation</sigName>
-              <xpcsigName>LL Controller/Saturation</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
               <sigName>Sum</sigName>
               <xpcsigName>LL Controller/Sum</xpcsigName>
               <sigWidth>2</sigWidth>
@@ -878,6 +870,132 @@ Switch</sigName>
     <Name>Robot</Name>
     <xPCName>FingerStrokeAssistance/Robot</xPCName>
         <SubSystem>
+    <Name>Discrete Derivative</Name>
+    <xPCName>FingerStrokeAssistance/Robot/Discrete Derivative</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>TSamp</blkName>
+            <xpcblkName>Robot/Discrete Derivative/TSamp</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Robot/Discrete Derivative/TSamp</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>WtEt</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>UD</blkName>
+            <xpcblkName>Robot/Discrete Derivative/UD</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Robot/Discrete Derivative/UD</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>ICPrevScaledInput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Diff</sigName>
+              <xpcsigName>Robot/Discrete Derivative/Diff</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>TSamp</sigName>
+              <xpcsigName>Robot/Discrete Derivative/TSamp</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>UD</sigName>
+              <xpcsigName>Robot/Discrete Derivative/UD</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+                
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Triggered
+Subsystem</Name>
+    <xPCName>FingerStrokeAssistance/Robot/Triggered Subsystem</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Out1</blkName>
+            <xpcblkName>Robot/Triggered Subsystem/Out1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Robot/Triggered Subsystem/Out1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>In1</sigName>
+              <xpcsigName>Robot/Triggered Subsystem/In1</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>account for handedness</Name>
     <xPCName>FingerStrokeAssistance/Robot/account for handedness</xPCName>
         <SubSystem>
@@ -1134,148 +1252,6 @@ Switch</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>get offsets</Name>
-    <xPCName>FingerStrokeAssistance/Robot/get offsets</xPCName>
-        <SubSystem>
-    <Name>MATLAB Function</Name>
-    <xPCName>FingerStrokeAssistance/Robot/get offsets/MATLAB Function</xPCName>
-    
-    
-    </SubSystem>
-
-    
-
-
- 
-            <block>
-            <blkName>Memory</blkName>
-            <xpcblkName>Robot/get offsets/Memory</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Robot/get offsets/Memory</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>X0</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Memory1</blkName>
-            <xpcblkName>Robot/get offsets/Memory1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Robot/get offsets/Memory1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>X0</paramName>
-          <dim>[1, 2]</dim>  
-          </parameter>
-          </block>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>MATLAB Function/p1</sigName>
-              <xpcsigName>Robot/get offsets/MATLAB Function/p1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>MATLAB Function/p2</sigName>
-              <xpcsigName>Robot/get offsets/MATLAB Function/p2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>MATLAB Function/p3</sigName>
-              <xpcsigName>Robot/get offsets/MATLAB Function/p3</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>MATLAB Function/p4</sigName>
-              <xpcsigName>Robot/get offsets/MATLAB Function/p4</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Digital Clock</sigName>
-              <xpcsigName>Robot/get offsets/Digital Clock</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Memory</sigName>
-              <xpcsigName>Robot/get offsets/Memory</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Memory1</sigName>
-              <xpcsigName>Robot/get offsets/Memory1</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-    </SubSystem>
-    <SubSystem>
     <Name>gravDir</Name>
     <xPCName>FingerStrokeAssistance/Robot/gravDir</xPCName>
     
@@ -1348,6 +1324,18 @@ Switch</sigName>
     </SubSystem>
 
     
+ 
+            <block>
+            <blkName>Discrete Derivative</blkName>
+            <xpcblkName>Robot/Discrete Derivative</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Robot/Discrete Derivative</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>ICPrevScaledInput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
 
 
 
@@ -1360,18 +1348,6 @@ Switch</sigName>
             <blkName>Gain</blkName>
             <xpcblkName>Robot/Gain</xpcblkName>
             <SLblockPath>FingerStrokeAssistance/Robot/Gain</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain1</blkName>
-            <xpcblkName>Robot/Gain1</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/Robot/Gain1</SLblockPath>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
           <paramName>Gain</paramName>
@@ -1578,6 +1554,22 @@ Switch</sigName>
           </block>
 
 
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>Robot/Unit Delay</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Robot/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+
+
     
     
 
@@ -1590,25 +1582,8 @@ Switch</sigName>
               <signal>
               <sigName>Gain</sigName>
               <xpcsigName>Robot/Gain</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain1</sigName>
-              <xpcsigName>Robot/Gain1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
             </signal>
 
 
@@ -1750,6 +1725,40 @@ Switch</sigName>
     
     
 
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>Robot/Sum</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>Robot/Unit Delay</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
 
     </SubSystem>
     <SubSystem>
@@ -2458,7 +2467,6 @@ Switch</sigName>
           </block>
 
 
-
     
     
 
@@ -2821,11 +2829,6 @@ Switch</sigName>
               <sigDim>[1, 1]</sigDim>
             </signal>
 
-
-    
-    
-
-
     </SubSystem>
     <SubSystem>
     <Name>signals</Name>
@@ -2961,12 +2964,416 @@ Switch</sigName>
             </signal>
 
     </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>FingerStrokeAssistance/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
 
       
+ 
+            <block>
+            <blkName>Detect
+Change</blkName>
+            <xpcblkName>Detect Change</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Detect Change</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>vinit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
 
 
 
 
+
+
+
+ 
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>Constant1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>Constant3</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>standby-OFF</blkName>
+            <xpcblkName>standby-OFF</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/standby-OFF</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>standby-ON</blkName>
+            <xpcblkName>standby-ON</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/standby-ON</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Discrete-Time
+Integrator</blkName>
+            <xpcblkName>Discrete-Time Integrator</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Discrete-Time Integrator</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>gainval</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Main Switch</blkName>
+            <xpcblkName>Main Switch</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Main Switch</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>CurrentSetting</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>Unit Delay</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay1</blkName>
+            <xpcblkName>Unit Delay1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Unit Delay1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay2</blkName>
+            <xpcblkName>Unit Delay2</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Unit Delay2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay3</blkName>
+            <xpcblkName>Unit Delay3</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Unit Delay3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>MATLAB Function/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>MATLAB Function/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p3</sigName>
+              <xpcsigName>MATLAB Function/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p4</sigName>
+              <xpcsigName>MATLAB Function/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p5</sigName>
+              <xpcsigName>MATLAB Function/p5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p6</sigName>
+              <xpcsigName>MATLAB Function/p6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p7</sigName>
+              <xpcsigName>MATLAB Function/p7</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p8</sigName>
+              <xpcsigName>MATLAB Function/p8</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p9</sigName>
+              <xpcsigName>MATLAB Function/p9</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Discrete-Time
+Integrator</sigName>
+              <xpcsigName>Discrete-Time Integrator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Main Switch</sigName>
+              <xpcsigName>Main Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>Unit Delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay1</sigName>
+              <xpcsigName>Unit Delay1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay2</sigName>
+              <xpcsigName>Unit Delay2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay3</sigName>
+              <xpcsigName>Unit Delay3</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
 
 <block>
    <blkName>Model Parameters</blkName>
