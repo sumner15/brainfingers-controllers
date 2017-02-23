@@ -2,8 +2,8 @@ function pt=FingerStrokeAssistancept
 pt = [];
 
   
-pt(1).blockname = 'Detect Change';
-pt(1).paramname = 'vinit';
+pt(1).blockname = 'Constant1';
+pt(1).paramname = 'Value';
 pt(1).class     = 'scalar';
 pt(1).nrows     = 1;
 pt(1).ncols     = 1;
@@ -11,15 +11,15 @@ pt(1).subsource = 'SS_DOUBLE';
 pt(1).ndims     = '2';
 pt(1).size      = '[]';
 pt(1).isStruct  = false;
-pt(1).symbol     = 'FingerStrokeAssistance_P.DetectChange_vinit';
-pt(1).baseaddr   = '&FingerStrokeAssistance_P.DetectChange_vinit';
+pt(1).symbol     = 'FingerStrokeAssistance_P.Constant1_Value';
+pt(1).baseaddr   = '&FingerStrokeAssistance_P.Constant1_Value';
 pt(1).dtname     = 'real_T';
 
 pt(getlenPT) = pt(1);
 
 
   
-pt(2).blockname = 'Constant1';
+pt(2).blockname = 'Constant3';
 pt(2).paramname = 'Value';
 pt(2).class     = 'scalar';
 pt(2).nrows     = 1;
@@ -28,15 +28,15 @@ pt(2).subsource = 'SS_DOUBLE';
 pt(2).ndims     = '2';
 pt(2).size      = '[]';
 pt(2).isStruct  = false;
-pt(2).symbol     = 'FingerStrokeAssistance_P.Constant1_Value';
-pt(2).baseaddr   = '&FingerStrokeAssistance_P.Constant1_Value';
+pt(2).symbol     = 'FingerStrokeAssistance_P.Constant3_Value';
+pt(2).baseaddr   = '&FingerStrokeAssistance_P.Constant3_Value';
 pt(2).dtname     = 'real_T';
 
 
 
   
-pt(3).blockname = 'Constant3';
-pt(3).paramname = 'Value';
+pt(3).blockname = 'Unit Delay';
+pt(3).paramname = 'InitialCondition';
 pt(3).class     = 'scalar';
 pt(3).nrows     = 1;
 pt(3).ncols     = 1;
@@ -44,15 +44,15 @@ pt(3).subsource = 'SS_DOUBLE';
 pt(3).ndims     = '2';
 pt(3).size      = '[]';
 pt(3).isStruct  = false;
-pt(3).symbol     = 'FingerStrokeAssistance_P.Constant3_Value';
-pt(3).baseaddr   = '&FingerStrokeAssistance_P.Constant3_Value';
+pt(3).symbol     = 'FingerStrokeAssistance_P.UnitDelay_InitialCondition';
+pt(3).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay_InitialCondition';
 pt(3).dtname     = 'real_T';
 
 
 
   
-pt(4).blockname = 'standby-OFF';
-pt(4).paramname = 'Value';
+pt(4).blockname = 'Unit Delay1';
+pt(4).paramname = 'InitialCondition';
 pt(4).class     = 'scalar';
 pt(4).nrows     = 1;
 pt(4).ncols     = 1;
@@ -60,15 +60,15 @@ pt(4).subsource = 'SS_DOUBLE';
 pt(4).ndims     = '2';
 pt(4).size      = '[]';
 pt(4).isStruct  = false;
-pt(4).symbol     = 'FingerStrokeAssistance_P.standbyOFF_Value';
-pt(4).baseaddr   = '&FingerStrokeAssistance_P.standbyOFF_Value';
+pt(4).symbol     = 'FingerStrokeAssistance_P.UnitDelay1_InitialCondition';
+pt(4).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay1_InitialCondition';
 pt(4).dtname     = 'real_T';
 
 
 
   
-pt(5).blockname = 'standby-ON';
-pt(5).paramname = 'Value';
+pt(5).blockname = 'Unit Delay3';
+pt(5).paramname = 'InitialCondition';
 pt(5).class     = 'scalar';
 pt(5).nrows     = 1;
 pt(5).ncols     = 1;
@@ -76,15 +76,15 @@ pt(5).subsource = 'SS_DOUBLE';
 pt(5).ndims     = '2';
 pt(5).size      = '[]';
 pt(5).isStruct  = false;
-pt(5).symbol     = 'FingerStrokeAssistance_P.standbyON_Value';
-pt(5).baseaddr   = '&FingerStrokeAssistance_P.standbyON_Value';
+pt(5).symbol     = 'FingerStrokeAssistance_P.UnitDelay3_InitialCondition';
+pt(5).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay3_InitialCondition';
 pt(5).dtname     = 'real_T';
 
 
 
   
-pt(6).blockname = 'Discrete-Time Integrator';
-pt(6).paramname = 'gainval';
+pt(6).blockname = 'HL Controller/Detect Change';
+pt(6).paramname = 'vinit';
 pt(6).class     = 'scalar';
 pt(6).nrows     = 1;
 pt(6).ncols     = 1;
@@ -92,15 +92,15 @@ pt(6).subsource = 'SS_DOUBLE';
 pt(6).ndims     = '2';
 pt(6).size      = '[]';
 pt(6).isStruct  = false;
-pt(6).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_gainval';
-pt(6).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_gainval';
+pt(6).symbol     = 'FingerStrokeAssistance_P.DetectChange_vinit_dl';
+pt(6).baseaddr   = '&FingerStrokeAssistance_P.DetectChange_vinit_dl';
 pt(6).dtname     = 'real_T';
 
 
 
   
-pt(7).blockname = 'Discrete-Time Integrator';
-pt(7).paramname = 'InitialCondition';
+pt(7).blockname = 'HL Controller/Discrete-Time Integrator';
+pt(7).paramname = 'gainval';
 pt(7).class     = 'scalar';
 pt(7).nrows     = 1;
 pt(7).ncols     = 1;
@@ -108,31 +108,31 @@ pt(7).subsource = 'SS_DOUBLE';
 pt(7).ndims     = '2';
 pt(7).size      = '[]';
 pt(7).isStruct  = false;
-pt(7).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_IC';
-pt(7).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_IC';
+pt(7).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_gainva_m';
+pt(7).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_gainva_m';
 pt(7).dtname     = 'real_T';
 
 
 
   
-pt(8).blockname = 'Main Switch';
-pt(8).paramname = 'CurrentSetting';
+pt(8).blockname = 'HL Controller/Discrete-Time Integrator';
+pt(8).paramname = 'InitialCondition';
 pt(8).class     = 'scalar';
 pt(8).nrows     = 1;
 pt(8).ncols     = 1;
-pt(8).subsource = 'SS_UINT8';
+pt(8).subsource = 'SS_DOUBLE';
 pt(8).ndims     = '2';
 pt(8).size      = '[]';
 pt(8).isStruct  = false;
-pt(8).symbol     = 'FingerStrokeAssistance_P.MainSwitch_CurrentSetting';
-pt(8).baseaddr   = '&FingerStrokeAssistance_P.MainSwitch_CurrentSetting';
-pt(8).dtname     = 'uint8_T';
+pt(8).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_IC_h';
+pt(8).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_IC_h';
+pt(8).dtname     = 'real_T';
 
 
 
   
-pt(9).blockname = 'Unit Delay';
-pt(9).paramname = 'InitialCondition';
+pt(9).blockname = 'HL Controller/Discrete-Time Integrator';
+pt(9).paramname = 'UpperSaturationLimit';
 pt(9).class     = 'scalar';
 pt(9).nrows     = 1;
 pt(9).ncols     = 1;
@@ -140,15 +140,15 @@ pt(9).subsource = 'SS_DOUBLE';
 pt(9).ndims     = '2';
 pt(9).size      = '[]';
 pt(9).isStruct  = false;
-pt(9).symbol     = 'FingerStrokeAssistance_P.UnitDelay_InitialCondition';
-pt(9).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay_InitialCondition';
+pt(9).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_UpperSat';
+pt(9).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_UpperSat';
 pt(9).dtname     = 'real_T';
 
 
 
   
-pt(10).blockname = 'Unit Delay1';
-pt(10).paramname = 'InitialCondition';
+pt(10).blockname = 'HL Controller/Discrete-Time Integrator';
+pt(10).paramname = 'LowerSaturationLimit';
 pt(10).class     = 'scalar';
 pt(10).nrows     = 1;
 pt(10).ncols     = 1;
@@ -156,15 +156,15 @@ pt(10).subsource = 'SS_DOUBLE';
 pt(10).ndims     = '2';
 pt(10).size      = '[]';
 pt(10).isStruct  = false;
-pt(10).symbol     = 'FingerStrokeAssistance_P.UnitDelay1_InitialCondition';
-pt(10).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay1_InitialCondition';
+pt(10).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_LowerSat';
+pt(10).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_LowerSat';
 pt(10).dtname     = 'real_T';
 
 
 
   
-pt(11).blockname = 'Unit Delay2';
-pt(11).paramname = 'InitialCondition';
+pt(11).blockname = 'HL Controller/Gain1';
+pt(11).paramname = 'Gain';
 pt(11).class     = 'scalar';
 pt(11).nrows     = 1;
 pt(11).ncols     = 1;
@@ -172,31 +172,31 @@ pt(11).subsource = 'SS_DOUBLE';
 pt(11).ndims     = '2';
 pt(11).size      = '[]';
 pt(11).isStruct  = false;
-pt(11).symbol     = 'FingerStrokeAssistance_P.UnitDelay2_InitialCondition';
-pt(11).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay2_InitialCondition';
+pt(11).symbol     = 'FingerStrokeAssistance_P.Gain1_Gain_n';
+pt(11).baseaddr   = '&FingerStrokeAssistance_P.Gain1_Gain_n';
 pt(11).dtname     = 'real_T';
 
 
 
   
-pt(12).blockname = 'Unit Delay3';
-pt(12).paramname = 'InitialCondition';
+pt(12).blockname = 'HL Controller/Delay';
+pt(12).paramname = 'DelayLength';
 pt(12).class     = 'scalar';
 pt(12).nrows     = 1;
 pt(12).ncols     = 1;
-pt(12).subsource = 'SS_DOUBLE';
+pt(12).subsource = 'SS_UINT32';
 pt(12).ndims     = '2';
 pt(12).size      = '[]';
 pt(12).isStruct  = false;
-pt(12).symbol     = 'FingerStrokeAssistance_P.UnitDelay3_InitialCondition';
-pt(12).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay3_InitialCondition';
-pt(12).dtname     = 'real_T';
+pt(12).symbol     = 'FingerStrokeAssistance_P.Delay_DelayLength';
+pt(12).baseaddr   = '&FingerStrokeAssistance_P.Delay_DelayLength';
+pt(12).dtname     = 'uint32_T';
 
 
 
   
-pt(13).blockname = 'HL Controller/Constant';
-pt(13).paramname = 'Value';
+pt(13).blockname = 'HL Controller/Delay';
+pt(13).paramname = 'InitialCondition';
 pt(13).class     = 'scalar';
 pt(13).nrows     = 1;
 pt(13).ncols     = 1;
@@ -204,31 +204,31 @@ pt(13).subsource = 'SS_DOUBLE';
 pt(13).ndims     = '2';
 pt(13).size      = '[]';
 pt(13).isStruct  = false;
-pt(13).symbol     = 'FingerStrokeAssistance_P.Constant_Value_h';
-pt(13).baseaddr   = '&FingerStrokeAssistance_P.Constant_Value_h';
+pt(13).symbol     = 'FingerStrokeAssistance_P.Delay_InitialCondition';
+pt(13).baseaddr   = '&FingerStrokeAssistance_P.Delay_InitialCondition';
 pt(13).dtname     = 'real_T';
 
 
 
   
-pt(14).blockname = 'HL Controller/Constant2';
-pt(14).paramname = 'Value';
+pt(14).blockname = 'HL Controller/Delay1';
+pt(14).paramname = 'DelayLength';
 pt(14).class     = 'scalar';
 pt(14).nrows     = 1;
 pt(14).ncols     = 1;
-pt(14).subsource = 'SS_DOUBLE';
+pt(14).subsource = 'SS_UINT32';
 pt(14).ndims     = '2';
 pt(14).size      = '[]';
 pt(14).isStruct  = false;
-pt(14).symbol     = 'FingerStrokeAssistance_P.Constant2_Value';
-pt(14).baseaddr   = '&FingerStrokeAssistance_P.Constant2_Value';
-pt(14).dtname     = 'real_T';
+pt(14).symbol     = 'FingerStrokeAssistance_P.Delay1_DelayLength';
+pt(14).baseaddr   = '&FingerStrokeAssistance_P.Delay1_DelayLength';
+pt(14).dtname     = 'uint32_T';
 
 
 
   
-pt(15).blockname = 'HL Controller/Switch_Off';
-pt(15).paramname = 'Value';
+pt(15).blockname = 'HL Controller/Delay1';
+pt(15).paramname = 'InitialCondition';
 pt(15).class     = 'scalar';
 pt(15).nrows     = 1;
 pt(15).ncols     = 1;
@@ -236,47 +236,47 @@ pt(15).subsource = 'SS_DOUBLE';
 pt(15).ndims     = '2';
 pt(15).size      = '[]';
 pt(15).isStruct  = false;
-pt(15).symbol     = 'FingerStrokeAssistance_P.Switch_Off_Value';
-pt(15).baseaddr   = '&FingerStrokeAssistance_P.Switch_Off_Value';
+pt(15).symbol     = 'FingerStrokeAssistance_P.Delay1_InitialCondition';
+pt(15).baseaddr   = '&FingerStrokeAssistance_P.Delay1_InitialCondition';
 pt(15).dtname     = 'real_T';
 
 
 
   
-pt(16).blockname = 'HL Controller/Switch_On';
-pt(16).paramname = 'Value';
-pt(16).class     = 'scalar';
+pt(16).blockname = 'HL Controller/Discrete Filter';
+pt(16).paramname = 'Numerator';
+pt(16).class     = 'vector';
 pt(16).nrows     = 1;
-pt(16).ncols     = 1;
+pt(16).ncols     = 2;
 pt(16).subsource = 'SS_DOUBLE';
 pt(16).ndims     = '2';
 pt(16).size      = '[]';
 pt(16).isStruct  = false;
-pt(16).symbol     = 'FingerStrokeAssistance_P.Switch_On_Value';
-pt(16).baseaddr   = '&FingerStrokeAssistance_P.Switch_On_Value';
+pt(16).symbol     = 'FingerStrokeAssistance_P.DiscreteFilter_NumCoef';
+pt(16).baseaddr   = '&FingerStrokeAssistance_P.DiscreteFilter_NumCoef[0]';
 pt(16).dtname     = 'real_T';
 
 
 
   
-pt(17).blockname = 'HL Controller/Discrete-Time Integrator';
-pt(17).paramname = 'gainval';
-pt(17).class     = 'scalar';
+pt(17).blockname = 'HL Controller/Discrete Filter';
+pt(17).paramname = 'Denominator';
+pt(17).class     = 'vector';
 pt(17).nrows     = 1;
-pt(17).ncols     = 1;
+pt(17).ncols     = 2;
 pt(17).subsource = 'SS_DOUBLE';
 pt(17).ndims     = '2';
 pt(17).size      = '[]';
 pt(17).isStruct  = false;
-pt(17).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_gainva_m';
-pt(17).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_gainva_m';
+pt(17).symbol     = 'FingerStrokeAssistance_P.DiscreteFilter_DenCoef';
+pt(17).baseaddr   = '&FingerStrokeAssistance_P.DiscreteFilter_DenCoef[0]';
 pt(17).dtname     = 'real_T';
 
 
 
   
-pt(18).blockname = 'HL Controller/Discrete-Time Integrator';
-pt(18).paramname = 'InitialCondition';
+pt(18).blockname = 'HL Controller/Discrete Filter';
+pt(18).paramname = 'InitialStates';
 pt(18).class     = 'scalar';
 pt(18).nrows     = 1;
 pt(18).ncols     = 1;
@@ -284,15 +284,15 @@ pt(18).subsource = 'SS_DOUBLE';
 pt(18).ndims     = '2';
 pt(18).size      = '[]';
 pt(18).isStruct  = false;
-pt(18).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_IC_h';
-pt(18).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_IC_h';
+pt(18).symbol     = 'FingerStrokeAssistance_P.DiscreteFilter_InitialStates';
+pt(18).baseaddr   = '&FingerStrokeAssistance_P.DiscreteFilter_InitialStates';
 pt(18).dtname     = 'real_T';
 
 
 
   
-pt(19).blockname = 'HL Controller/Discrete-Time Integrator';
-pt(19).paramname = 'UpperSaturationLimit';
+pt(19).blockname = 'LL Controller/Discrete PID Controller';
+pt(19).paramname = 'P';
 pt(19).class     = 'scalar';
 pt(19).nrows     = 1;
 pt(19).ncols     = 1;
@@ -300,15 +300,15 @@ pt(19).subsource = 'SS_DOUBLE';
 pt(19).ndims     = '2';
 pt(19).size      = '[]';
 pt(19).isStruct  = false;
-pt(19).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_UpperSat';
-pt(19).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_UpperSat';
+pt(19).symbol     = 'FingerStrokeAssistance_P.DiscretePIDController_P';
+pt(19).baseaddr   = '&FingerStrokeAssistance_P.DiscretePIDController_P';
 pt(19).dtname     = 'real_T';
 
 
 
   
-pt(20).blockname = 'HL Controller/Discrete-Time Integrator';
-pt(20).paramname = 'LowerSaturationLimit';
+pt(20).blockname = 'LL Controller/Discrete PID Controller';
+pt(20).paramname = 'I';
 pt(20).class     = 'scalar';
 pt(20).nrows     = 1;
 pt(20).ncols     = 1;
@@ -316,15 +316,15 @@ pt(20).subsource = 'SS_DOUBLE';
 pt(20).ndims     = '2';
 pt(20).size      = '[]';
 pt(20).isStruct  = false;
-pt(20).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_LowerSat';
-pt(20).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_LowerSat';
+pt(20).symbol     = 'FingerStrokeAssistance_P.DiscretePIDController_I';
+pt(20).baseaddr   = '&FingerStrokeAssistance_P.DiscretePIDController_I';
 pt(20).dtname     = 'real_T';
 
 
 
   
-pt(21).blockname = 'HL Controller/Gain1';
-pt(21).paramname = 'Gain';
+pt(21).blockname = 'LL Controller/Discrete PID Controller';
+pt(21).paramname = 'D';
 pt(21).class     = 'scalar';
 pt(21).nrows     = 1;
 pt(21).ncols     = 1;
@@ -332,47 +332,47 @@ pt(21).subsource = 'SS_DOUBLE';
 pt(21).ndims     = '2';
 pt(21).size      = '[]';
 pt(21).isStruct  = false;
-pt(21).symbol     = 'FingerStrokeAssistance_P.Gain1_Gain';
-pt(21).baseaddr   = '&FingerStrokeAssistance_P.Gain1_Gain';
+pt(21).symbol     = 'FingerStrokeAssistance_P.DiscretePIDController_D';
+pt(21).baseaddr   = '&FingerStrokeAssistance_P.DiscretePIDController_D';
 pt(21).dtname     = 'real_T';
 
 
 
   
-pt(22).blockname = 'HL Controller/Manual Switch3';
-pt(22).paramname = 'CurrentSetting';
+pt(22).blockname = 'LL Controller/Discrete PID Controller';
+pt(22).paramname = 'N';
 pt(22).class     = 'scalar';
 pt(22).nrows     = 1;
 pt(22).ncols     = 1;
-pt(22).subsource = 'SS_UINT8';
+pt(22).subsource = 'SS_DOUBLE';
 pt(22).ndims     = '2';
 pt(22).size      = '[]';
 pt(22).isStruct  = false;
-pt(22).symbol     = 'FingerStrokeAssistance_P.ManualSwitch3_CurrentSetting';
-pt(22).baseaddr   = '&FingerStrokeAssistance_P.ManualSwitch3_CurrentSetting';
-pt(22).dtname     = 'uint8_T';
+pt(22).symbol     = 'FingerStrokeAssistance_P.DiscretePIDController_N';
+pt(22).baseaddr   = '&FingerStrokeAssistance_P.DiscretePIDController_N';
+pt(22).dtname     = 'real_T';
 
 
 
   
-pt(23).blockname = 'HL Controller/Delay';
-pt(23).paramname = 'DelayLength';
+pt(23).blockname = 'ON//OFF/Constant';
+pt(23).paramname = 'Value';
 pt(23).class     = 'scalar';
 pt(23).nrows     = 1;
 pt(23).ncols     = 1;
-pt(23).subsource = 'SS_UINT32';
+pt(23).subsource = 'SS_BOOLEAN';
 pt(23).ndims     = '2';
 pt(23).size      = '[]';
 pt(23).isStruct  = false;
-pt(23).symbol     = 'FingerStrokeAssistance_P.Delay_DelayLength';
-pt(23).baseaddr   = '&FingerStrokeAssistance_P.Delay_DelayLength';
-pt(23).dtname     = 'uint32_T';
+pt(23).symbol     = 'FingerStrokeAssistance_P.Constant_Value_i';
+pt(23).baseaddr   = '&FingerStrokeAssistance_P.Constant_Value_i';
+pt(23).dtname     = 'boolean_T';
 
 
 
   
-pt(24).blockname = 'HL Controller/Delay';
-pt(24).paramname = 'InitialCondition';
+pt(24).blockname = 'Robot/Discrete Derivative';
+pt(24).paramname = 'ICPrevScaledInput';
 pt(24).class     = 'scalar';
 pt(24).nrows     = 1;
 pt(24).ncols     = 1;
@@ -380,31 +380,31 @@ pt(24).subsource = 'SS_DOUBLE';
 pt(24).ndims     = '2';
 pt(24).size      = '[]';
 pt(24).isStruct  = false;
-pt(24).symbol     = 'FingerStrokeAssistance_P.Delay_InitialCondition';
-pt(24).baseaddr   = '&FingerStrokeAssistance_P.Delay_InitialCondition';
+pt(24).symbol     = 'FingerStrokeAssistance_P.DiscreteDerivative_ICPrevScaled';
+pt(24).baseaddr   = '&FingerStrokeAssistance_P.DiscreteDerivative_ICPrevScaled';
 pt(24).dtname     = 'real_T';
 
 
 
   
-pt(25).blockname = 'HL Controller/Delay1';
-pt(25).paramname = 'DelayLength';
+pt(25).blockname = 'Robot/Gain';
+pt(25).paramname = 'Gain';
 pt(25).class     = 'scalar';
 pt(25).nrows     = 1;
 pt(25).ncols     = 1;
-pt(25).subsource = 'SS_UINT32';
+pt(25).subsource = 'SS_DOUBLE';
 pt(25).ndims     = '2';
 pt(25).size      = '[]';
 pt(25).isStruct  = false;
-pt(25).symbol     = 'FingerStrokeAssistance_P.Delay1_DelayLength';
-pt(25).baseaddr   = '&FingerStrokeAssistance_P.Delay1_DelayLength';
-pt(25).dtname     = 'uint32_T';
+pt(25).symbol     = 'FingerStrokeAssistance_P.Gain_Gain';
+pt(25).baseaddr   = '&FingerStrokeAssistance_P.Gain_Gain';
+pt(25).dtname     = 'real_T';
 
 
 
   
-pt(26).blockname = 'HL Controller/Delay1';
-pt(26).paramname = 'InitialCondition';
+pt(26).blockname = 'Robot/Gain1';
+pt(26).paramname = 'Gain';
 pt(26).class     = 'scalar';
 pt(26).nrows     = 1;
 pt(26).ncols     = 1;
@@ -412,47 +412,47 @@ pt(26).subsource = 'SS_DOUBLE';
 pt(26).ndims     = '2';
 pt(26).size      = '[]';
 pt(26).isStruct  = false;
-pt(26).symbol     = 'FingerStrokeAssistance_P.Delay1_InitialCondition';
-pt(26).baseaddr   = '&FingerStrokeAssistance_P.Delay1_InitialCondition';
+pt(26).symbol     = 'FingerStrokeAssistance_P.Gain1_Gain';
+pt(26).baseaddr   = '&FingerStrokeAssistance_P.Gain1_Gain';
 pt(26).dtname     = 'real_T';
 
 
 
   
-pt(27).blockname = 'HL Controller/Discrete Filter';
-pt(27).paramname = 'Numerator';
-pt(27).class     = 'vector';
+pt(27).blockname = 'Robot/PCI 6221 ENC ';
+pt(27).paramname = 'P1';
+pt(27).class     = 'scalar';
 pt(27).nrows     = 1;
-pt(27).ncols     = 2;
+pt(27).ncols     = 1;
 pt(27).subsource = 'SS_DOUBLE';
 pt(27).ndims     = '2';
 pt(27).size      = '[]';
 pt(27).isStruct  = false;
-pt(27).symbol     = 'FingerStrokeAssistance_P.DiscreteFilter_NumCoef';
-pt(27).baseaddr   = '&FingerStrokeAssistance_P.DiscreteFilter_NumCoef[0]';
+pt(27).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P1';
+pt(27).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P1';
 pt(27).dtname     = 'real_T';
 
 
 
   
-pt(28).blockname = 'HL Controller/Discrete Filter';
-pt(28).paramname = 'Denominator';
-pt(28).class     = 'vector';
+pt(28).blockname = 'Robot/PCI 6221 ENC ';
+pt(28).paramname = 'P2';
+pt(28).class     = 'scalar';
 pt(28).nrows     = 1;
-pt(28).ncols     = 2;
+pt(28).ncols     = 1;
 pt(28).subsource = 'SS_DOUBLE';
 pt(28).ndims     = '2';
 pt(28).size      = '[]';
 pt(28).isStruct  = false;
-pt(28).symbol     = 'FingerStrokeAssistance_P.DiscreteFilter_DenCoef';
-pt(28).baseaddr   = '&FingerStrokeAssistance_P.DiscreteFilter_DenCoef[0]';
+pt(28).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P2';
+pt(28).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P2';
 pt(28).dtname     = 'real_T';
 
 
 
   
-pt(29).blockname = 'HL Controller/Discrete Filter';
-pt(29).paramname = 'InitialStates';
+pt(29).blockname = 'Robot/PCI 6221 ENC ';
+pt(29).paramname = 'P3';
 pt(29).class     = 'scalar';
 pt(29).nrows     = 1;
 pt(29).ncols     = 1;
@@ -460,15 +460,15 @@ pt(29).subsource = 'SS_DOUBLE';
 pt(29).ndims     = '2';
 pt(29).size      = '[]';
 pt(29).isStruct  = false;
-pt(29).symbol     = 'FingerStrokeAssistance_P.DiscreteFilter_InitialStates';
-pt(29).baseaddr   = '&FingerStrokeAssistance_P.DiscreteFilter_InitialStates';
+pt(29).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P3';
+pt(29).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P3';
 pt(29).dtname     = 'real_T';
 
 
 
   
-pt(30).blockname = 'LL Controller/Discrete PID Controller';
-pt(30).paramname = 'P';
+pt(30).blockname = 'Robot/PCI 6221 ENC ';
+pt(30).paramname = 'P4';
 pt(30).class     = 'scalar';
 pt(30).nrows     = 1;
 pt(30).ncols     = 1;
@@ -476,15 +476,15 @@ pt(30).subsource = 'SS_DOUBLE';
 pt(30).ndims     = '2';
 pt(30).size      = '[]';
 pt(30).isStruct  = false;
-pt(30).symbol     = 'FingerStrokeAssistance_P.DiscretePIDController_P';
-pt(30).baseaddr   = '&FingerStrokeAssistance_P.DiscretePIDController_P';
+pt(30).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P4';
+pt(30).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P4';
 pt(30).dtname     = 'real_T';
 
 
 
   
-pt(31).blockname = 'LL Controller/Discrete PID Controller';
-pt(31).paramname = 'I';
+pt(31).blockname = 'Robot/PCI 6221 ENC ';
+pt(31).paramname = 'P5';
 pt(31).class     = 'scalar';
 pt(31).nrows     = 1;
 pt(31).ncols     = 1;
@@ -492,15 +492,15 @@ pt(31).subsource = 'SS_DOUBLE';
 pt(31).ndims     = '2';
 pt(31).size      = '[]';
 pt(31).isStruct  = false;
-pt(31).symbol     = 'FingerStrokeAssistance_P.DiscretePIDController_I';
-pt(31).baseaddr   = '&FingerStrokeAssistance_P.DiscretePIDController_I';
+pt(31).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P5';
+pt(31).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P5';
 pt(31).dtname     = 'real_T';
 
 
 
   
-pt(32).blockname = 'LL Controller/Discrete PID Controller';
-pt(32).paramname = 'D';
+pt(32).blockname = 'Robot/PCI 6221 ENC ';
+pt(32).paramname = 'P6';
 pt(32).class     = 'scalar';
 pt(32).nrows     = 1;
 pt(32).ncols     = 1;
@@ -508,15 +508,15 @@ pt(32).subsource = 'SS_DOUBLE';
 pt(32).ndims     = '2';
 pt(32).size      = '[]';
 pt(32).isStruct  = false;
-pt(32).symbol     = 'FingerStrokeAssistance_P.DiscretePIDController_D';
-pt(32).baseaddr   = '&FingerStrokeAssistance_P.DiscretePIDController_D';
+pt(32).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P6';
+pt(32).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P6';
 pt(32).dtname     = 'real_T';
 
 
 
   
-pt(33).blockname = 'LL Controller/Discrete PID Controller';
-pt(33).paramname = 'N';
+pt(33).blockname = 'Robot/PCI 6221 ENC ';
+pt(33).paramname = 'P7';
 pt(33).class     = 'scalar';
 pt(33).nrows     = 1;
 pt(33).ncols     = 1;
@@ -524,15 +524,15 @@ pt(33).subsource = 'SS_DOUBLE';
 pt(33).ndims     = '2';
 pt(33).size      = '[]';
 pt(33).isStruct  = false;
-pt(33).symbol     = 'FingerStrokeAssistance_P.DiscretePIDController_N';
-pt(33).baseaddr   = '&FingerStrokeAssistance_P.DiscretePIDController_N';
+pt(33).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P7';
+pt(33).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P7';
 pt(33).dtname     = 'real_T';
 
 
 
   
-pt(34).blockname = 'LL Controller/Gain';
-pt(34).paramname = 'Gain';
+pt(34).blockname = 'Robot/PCI 6221 ENC ';
+pt(34).paramname = 'P8';
 pt(34).class     = 'scalar';
 pt(34).nrows     = 1;
 pt(34).ncols     = 1;
@@ -540,15 +540,15 @@ pt(34).subsource = 'SS_DOUBLE';
 pt(34).ndims     = '2';
 pt(34).size      = '[]';
 pt(34).isStruct  = false;
-pt(34).symbol     = 'FingerStrokeAssistance_P.Gain_Gain_o';
-pt(34).baseaddr   = '&FingerStrokeAssistance_P.Gain_Gain_o';
+pt(34).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P8';
+pt(34).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P8';
 pt(34).dtname     = 'real_T';
 
 
 
   
-pt(35).blockname = 'Robot/Discrete Derivative';
-pt(35).paramname = 'ICPrevScaledInput';
+pt(35).blockname = 'Robot/PCI 6221 ENC ';
+pt(35).paramname = 'P9';
 pt(35).class     = 'scalar';
 pt(35).nrows     = 1;
 pt(35).ncols     = 1;
@@ -556,15 +556,15 @@ pt(35).subsource = 'SS_DOUBLE';
 pt(35).ndims     = '2';
 pt(35).size      = '[]';
 pt(35).isStruct  = false;
-pt(35).symbol     = 'FingerStrokeAssistance_P.DiscreteDerivative_ICPrevScaled';
-pt(35).baseaddr   = '&FingerStrokeAssistance_P.DiscreteDerivative_ICPrevScaled';
+pt(35).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P9';
+pt(35).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P9';
 pt(35).dtname     = 'real_T';
 
 
 
   
-pt(36).blockname = 'Robot/Gain';
-pt(36).paramname = 'Gain';
+pt(36).blockname = 'Robot/PCI 6221 ENC ';
+pt(36).paramname = 'P10';
 pt(36).class     = 'scalar';
 pt(36).nrows     = 1;
 pt(36).ncols     = 1;
@@ -572,14 +572,14 @@ pt(36).subsource = 'SS_DOUBLE';
 pt(36).ndims     = '2';
 pt(36).size      = '[]';
 pt(36).isStruct  = false;
-pt(36).symbol     = 'FingerStrokeAssistance_P.Gain_Gain';
-pt(36).baseaddr   = '&FingerStrokeAssistance_P.Gain_Gain';
+pt(36).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P10';
+pt(36).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P10';
 pt(36).dtname     = 'real_T';
 
 
 
   
-pt(37).blockname = 'Robot/PCI 6221 ENC ';
+pt(37).blockname = 'Robot/PCI 6221 ENC 1';
 pt(37).paramname = 'P1';
 pt(37).class     = 'scalar';
 pt(37).nrows     = 1;
@@ -588,14 +588,14 @@ pt(37).subsource = 'SS_DOUBLE';
 pt(37).ndims     = '2';
 pt(37).size      = '[]';
 pt(37).isStruct  = false;
-pt(37).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P1';
-pt(37).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P1';
+pt(37).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P1';
+pt(37).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P1';
 pt(37).dtname     = 'real_T';
 
 
 
   
-pt(38).blockname = 'Robot/PCI 6221 ENC ';
+pt(38).blockname = 'Robot/PCI 6221 ENC 1';
 pt(38).paramname = 'P2';
 pt(38).class     = 'scalar';
 pt(38).nrows     = 1;
@@ -604,14 +604,14 @@ pt(38).subsource = 'SS_DOUBLE';
 pt(38).ndims     = '2';
 pt(38).size      = '[]';
 pt(38).isStruct  = false;
-pt(38).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P2';
-pt(38).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P2';
+pt(38).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P2';
+pt(38).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P2';
 pt(38).dtname     = 'real_T';
 
 
 
   
-pt(39).blockname = 'Robot/PCI 6221 ENC ';
+pt(39).blockname = 'Robot/PCI 6221 ENC 1';
 pt(39).paramname = 'P3';
 pt(39).class     = 'scalar';
 pt(39).nrows     = 1;
@@ -620,14 +620,14 @@ pt(39).subsource = 'SS_DOUBLE';
 pt(39).ndims     = '2';
 pt(39).size      = '[]';
 pt(39).isStruct  = false;
-pt(39).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P3';
-pt(39).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P3';
+pt(39).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P3';
+pt(39).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P3';
 pt(39).dtname     = 'real_T';
 
 
 
   
-pt(40).blockname = 'Robot/PCI 6221 ENC ';
+pt(40).blockname = 'Robot/PCI 6221 ENC 1';
 pt(40).paramname = 'P4';
 pt(40).class     = 'scalar';
 pt(40).nrows     = 1;
@@ -636,14 +636,14 @@ pt(40).subsource = 'SS_DOUBLE';
 pt(40).ndims     = '2';
 pt(40).size      = '[]';
 pt(40).isStruct  = false;
-pt(40).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P4';
-pt(40).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P4';
+pt(40).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P4';
+pt(40).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P4';
 pt(40).dtname     = 'real_T';
 
 
 
   
-pt(41).blockname = 'Robot/PCI 6221 ENC ';
+pt(41).blockname = 'Robot/PCI 6221 ENC 1';
 pt(41).paramname = 'P5';
 pt(41).class     = 'scalar';
 pt(41).nrows     = 1;
@@ -652,14 +652,14 @@ pt(41).subsource = 'SS_DOUBLE';
 pt(41).ndims     = '2';
 pt(41).size      = '[]';
 pt(41).isStruct  = false;
-pt(41).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P5';
-pt(41).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P5';
+pt(41).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P5';
+pt(41).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P5';
 pt(41).dtname     = 'real_T';
 
 
 
   
-pt(42).blockname = 'Robot/PCI 6221 ENC ';
+pt(42).blockname = 'Robot/PCI 6221 ENC 1';
 pt(42).paramname = 'P6';
 pt(42).class     = 'scalar';
 pt(42).nrows     = 1;
@@ -668,14 +668,14 @@ pt(42).subsource = 'SS_DOUBLE';
 pt(42).ndims     = '2';
 pt(42).size      = '[]';
 pt(42).isStruct  = false;
-pt(42).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P6';
-pt(42).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P6';
+pt(42).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P6';
+pt(42).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P6';
 pt(42).dtname     = 'real_T';
 
 
 
   
-pt(43).blockname = 'Robot/PCI 6221 ENC ';
+pt(43).blockname = 'Robot/PCI 6221 ENC 1';
 pt(43).paramname = 'P7';
 pt(43).class     = 'scalar';
 pt(43).nrows     = 1;
@@ -684,14 +684,14 @@ pt(43).subsource = 'SS_DOUBLE';
 pt(43).ndims     = '2';
 pt(43).size      = '[]';
 pt(43).isStruct  = false;
-pt(43).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P7';
-pt(43).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P7';
+pt(43).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P7';
+pt(43).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P7';
 pt(43).dtname     = 'real_T';
 
 
 
   
-pt(44).blockname = 'Robot/PCI 6221 ENC ';
+pt(44).blockname = 'Robot/PCI 6221 ENC 1';
 pt(44).paramname = 'P8';
 pt(44).class     = 'scalar';
 pt(44).nrows     = 1;
@@ -700,14 +700,14 @@ pt(44).subsource = 'SS_DOUBLE';
 pt(44).ndims     = '2';
 pt(44).size      = '[]';
 pt(44).isStruct  = false;
-pt(44).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P8';
-pt(44).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P8';
+pt(44).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P8';
+pt(44).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P8';
 pt(44).dtname     = 'real_T';
 
 
 
   
-pt(45).blockname = 'Robot/PCI 6221 ENC ';
+pt(45).blockname = 'Robot/PCI 6221 ENC 1';
 pt(45).paramname = 'P9';
 pt(45).class     = 'scalar';
 pt(45).nrows     = 1;
@@ -716,14 +716,14 @@ pt(45).subsource = 'SS_DOUBLE';
 pt(45).ndims     = '2';
 pt(45).size      = '[]';
 pt(45).isStruct  = false;
-pt(45).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P9';
-pt(45).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P9';
+pt(45).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P9';
+pt(45).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P9';
 pt(45).dtname     = 'real_T';
 
 
 
   
-pt(46).blockname = 'Robot/PCI 6221 ENC ';
+pt(46).blockname = 'Robot/PCI 6221 ENC 1';
 pt(46).paramname = 'P10';
 pt(46).class     = 'scalar';
 pt(46).nrows     = 1;
@@ -732,62 +732,62 @@ pt(46).subsource = 'SS_DOUBLE';
 pt(46).ndims     = '2';
 pt(46).size      = '[]';
 pt(46).isStruct  = false;
-pt(46).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC_P10';
-pt(46).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC_P10';
+pt(46).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P10';
+pt(46).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P10';
 pt(46).dtname     = 'real_T';
 
 
 
   
-pt(47).blockname = 'Robot/PCI 6221 ENC 1';
+pt(47).blockname = 'Robot/PCI-6221 AD1';
 pt(47).paramname = 'P1';
-pt(47).class     = 'scalar';
+pt(47).class     = 'vector';
 pt(47).nrows     = 1;
-pt(47).ncols     = 1;
+pt(47).ncols     = 8;
 pt(47).subsource = 'SS_DOUBLE';
 pt(47).ndims     = '2';
 pt(47).size      = '[]';
 pt(47).isStruct  = false;
-pt(47).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P1';
-pt(47).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P1';
+pt(47).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P1';
+pt(47).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P1[0]';
 pt(47).dtname     = 'real_T';
 
 
 
   
-pt(48).blockname = 'Robot/PCI 6221 ENC 1';
+pt(48).blockname = 'Robot/PCI-6221 AD1';
 pt(48).paramname = 'P2';
-pt(48).class     = 'scalar';
+pt(48).class     = 'vector';
 pt(48).nrows     = 1;
-pt(48).ncols     = 1;
+pt(48).ncols     = 8;
 pt(48).subsource = 'SS_DOUBLE';
 pt(48).ndims     = '2';
 pt(48).size      = '[]';
 pt(48).isStruct  = false;
-pt(48).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P2';
-pt(48).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P2';
+pt(48).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P2';
+pt(48).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P2[0]';
 pt(48).dtname     = 'real_T';
 
 
 
   
-pt(49).blockname = 'Robot/PCI 6221 ENC 1';
+pt(49).blockname = 'Robot/PCI-6221 AD1';
 pt(49).paramname = 'P3';
-pt(49).class     = 'scalar';
+pt(49).class     = 'vector';
 pt(49).nrows     = 1;
-pt(49).ncols     = 1;
+pt(49).ncols     = 8;
 pt(49).subsource = 'SS_DOUBLE';
 pt(49).ndims     = '2';
 pt(49).size      = '[]';
 pt(49).isStruct  = false;
-pt(49).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P3';
-pt(49).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P3';
+pt(49).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P3';
+pt(49).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P3[0]';
 pt(49).dtname     = 'real_T';
 
 
 
   
-pt(50).blockname = 'Robot/PCI 6221 ENC 1';
+pt(50).blockname = 'Robot/PCI-6221 AD1';
 pt(50).paramname = 'P4';
 pt(50).class     = 'scalar';
 pt(50).nrows     = 1;
@@ -796,14 +796,14 @@ pt(50).subsource = 'SS_DOUBLE';
 pt(50).ndims     = '2';
 pt(50).size      = '[]';
 pt(50).isStruct  = false;
-pt(50).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P4';
-pt(50).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P4';
+pt(50).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P4';
+pt(50).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P4';
 pt(50).dtname     = 'real_T';
 
 
 
   
-pt(51).blockname = 'Robot/PCI 6221 ENC 1';
+pt(51).blockname = 'Robot/PCI-6221 AD1';
 pt(51).paramname = 'P5';
 pt(51).class     = 'scalar';
 pt(51).nrows     = 1;
@@ -812,14 +812,14 @@ pt(51).subsource = 'SS_DOUBLE';
 pt(51).ndims     = '2';
 pt(51).size      = '[]';
 pt(51).isStruct  = false;
-pt(51).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P5';
-pt(51).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P5';
+pt(51).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P5';
+pt(51).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P5';
 pt(51).dtname     = 'real_T';
 
 
 
   
-pt(52).blockname = 'Robot/PCI 6221 ENC 1';
+pt(52).blockname = 'Robot/PCI-6221 AD1';
 pt(52).paramname = 'P6';
 pt(52).class     = 'scalar';
 pt(52).nrows     = 1;
@@ -828,14 +828,14 @@ pt(52).subsource = 'SS_DOUBLE';
 pt(52).ndims     = '2';
 pt(52).size      = '[]';
 pt(52).isStruct  = false;
-pt(52).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P6';
-pt(52).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P6';
+pt(52).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P6';
+pt(52).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P6';
 pt(52).dtname     = 'real_T';
 
 
 
   
-pt(53).blockname = 'Robot/PCI 6221 ENC 1';
+pt(53).blockname = 'Robot/PCI-6221 AD1';
 pt(53).paramname = 'P7';
 pt(53).class     = 'scalar';
 pt(53).nrows     = 1;
@@ -844,111 +844,111 @@ pt(53).subsource = 'SS_DOUBLE';
 pt(53).ndims     = '2';
 pt(53).size      = '[]';
 pt(53).isStruct  = false;
-pt(53).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P7';
-pt(53).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P7';
+pt(53).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P7';
+pt(53).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P7';
 pt(53).dtname     = 'real_T';
 
 
 
   
-pt(54).blockname = 'Robot/PCI 6221 ENC 1';
-pt(54).paramname = 'P8';
-pt(54).class     = 'scalar';
+pt(54).blockname = 'Robot/PCI-6221 DA';
+pt(54).paramname = 'P1';
+pt(54).class     = 'vector';
 pt(54).nrows     = 1;
-pt(54).ncols     = 1;
+pt(54).ncols     = 2;
 pt(54).subsource = 'SS_DOUBLE';
 pt(54).ndims     = '2';
 pt(54).size      = '[]';
 pt(54).isStruct  = false;
-pt(54).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P8';
-pt(54).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P8';
+pt(54).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P1';
+pt(54).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P1[0]';
 pt(54).dtname     = 'real_T';
 
 
 
   
-pt(55).blockname = 'Robot/PCI 6221 ENC 1';
-pt(55).paramname = 'P9';
-pt(55).class     = 'scalar';
+pt(55).blockname = 'Robot/PCI-6221 DA';
+pt(55).paramname = 'P2';
+pt(55).class     = 'vector';
 pt(55).nrows     = 1;
-pt(55).ncols     = 1;
+pt(55).ncols     = 2;
 pt(55).subsource = 'SS_DOUBLE';
 pt(55).ndims     = '2';
 pt(55).size      = '[]';
 pt(55).isStruct  = false;
-pt(55).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P9';
-pt(55).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P9';
+pt(55).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P2';
+pt(55).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P2[0]';
 pt(55).dtname     = 'real_T';
 
 
 
   
-pt(56).blockname = 'Robot/PCI 6221 ENC 1';
-pt(56).paramname = 'P10';
-pt(56).class     = 'scalar';
+pt(56).blockname = 'Robot/PCI-6221 DA';
+pt(56).paramname = 'P3';
+pt(56).class     = 'vector';
 pt(56).nrows     = 1;
-pt(56).ncols     = 1;
+pt(56).ncols     = 2;
 pt(56).subsource = 'SS_DOUBLE';
 pt(56).ndims     = '2';
 pt(56).size      = '[]';
 pt(56).isStruct  = false;
-pt(56).symbol     = 'FingerStrokeAssistance_P.PCI6221ENC1_P10';
-pt(56).baseaddr   = '&FingerStrokeAssistance_P.PCI6221ENC1_P10';
+pt(56).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P3';
+pt(56).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P3[0]';
 pt(56).dtname     = 'real_T';
 
 
 
   
-pt(57).blockname = 'Robot/PCI-6221 AD1';
-pt(57).paramname = 'P1';
+pt(57).blockname = 'Robot/PCI-6221 DA';
+pt(57).paramname = 'P4';
 pt(57).class     = 'vector';
 pt(57).nrows     = 1;
-pt(57).ncols     = 8;
+pt(57).ncols     = 2;
 pt(57).subsource = 'SS_DOUBLE';
 pt(57).ndims     = '2';
 pt(57).size      = '[]';
 pt(57).isStruct  = false;
-pt(57).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P1';
-pt(57).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P1[0]';
+pt(57).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P4';
+pt(57).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P4[0]';
 pt(57).dtname     = 'real_T';
 
 
 
   
-pt(58).blockname = 'Robot/PCI-6221 AD1';
-pt(58).paramname = 'P2';
-pt(58).class     = 'vector';
+pt(58).blockname = 'Robot/PCI-6221 DA';
+pt(58).paramname = 'P5';
+pt(58).class     = 'scalar';
 pt(58).nrows     = 1;
-pt(58).ncols     = 8;
+pt(58).ncols     = 1;
 pt(58).subsource = 'SS_DOUBLE';
 pt(58).ndims     = '2';
 pt(58).size      = '[]';
 pt(58).isStruct  = false;
-pt(58).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P2';
-pt(58).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P2[0]';
+pt(58).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P5';
+pt(58).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P5';
 pt(58).dtname     = 'real_T';
 
 
 
   
-pt(59).blockname = 'Robot/PCI-6221 AD1';
-pt(59).paramname = 'P3';
-pt(59).class     = 'vector';
+pt(59).blockname = 'Robot/PCI-6221 DA';
+pt(59).paramname = 'P6';
+pt(59).class     = 'scalar';
 pt(59).nrows     = 1;
-pt(59).ncols     = 8;
+pt(59).ncols     = 1;
 pt(59).subsource = 'SS_DOUBLE';
 pt(59).ndims     = '2';
 pt(59).size      = '[]';
 pt(59).isStruct  = false;
-pt(59).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P3';
-pt(59).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P3[0]';
+pt(59).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P6';
+pt(59).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P6';
 pt(59).dtname     = 'real_T';
 
 
 
   
-pt(60).blockname = 'Robot/PCI-6221 AD1';
-pt(60).paramname = 'P4';
+pt(60).blockname = 'Robot/PCI-6221 DA';
+pt(60).paramname = 'P7';
 pt(60).class     = 'scalar';
 pt(60).nrows     = 1;
 pt(60).ncols     = 1;
@@ -956,15 +956,15 @@ pt(60).subsource = 'SS_DOUBLE';
 pt(60).ndims     = '2';
 pt(60).size      = '[]';
 pt(60).isStruct  = false;
-pt(60).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P4';
-pt(60).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P4';
+pt(60).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P7';
+pt(60).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P7';
 pt(60).dtname     = 'real_T';
 
 
 
   
-pt(61).blockname = 'Robot/PCI-6221 AD1';
-pt(61).paramname = 'P5';
+pt(61).blockname = 'Robot/Unit Delay';
+pt(61).paramname = 'InitialCondition';
 pt(61).class     = 'scalar';
 pt(61).nrows     = 1;
 pt(61).ncols     = 1;
@@ -972,15 +972,15 @@ pt(61).subsource = 'SS_DOUBLE';
 pt(61).ndims     = '2';
 pt(61).size      = '[]';
 pt(61).isStruct  = false;
-pt(61).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P5';
-pt(61).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P5';
+pt(61).symbol     = 'FingerStrokeAssistance_P.UnitDelay_InitialCondition_e';
+pt(61).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay_InitialCondition_e';
 pt(61).dtname     = 'real_T';
 
 
 
   
-pt(62).blockname = 'Robot/PCI-6221 AD1';
-pt(62).paramname = 'P6';
+pt(62).blockname = 'Subsystem/Detect Change';
+pt(62).paramname = 'vinit';
 pt(62).class     = 'scalar';
 pt(62).nrows     = 1;
 pt(62).ncols     = 1;
@@ -988,15 +988,15 @@ pt(62).subsource = 'SS_DOUBLE';
 pt(62).ndims     = '2';
 pt(62).size      = '[]';
 pt(62).isStruct  = false;
-pt(62).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P6';
-pt(62).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P6';
+pt(62).symbol     = 'FingerStrokeAssistance_P.DetectChange_vinit';
+pt(62).baseaddr   = '&FingerStrokeAssistance_P.DetectChange_vinit';
 pt(62).dtname     = 'real_T';
 
 
 
   
-pt(63).blockname = 'Robot/PCI-6221 AD1';
-pt(63).paramname = 'P7';
+pt(63).blockname = 'Subsystem/Discrete-Time Integrator';
+pt(63).paramname = 'gainval';
 pt(63).class     = 'scalar';
 pt(63).nrows     = 1;
 pt(63).ncols     = 1;
@@ -1004,79 +1004,79 @@ pt(63).subsource = 'SS_DOUBLE';
 pt(63).ndims     = '2';
 pt(63).size      = '[]';
 pt(63).isStruct  = false;
-pt(63).symbol     = 'FingerStrokeAssistance_P.PCI6221AD1_P7';
-pt(63).baseaddr   = '&FingerStrokeAssistance_P.PCI6221AD1_P7';
+pt(63).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_gainval';
+pt(63).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_gainval';
 pt(63).dtname     = 'real_T';
 
 
 
   
-pt(64).blockname = 'Robot/PCI-6221 DA';
-pt(64).paramname = 'P1';
-pt(64).class     = 'vector';
+pt(64).blockname = 'Subsystem/Discrete-Time Integrator';
+pt(64).paramname = 'InitialCondition';
+pt(64).class     = 'scalar';
 pt(64).nrows     = 1;
-pt(64).ncols     = 2;
+pt(64).ncols     = 1;
 pt(64).subsource = 'SS_DOUBLE';
 pt(64).ndims     = '2';
 pt(64).size      = '[]';
 pt(64).isStruct  = false;
-pt(64).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P1';
-pt(64).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P1[0]';
+pt(64).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_IC';
+pt(64).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_IC';
 pt(64).dtname     = 'real_T';
 
 
 
   
-pt(65).blockname = 'Robot/PCI-6221 DA';
-pt(65).paramname = 'P2';
-pt(65).class     = 'vector';
+pt(65).blockname = 'Subsystem/Unit Delay1';
+pt(65).paramname = 'InitialCondition';
+pt(65).class     = 'scalar';
 pt(65).nrows     = 1;
-pt(65).ncols     = 2;
+pt(65).ncols     = 1;
 pt(65).subsource = 'SS_DOUBLE';
 pt(65).ndims     = '2';
 pt(65).size      = '[]';
 pt(65).isStruct  = false;
-pt(65).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P2';
-pt(65).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P2[0]';
+pt(65).symbol     = 'FingerStrokeAssistance_P.UnitDelay1_InitialCondition_o';
+pt(65).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay1_InitialCondition_o';
 pt(65).dtname     = 'real_T';
 
 
 
   
-pt(66).blockname = 'Robot/PCI-6221 DA';
-pt(66).paramname = 'P3';
-pt(66).class     = 'vector';
+pt(66).blockname = 'Subsystem/Unit Delay2';
+pt(66).paramname = 'InitialCondition';
+pt(66).class     = 'scalar';
 pt(66).nrows     = 1;
-pt(66).ncols     = 2;
+pt(66).ncols     = 1;
 pt(66).subsource = 'SS_DOUBLE';
 pt(66).ndims     = '2';
 pt(66).size      = '[]';
 pt(66).isStruct  = false;
-pt(66).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P3';
-pt(66).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P3[0]';
+pt(66).symbol     = 'FingerStrokeAssistance_P.UnitDelay2_InitialCondition';
+pt(66).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay2_InitialCondition';
 pt(66).dtname     = 'real_T';
 
 
 
   
-pt(67).blockname = 'Robot/PCI-6221 DA';
-pt(67).paramname = 'P4';
-pt(67).class     = 'vector';
+pt(67).blockname = 'Subsystem1/Detect Change';
+pt(67).paramname = 'vinit';
+pt(67).class     = 'scalar';
 pt(67).nrows     = 1;
-pt(67).ncols     = 2;
+pt(67).ncols     = 1;
 pt(67).subsource = 'SS_DOUBLE';
 pt(67).ndims     = '2';
 pt(67).size      = '[]';
 pt(67).isStruct  = false;
-pt(67).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P4';
-pt(67).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P4[0]';
+pt(67).symbol     = 'FingerStrokeAssistance_P.DetectChange_vinit_d';
+pt(67).baseaddr   = '&FingerStrokeAssistance_P.DetectChange_vinit_d';
 pt(67).dtname     = 'real_T';
 
 
 
   
-pt(68).blockname = 'Robot/PCI-6221 DA';
-pt(68).paramname = 'P5';
+pt(68).blockname = 'Subsystem1/Discrete-Time Integrator';
+pt(68).paramname = 'gainval';
 pt(68).class     = 'scalar';
 pt(68).nrows     = 1;
 pt(68).ncols     = 1;
@@ -1084,15 +1084,15 @@ pt(68).subsource = 'SS_DOUBLE';
 pt(68).ndims     = '2';
 pt(68).size      = '[]';
 pt(68).isStruct  = false;
-pt(68).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P5';
-pt(68).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P5';
+pt(68).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_gainva_b';
+pt(68).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_gainva_b';
 pt(68).dtname     = 'real_T';
 
 
 
   
-pt(69).blockname = 'Robot/PCI-6221 DA';
-pt(69).paramname = 'P6';
+pt(69).blockname = 'Subsystem1/Discrete-Time Integrator';
+pt(69).paramname = 'InitialCondition';
 pt(69).class     = 'scalar';
 pt(69).nrows     = 1;
 pt(69).ncols     = 1;
@@ -1100,15 +1100,15 @@ pt(69).subsource = 'SS_DOUBLE';
 pt(69).ndims     = '2';
 pt(69).size      = '[]';
 pt(69).isStruct  = false;
-pt(69).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P6';
-pt(69).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P6';
+pt(69).symbol     = 'FingerStrokeAssistance_P.DiscreteTimeIntegrator_IC_l';
+pt(69).baseaddr   = '&FingerStrokeAssistance_P.DiscreteTimeIntegrator_IC_l';
 pt(69).dtname     = 'real_T';
 
 
 
   
-pt(70).blockname = 'Robot/PCI-6221 DA';
-pt(70).paramname = 'P7';
+pt(70).blockname = 'Subsystem1/Unit Delay1';
+pt(70).paramname = 'InitialCondition';
 pt(70).class     = 'scalar';
 pt(70).nrows     = 1;
 pt(70).ncols     = 1;
@@ -1116,14 +1116,14 @@ pt(70).subsource = 'SS_DOUBLE';
 pt(70).ndims     = '2';
 pt(70).size      = '[]';
 pt(70).isStruct  = false;
-pt(70).symbol     = 'FingerStrokeAssistance_P.PCI6221DA_P7';
-pt(70).baseaddr   = '&FingerStrokeAssistance_P.PCI6221DA_P7';
+pt(70).symbol     = 'FingerStrokeAssistance_P.UnitDelay1_InitialCondition_oy';
+pt(70).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay1_InitialCondition_oy';
 pt(70).dtname     = 'real_T';
 
 
 
   
-pt(71).blockname = 'Robot/Unit Delay';
+pt(71).blockname = 'Subsystem1/Unit Delay2';
 pt(71).paramname = 'InitialCondition';
 pt(71).class     = 'scalar';
 pt(71).nrows     = 1;
@@ -1132,8 +1132,8 @@ pt(71).subsource = 'SS_DOUBLE';
 pt(71).ndims     = '2';
 pt(71).size      = '[]';
 pt(71).isStruct  = false;
-pt(71).symbol     = 'FingerStrokeAssistance_P.UnitDelay_InitialCondition_e';
-pt(71).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay_InitialCondition_e';
+pt(71).symbol     = 'FingerStrokeAssistance_P.UnitDelay2_InitialCondition_f';
+pt(71).baseaddr   = '&FingerStrokeAssistance_P.UnitDelay2_InitialCondition_f';
 pt(71).dtname     = 'real_T';
 
 
@@ -1523,8 +1523,8 @@ pt(95).dtname     = 'real_T';
 
 
   
-pt(96).blockname = 'signals/sigGravAccel';
-pt(96).paramname = 'Gain';
+pt(96).blockname = 'LL Controller/Discrete PID Controller/Filter';
+pt(96).paramname = 'gainval';
 pt(96).class     = 'scalar';
 pt(96).nrows     = 1;
 pt(96).ncols     = 1;
@@ -1532,15 +1532,15 @@ pt(96).subsource = 'SS_DOUBLE';
 pt(96).ndims     = '2';
 pt(96).size      = '[]';
 pt(96).isStruct  = false;
-pt(96).symbol     = 'FingerStrokeAssistance_P.sigGravAccel_Gain';
-pt(96).baseaddr   = '&FingerStrokeAssistance_P.sigGravAccel_Gain';
+pt(96).symbol     = 'FingerStrokeAssistance_P.Filter_gainval';
+pt(96).baseaddr   = '&FingerStrokeAssistance_P.Filter_gainval';
 pt(96).dtname     = 'real_T';
 
 
 
   
-pt(97).blockname = 'signals/sigTargetTime';
-pt(97).paramname = 'Gain';
+pt(97).blockname = 'LL Controller/Discrete PID Controller/Filter';
+pt(97).paramname = 'InitialCondition';
 pt(97).class     = 'scalar';
 pt(97).nrows     = 1;
 pt(97).ncols     = 1;
@@ -1548,14 +1548,14 @@ pt(97).subsource = 'SS_DOUBLE';
 pt(97).ndims     = '2';
 pt(97).size      = '[]';
 pt(97).isStruct  = false;
-pt(97).symbol     = 'FingerStrokeAssistance_P.sigTargetTime_Gain';
-pt(97).baseaddr   = '&FingerStrokeAssistance_P.sigTargetTime_Gain';
+pt(97).symbol     = 'FingerStrokeAssistance_P.Filter_IC';
+pt(97).baseaddr   = '&FingerStrokeAssistance_P.Filter_IC';
 pt(97).dtname     = 'real_T';
 
 
 
   
-pt(98).blockname = 'LL Controller/Discrete PID Controller/Filter';
+pt(98).blockname = 'LL Controller/Discrete PID Controller/Integrator';
 pt(98).paramname = 'gainval';
 pt(98).class     = 'scalar';
 pt(98).nrows     = 1;
@@ -1564,14 +1564,14 @@ pt(98).subsource = 'SS_DOUBLE';
 pt(98).ndims     = '2';
 pt(98).size      = '[]';
 pt(98).isStruct  = false;
-pt(98).symbol     = 'FingerStrokeAssistance_P.Filter_gainval';
-pt(98).baseaddr   = '&FingerStrokeAssistance_P.Filter_gainval';
+pt(98).symbol     = 'FingerStrokeAssistance_P.Integrator_gainval';
+pt(98).baseaddr   = '&FingerStrokeAssistance_P.Integrator_gainval';
 pt(98).dtname     = 'real_T';
 
 
 
   
-pt(99).blockname = 'LL Controller/Discrete PID Controller/Filter';
+pt(99).blockname = 'LL Controller/Discrete PID Controller/Integrator';
 pt(99).paramname = 'InitialCondition';
 pt(99).class     = 'scalar';
 pt(99).nrows     = 1;
@@ -1580,15 +1580,15 @@ pt(99).subsource = 'SS_DOUBLE';
 pt(99).ndims     = '2';
 pt(99).size      = '[]';
 pt(99).isStruct  = false;
-pt(99).symbol     = 'FingerStrokeAssistance_P.Filter_IC';
-pt(99).baseaddr   = '&FingerStrokeAssistance_P.Filter_IC';
+pt(99).symbol     = 'FingerStrokeAssistance_P.Integrator_IC';
+pt(99).baseaddr   = '&FingerStrokeAssistance_P.Integrator_IC';
 pt(99).dtname     = 'real_T';
 
 
 
   
-pt(100).blockname = 'LL Controller/Discrete PID Controller/Integrator';
-pt(100).paramname = 'gainval';
+pt(100).blockname = 'Robot/Discrete Derivative/TSamp';
+pt(100).paramname = 'WtEt';
 pt(100).class     = 'scalar';
 pt(100).nrows     = 1;
 pt(100).ncols     = 1;
@@ -1596,15 +1596,15 @@ pt(100).subsource = 'SS_DOUBLE';
 pt(100).ndims     = '2';
 pt(100).size      = '[]';
 pt(100).isStruct  = false;
-pt(100).symbol     = 'FingerStrokeAssistance_P.Integrator_gainval';
-pt(100).baseaddr   = '&FingerStrokeAssistance_P.Integrator_gainval';
+pt(100).symbol     = 'FingerStrokeAssistance_P.TSamp_WtEt';
+pt(100).baseaddr   = '&FingerStrokeAssistance_P.TSamp_WtEt';
 pt(100).dtname     = 'real_T';
 
 
 
   
-pt(101).blockname = 'LL Controller/Discrete PID Controller/Integrator';
-pt(101).paramname = 'InitialCondition';
+pt(101).blockname = 'Robot/Triggered Subsystem/Out1';
+pt(101).paramname = 'InitialOutput';
 pt(101).class     = 'scalar';
 pt(101).nrows     = 1;
 pt(101).ncols     = 1;
@@ -1612,15 +1612,15 @@ pt(101).subsource = 'SS_DOUBLE';
 pt(101).ndims     = '2';
 pt(101).size      = '[]';
 pt(101).isStruct  = false;
-pt(101).symbol     = 'FingerStrokeAssistance_P.Integrator_IC';
-pt(101).baseaddr   = '&FingerStrokeAssistance_P.Integrator_IC';
+pt(101).symbol     = 'FingerStrokeAssistance_P.Out1_Y0';
+pt(101).baseaddr   = '&FingerStrokeAssistance_P.Out1_Y0';
 pt(101).dtname     = 'real_T';
 
 
 
   
-pt(102).blockname = 'Robot/Discrete Derivative/TSamp';
-pt(102).paramname = 'WtEt';
+pt(102).blockname = 'Robot/filtered force output/Memory';
+pt(102).paramname = 'X0';
 pt(102).class     = 'scalar';
 pt(102).nrows     = 1;
 pt(102).ncols     = 1;
@@ -1628,15 +1628,15 @@ pt(102).subsource = 'SS_DOUBLE';
 pt(102).ndims     = '2';
 pt(102).size      = '[]';
 pt(102).isStruct  = false;
-pt(102).symbol     = 'FingerStrokeAssistance_P.TSamp_WtEt';
-pt(102).baseaddr   = '&FingerStrokeAssistance_P.TSamp_WtEt';
+pt(102).symbol     = 'FingerStrokeAssistance_P.Memory_X0';
+pt(102).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0';
 pt(102).dtname     = 'real_T';
 
 
 
   
-pt(103).blockname = 'Robot/Triggered Subsystem/Out1';
-pt(103).paramname = 'InitialOutput';
+pt(103).blockname = 'Robot/filtered force output/Memory1';
+pt(103).paramname = 'X0';
 pt(103).class     = 'scalar';
 pt(103).nrows     = 1;
 pt(103).ncols     = 1;
@@ -1644,15 +1644,15 @@ pt(103).subsource = 'SS_DOUBLE';
 pt(103).ndims     = '2';
 pt(103).size      = '[]';
 pt(103).isStruct  = false;
-pt(103).symbol     = 'FingerStrokeAssistance_P.Out1_Y0';
-pt(103).baseaddr   = '&FingerStrokeAssistance_P.Out1_Y0';
+pt(103).symbol     = 'FingerStrokeAssistance_P.Memory1_X0';
+pt(103).baseaddr   = '&FingerStrokeAssistance_P.Memory1_X0';
 pt(103).dtname     = 'real_T';
 
 
 
   
-pt(104).blockname = 'Robot/filtered force output/Memory';
-pt(104).paramname = 'X0';
+pt(104).blockname = 'Robot/gravDir/Constant';
+pt(104).paramname = 'Value';
 pt(104).class     = 'scalar';
 pt(104).nrows     = 1;
 pt(104).ncols     = 1;
@@ -1660,15 +1660,15 @@ pt(104).subsource = 'SS_DOUBLE';
 pt(104).ndims     = '2';
 pt(104).size      = '[]';
 pt(104).isStruct  = false;
-pt(104).symbol     = 'FingerStrokeAssistance_P.Memory_X0';
-pt(104).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0';
+pt(104).symbol     = 'FingerStrokeAssistance_P.Constant_Value';
+pt(104).baseaddr   = '&FingerStrokeAssistance_P.Constant_Value';
 pt(104).dtname     = 'real_T';
 
 
 
   
-pt(105).blockname = 'Robot/filtered force output/Memory1';
-pt(105).paramname = 'X0';
+pt(105).blockname = 'Robot/gravDir/gain';
+pt(105).paramname = 'Gain';
 pt(105).class     = 'scalar';
 pt(105).nrows     = 1;
 pt(105).ncols     = 1;
@@ -1676,46 +1676,46 @@ pt(105).subsource = 'SS_DOUBLE';
 pt(105).ndims     = '2';
 pt(105).size      = '[]';
 pt(105).isStruct  = false;
-pt(105).symbol     = 'FingerStrokeAssistance_P.Memory1_X0';
-pt(105).baseaddr   = '&FingerStrokeAssistance_P.Memory1_X0';
+pt(105).symbol     = 'FingerStrokeAssistance_P.gain_Gain';
+pt(105).baseaddr   = '&FingerStrokeAssistance_P.gain_Gain';
 pt(105).dtname     = 'real_T';
 
 
 
   
-pt(106).blockname = 'Robot/gravDir/Constant';
-pt(106).paramname = 'Value';
-pt(106).class     = 'scalar';
+pt(106).blockname = 'parameters/gain transition/Memory';
+pt(106).paramname = 'X0';
+pt(106).class     = 'vector';
 pt(106).nrows     = 1;
-pt(106).ncols     = 1;
+pt(106).ncols     = 4;
 pt(106).subsource = 'SS_DOUBLE';
 pt(106).ndims     = '2';
 pt(106).size      = '[]';
 pt(106).isStruct  = false;
-pt(106).symbol     = 'FingerStrokeAssistance_P.Constant_Value';
-pt(106).baseaddr   = '&FingerStrokeAssistance_P.Constant_Value';
+pt(106).symbol     = 'FingerStrokeAssistance_P.Memory_X0_g';
+pt(106).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_g[0]';
 pt(106).dtname     = 'real_T';
 
 
 
   
-pt(107).blockname = 'Robot/gravDir/gain';
-pt(107).paramname = 'Gain';
-pt(107).class     = 'scalar';
+pt(107).blockname = 'parameters/gain transition1/Memory';
+pt(107).paramname = 'X0';
+pt(107).class     = 'vector';
 pt(107).nrows     = 1;
-pt(107).ncols     = 1;
+pt(107).ncols     = 4;
 pt(107).subsource = 'SS_DOUBLE';
 pt(107).ndims     = '2';
 pt(107).size      = '[]';
 pt(107).isStruct  = false;
-pt(107).symbol     = 'FingerStrokeAssistance_P.gain_Gain';
-pt(107).baseaddr   = '&FingerStrokeAssistance_P.gain_Gain';
+pt(107).symbol     = 'FingerStrokeAssistance_P.Memory_X0_a';
+pt(107).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_a[0]';
 pt(107).dtname     = 'real_T';
 
 
 
   
-pt(108).blockname = 'parameters/gain transition/Memory';
+pt(108).blockname = 'parameters/gain transition2/Memory';
 pt(108).paramname = 'X0';
 pt(108).class     = 'vector';
 pt(108).nrows     = 1;
@@ -1724,14 +1724,14 @@ pt(108).subsource = 'SS_DOUBLE';
 pt(108).ndims     = '2';
 pt(108).size      = '[]';
 pt(108).isStruct  = false;
-pt(108).symbol     = 'FingerStrokeAssistance_P.Memory_X0_g';
-pt(108).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_g[0]';
+pt(108).symbol     = 'FingerStrokeAssistance_P.Memory_X0_b';
+pt(108).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_b[0]';
 pt(108).dtname     = 'real_T';
 
 
 
   
-pt(109).blockname = 'parameters/gain transition1/Memory';
+pt(109).blockname = 'parameters/gain transition3/Memory';
 pt(109).paramname = 'X0';
 pt(109).class     = 'vector';
 pt(109).nrows     = 1;
@@ -1740,14 +1740,14 @@ pt(109).subsource = 'SS_DOUBLE';
 pt(109).ndims     = '2';
 pt(109).size      = '[]';
 pt(109).isStruct  = false;
-pt(109).symbol     = 'FingerStrokeAssistance_P.Memory_X0_a';
-pt(109).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_a[0]';
+pt(109).symbol     = 'FingerStrokeAssistance_P.Memory_X0_g0';
+pt(109).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_g0[0]';
 pt(109).dtname     = 'real_T';
 
 
 
   
-pt(110).blockname = 'parameters/gain transition2/Memory';
+pt(110).blockname = 'parameters/gain transition4/Memory';
 pt(110).paramname = 'X0';
 pt(110).class     = 'vector';
 pt(110).nrows     = 1;
@@ -1756,14 +1756,14 @@ pt(110).subsource = 'SS_DOUBLE';
 pt(110).ndims     = '2';
 pt(110).size      = '[]';
 pt(110).isStruct  = false;
-pt(110).symbol     = 'FingerStrokeAssistance_P.Memory_X0_b';
-pt(110).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_b[0]';
+pt(110).symbol     = 'FingerStrokeAssistance_P.Memory_X0_bp';
+pt(110).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_bp[0]';
 pt(110).dtname     = 'real_T';
 
 
 
   
-pt(111).blockname = 'parameters/gain transition3/Memory';
+pt(111).blockname = 'parameters/gain transition5/Memory';
 pt(111).paramname = 'X0';
 pt(111).class     = 'vector';
 pt(111).nrows     = 1;
@@ -1772,123 +1772,91 @@ pt(111).subsource = 'SS_DOUBLE';
 pt(111).ndims     = '2';
 pt(111).size      = '[]';
 pt(111).isStruct  = false;
-pt(111).symbol     = 'FingerStrokeAssistance_P.Memory_X0_g0';
-pt(111).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_g0[0]';
+pt(111).symbol     = 'FingerStrokeAssistance_P.Memory_X0_e';
+pt(111).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_e[0]';
 pt(111).dtname     = 'real_T';
 
 
 
   
-pt(112).blockname = 'parameters/gain transition4/Memory';
-pt(112).paramname = 'X0';
-pt(112).class     = 'vector';
-pt(112).nrows     = 1;
-pt(112).ncols     = 4;
+pt(112).blockname = '';
+pt(112).paramname = 'Alow';
+pt(112).class     = 'col-mat';
+pt(112).nrows     = 2;
+pt(112).ncols     = 2;
 pt(112).subsource = 'SS_DOUBLE';
 pt(112).ndims     = '2';
 pt(112).size      = '[]';
 pt(112).isStruct  = false;
-pt(112).symbol     = 'FingerStrokeAssistance_P.Memory_X0_bp';
-pt(112).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_bp[0]';
+pt(112).symbol     = 'FingerStrokeAssistance_P.Alow';
+pt(112).baseaddr   = '&FingerStrokeAssistance_P.Alow[0]';
 pt(112).dtname     = 'real_T';
 
 
 
   
-pt(113).blockname = 'parameters/gain transition5/Memory';
-pt(113).paramname = 'X0';
+pt(113).blockname = '';
+pt(113).paramname = 'Blow';
 pt(113).class     = 'vector';
-pt(113).nrows     = 1;
-pt(113).ncols     = 4;
+pt(113).nrows     = 2;
+pt(113).ncols     = 1;
 pt(113).subsource = 'SS_DOUBLE';
 pt(113).ndims     = '2';
 pt(113).size      = '[]';
 pt(113).isStruct  = false;
-pt(113).symbol     = 'FingerStrokeAssistance_P.Memory_X0_e';
-pt(113).baseaddr   = '&FingerStrokeAssistance_P.Memory_X0_e[0]';
+pt(113).symbol     = 'FingerStrokeAssistance_P.Blow';
+pt(113).baseaddr   = '&FingerStrokeAssistance_P.Blow[0]';
 pt(113).dtname     = 'real_T';
 
 
 
   
 pt(114).blockname = '';
-pt(114).paramname = 'Alow';
-pt(114).class     = 'col-mat';
-pt(114).nrows     = 2;
+pt(114).paramname = 'Clow';
+pt(114).class     = 'vector';
+pt(114).nrows     = 1;
 pt(114).ncols     = 2;
 pt(114).subsource = 'SS_DOUBLE';
 pt(114).ndims     = '2';
 pt(114).size      = '[]';
 pt(114).isStruct  = false;
-pt(114).symbol     = 'FingerStrokeAssistance_P.Alow';
-pt(114).baseaddr   = '&FingerStrokeAssistance_P.Alow[0]';
+pt(114).symbol     = 'FingerStrokeAssistance_P.Clow';
+pt(114).baseaddr   = '&FingerStrokeAssistance_P.Clow[0]';
 pt(114).dtname     = 'real_T';
 
 
 
   
 pt(115).blockname = '';
-pt(115).paramname = 'Blow';
-pt(115).class     = 'vector';
-pt(115).nrows     = 2;
+pt(115).paramname = 'Dlow';
+pt(115).class     = 'scalar';
+pt(115).nrows     = 1;
 pt(115).ncols     = 1;
 pt(115).subsource = 'SS_DOUBLE';
 pt(115).ndims     = '2';
 pt(115).size      = '[]';
 pt(115).isStruct  = false;
-pt(115).symbol     = 'FingerStrokeAssistance_P.Blow';
-pt(115).baseaddr   = '&FingerStrokeAssistance_P.Blow[0]';
+pt(115).symbol     = 'FingerStrokeAssistance_P.Dlow';
+pt(115).baseaddr   = '&FingerStrokeAssistance_P.Dlow';
 pt(115).dtname     = 'real_T';
 
 
 
   
 pt(116).blockname = '';
-pt(116).paramname = 'Clow';
+pt(116).paramname = 'x0low';
 pt(116).class     = 'vector';
-pt(116).nrows     = 1;
-pt(116).ncols     = 2;
+pt(116).nrows     = 2;
+pt(116).ncols     = 1;
 pt(116).subsource = 'SS_DOUBLE';
 pt(116).ndims     = '2';
 pt(116).size      = '[]';
 pt(116).isStruct  = false;
-pt(116).symbol     = 'FingerStrokeAssistance_P.Clow';
-pt(116).baseaddr   = '&FingerStrokeAssistance_P.Clow[0]';
+pt(116).symbol     = 'FingerStrokeAssistance_P.x0low';
+pt(116).baseaddr   = '&FingerStrokeAssistance_P.x0low[0]';
 pt(116).dtname     = 'real_T';
 
 
-
-  
-pt(117).blockname = '';
-pt(117).paramname = 'Dlow';
-pt(117).class     = 'scalar';
-pt(117).nrows     = 1;
-pt(117).ncols     = 1;
-pt(117).subsource = 'SS_DOUBLE';
-pt(117).ndims     = '2';
-pt(117).size      = '[]';
-pt(117).isStruct  = false;
-pt(117).symbol     = 'FingerStrokeAssistance_P.Dlow';
-pt(117).baseaddr   = '&FingerStrokeAssistance_P.Dlow';
-pt(117).dtname     = 'real_T';
-
-
-
-  
-pt(118).blockname = '';
-pt(118).paramname = 'x0low';
-pt(118).class     = 'vector';
-pt(118).nrows     = 2;
-pt(118).ncols     = 1;
-pt(118).subsource = 'SS_DOUBLE';
-pt(118).ndims     = '2';
-pt(118).size      = '[]';
-pt(118).isStruct  = false;
-pt(118).symbol     = 'FingerStrokeAssistance_P.x0low';
-pt(118).baseaddr   = '&FingerStrokeAssistance_P.x0low[0]';
-pt(118).dtname     = 'real_T';
-
-
 function len = getlenPT
-len = 118;
+len = 116;
 
