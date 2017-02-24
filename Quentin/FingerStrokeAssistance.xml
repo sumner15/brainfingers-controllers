@@ -106,6 +106,18 @@ Integrator</blkName>
 
  
             <block>
+            <blkName>Damping</blkName>
+            <xpcblkName>HL Controller/Damping</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Damping</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
             <blkName>Gain1</blkName>
             <xpcblkName>HL Controller/Gain1</xpcblkName>
             <SLblockPath>FingerStrokeAssistance/HL Controller/Gain1</SLblockPath>
@@ -152,9 +164,9 @@ Integrator</blkName>
 
  
             <block>
-            <blkName>Discrete Filter</blkName>
-            <xpcblkName>HL Controller/Discrete Filter</xpcblkName>
-            <SLblockPath>FingerStrokeAssistance/HL Controller/Discrete Filter</SLblockPath>
+            <blkName>Discrete Filter1</blkName>
+            <xpcblkName>HL Controller/Discrete Filter1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/HL Controller/Discrete Filter1</SLblockPath>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
           <paramName>Numerator</paramName>
@@ -203,6 +215,23 @@ Integrator</blkName>
               <sigName>Discrete-Time
 Integrator</sigName>
               <xpcsigName>HL Controller/Discrete-Time Integrator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Damping</sigName>
+              <xpcsigName>HL Controller/Damping</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -269,8 +298,8 @@ Integrator</sigName>
               
        
               <signal>
-              <sigName>Discrete Filter</sigName>
-              <xpcsigName>HL Controller/Discrete Filter</xpcsigName>
+              <sigName>Discrete Filter1</sigName>
+              <xpcsigName>HL Controller/Discrete Filter1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -280,6 +309,49 @@ Integrator</sigName>
     <Name>LL Controller</Name>
     <xPCName>FingerStrokeAssistance/LL Controller</xPCName>
         <SubSystem>
+    <Name>Compare
+To Constant</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/Compare To Constant</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>LL Controller/Compare To Constant/Constant</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Compare To Constant/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Compare</sigName>
+              <xpcsigName>LL Controller/Compare To Constant/Compare</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>Discrete PID Controller</Name>
     <xPCName>FingerStrokeAssistance/LL Controller/Discrete PID Controller</xPCName>
     
@@ -600,6 +672,19 @@ Dynamic1</Name>
     
  
             <block>
+            <blkName>Compare
+To Constant</blkName>
+            <xpcblkName>LL Controller/Compare To Constant</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Compare To Constant</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
             <blkName>Discrete PID Controller</blkName>
             <xpcblkName>LL Controller/Discrete PID Controller</xpcblkName>
             <SLblockPath>FingerStrokeAssistance/LL Controller/Discrete PID Controller</SLblockPath>
@@ -626,6 +711,89 @@ Dynamic1</Name>
           </block>
 
 
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>LL Controller/Constant</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>LL Controller/Gain</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Delay</blkName>
+            <xpcblkName>LL Controller/Delay</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>DelayLength</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>LL Controller/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>LL Controller/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
 
 
     
@@ -642,6 +810,40 @@ Dynamic1</Name>
               <xpcsigName>LL Controller/Sum</xpcsigName>
               <sigWidth>2</sigWidth>
               <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>LL Controller/Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Delay</sigName>
+              <xpcsigName>LL Controller/Delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
 
     </SubSystem>

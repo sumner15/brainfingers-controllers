@@ -3,9 +3,9 @@
  *
  * Code generation for model "FingerStrokeAssistance".
  *
- * Model version              : 1.1036
+ * Model version              : 1.1046
  * Simulink Coder version : 8.10 (R2016a) 10-Feb-2016
- * C source code generated on : Wed Feb 22 11:31:57 2017
+ * C source code generated on : Thu Feb 23 15:35:38 2017
  *
  * Target selection: slrt.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -21,63 +21,69 @@
 P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
   /*  Variable: Alow
    * Referenced by:
-   *   '<S20>/Low Pass 100 Hz'
-   *   '<S20>/Low Pass 100 Hz1'
+   *   '<S21>/Low Pass 100 Hz'
+   *   '<S21>/Low Pass 100 Hz1'
    */
   { 0.97351956087880709, 0.018600534405527915, -0.018600534405527919,
     0.9998246889024921 },
 
   /*  Variable: Blow
    * Referenced by:
-   *   '<S20>/Low Pass 100 Hz'
-   *   '<S20>/Low Pass 100 Hz1'
+   *   '<S21>/Low Pass 100 Hz'
+   *   '<S21>/Low Pass 100 Hz1'
    */
   { 0.02630512802368495, 0.00024792733173036719 },
 
   /*  Variable: Clow
    * Referenced by:
-   *   '<S20>/Low Pass 100 Hz'
-   *   '<S20>/Low Pass 100 Hz1'
+   *   '<S21>/Low Pass 100 Hz'
+   *   '<S21>/Low Pass 100 Hz1'
    */
   { 0.0065762820059212393, 0.707044799353615 },
   8.7655548754014668E-5,               /* Variable: Dlow
                                         * Referenced by:
-                                        *   '<S20>/Low Pass 100 Hz'
-                                        *   '<S20>/Low Pass 100 Hz1'
+                                        *   '<S21>/Low Pass 100 Hz'
+                                        *   '<S21>/Low Pass 100 Hz1'
                                         */
 
   /*  Variable: x0low
    * Referenced by:
-   *   '<S20>/Low Pass 100 Hz'
-   *   '<S20>/Low Pass 100 Hz1'
+   *   '<S21>/Low Pass 100 Hz'
+   *   '<S21>/Low Pass 100 Hz1'
    */
   { -0.0, 0.0 },
-  0.7,                                 /* Mask Parameter: DiscretePIDController_D
-                                        * Referenced by: '<S11>/Derivative Gain'
+  1.0,                                 /* Mask Parameter: DiscretePIDController_D
+                                        * Referenced by: '<S12>/Derivative Gain'
                                         */
   0.0,                                 /* Mask Parameter: DiscretePIDController_I
-                                        * Referenced by: '<S11>/Integral Gain'
+                                        * Referenced by: '<S12>/Integral Gain'
                                         */
   0.0,                                 /* Mask Parameter: DiscreteDerivative_ICPrevScaled
-                                        * Referenced by: '<S13>/UD'
+                                        * Referenced by: '<S14>/UD'
                                         */
   100.0,                               /* Mask Parameter: DiscretePIDController_N
-                                        * Referenced by: '<S11>/Filter Coefficient'
+                                        * Referenced by: '<S12>/Filter Coefficient'
                                         */
   10.0,                                /* Mask Parameter: DiscretePIDController_P
-                                        * Referenced by: '<S11>/Proportional Gain'
+                                        * Referenced by: '<S12>/Proportional Gain'
+                                        */
+  4.0,                                 /* Mask Parameter: CompareToConstant_const
+                                        * Referenced by: '<S11>/Constant'
                                         */
   0.0,                                 /* Mask Parameter: DetectChange_vinit
-                                        * Referenced by: '<S26>/Delay Input1'
-                                        */
-  0.0,                                 /* Mask Parameter: DetectChange_vinit_d
-                                        * Referenced by: '<S27>/Delay Input1'
-                                        */
-  0.0,                                 /* Mask Parameter: DetectChange_vinit_dl
                                         * Referenced by: '<S10>/Delay Input1'
                                         */
+  0.0,                                 /* Mask Parameter: DetectChange_vinit_a
+                                        * Referenced by: '<S27>/Delay Input1'
+                                        */
+  0.0,                                 /* Mask Parameter: DetectChange_vinit_d
+                                        * Referenced by: '<S28>/Delay Input1'
+                                        */
+  0.0,                                 /* Expression: 0
+                                        * Referenced by: '<S2>/Constant'
+                                        */
   0.0,                                 /* Expression: [0]
-                                        * Referenced by: '<S15>/Out1'
+                                        * Referenced by: '<S16>/Out1'
                                         */
   0.1,                                 /* Expression: 0.1
                                         * Referenced by: '<Root>/Constant1'
@@ -85,13 +91,50 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
   -0.1,                                /* Expression: -0.1
                                         * Referenced by: '<Root>/Constant3'
                                         */
+  0.0,                                 /* Expression: 0
+                                        * Referenced by: '<S1>/Delay'
+                                        */
+
+  /*  Expression: [b_hp]
+   * Referenced by: '<S1>/Discrete Filter1'
+   */
+  { 0.99968593938935957, -0.99968593938935957 },
+
+  /*  Expression: [a_hp]
+   * Referenced by: '<S1>/Discrete Filter1'
+   */
+  { 1.0, -0.99937187877871914 },
+  0.0,                                 /* Expression: 0
+                                        * Referenced by: '<S1>/Discrete Filter1'
+                                        */
+  -1.0,                                /* Expression: -1
+                                        * Referenced by: '<S1>/Gain1'
+                                        */
+  1.0,                                 /* Expression: 1
+                                        * Referenced by: '<S1>/Damping'
+                                        */
+  0.0,                                 /* Expression: 0
+                                        * Referenced by: '<S1>/Delay1'
+                                        */
+  0.001,                               /* Computed Parameter: DiscreteTimeIntegrator_gainval
+                                        * Referenced by: '<S1>/Discrete-Time Integrator'
+                                        */
+  0.0,                                 /* Expression: 0
+                                        * Referenced by: '<S1>/Discrete-Time Integrator'
+                                        */
+  1.0,                                 /* Expression: 1
+                                        * Referenced by: '<S1>/Discrete-Time Integrator'
+                                        */
+  0.0,                                 /* Expression: 0
+                                        * Referenced by: '<S1>/Discrete-Time Integrator'
+                                        */
   1.0,                                 /* Expression: 1
                                         * Referenced by: '<Root>/Unit Delay'
                                         */
   0.0,                                 /* Expression: 0
                                         * Referenced by: '<S6>/Unit Delay2'
                                         */
-  0.001,                               /* Computed Parameter: DiscreteTimeIntegrator_gainval
+  0.001,                               /* Computed Parameter: DiscreteTimeIntegrator_gainva_n
                                         * Referenced by: '<S6>/Discrete-Time Integrator'
                                         */
   0.0,                                 /* Expression: 0
@@ -290,20 +333,26 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
   0.0,                                 /* Expression: 0
                                         * Referenced by: '<Root>/Unit Delay1'
                                         */
-  0.001,                               /* Computed Parameter: Filter_gainval
-                                        * Referenced by: '<S11>/Filter'
-                                        */
-  0.0,                                 /* Expression: InitialConditionForFilter
-                                        * Referenced by: '<S11>/Filter'
+  1000.0,                              /* Computed Parameter: TSamp_WtEt
+                                        * Referenced by: '<S14>/TSamp'
                                         */
   0.001,                               /* Computed Parameter: Integrator_gainval
-                                        * Referenced by: '<S11>/Integrator'
+                                        * Referenced by: '<S12>/Integrator'
                                         */
   0.0,                                 /* Expression: InitialConditionForIntegrator
-                                        * Referenced by: '<S11>/Integrator'
+                                        * Referenced by: '<S12>/Integrator'
                                         */
-  1000.0,                              /* Computed Parameter: TSamp_WtEt
-                                        * Referenced by: '<S13>/TSamp'
+  0.001,                               /* Computed Parameter: Filter_gainval
+                                        * Referenced by: '<S12>/Filter'
+                                        */
+  0.0,                                 /* Expression: InitialConditionForFilter
+                                        * Referenced by: '<S12>/Filter'
+                                        */
+  0.0,                                 /* Expression: 0
+                                        * Referenced by: '<S2>/Delay'
+                                        */
+  1.0,                                 /* Expression: 1
+                                        * Referenced by: '<S2>/Gain'
                                         */
   -1.0,                                /* Expression: -1
                                         * Referenced by: '<S5>/Gain1'
@@ -373,13 +422,13 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
                                         * Referenced by: '<S5>/PCI-6221 DA'
                                         */
   0.0,                                 /* Expression: 0
-                                        * Referenced by: '<S20>/Memory'
+                                        * Referenced by: '<S21>/Memory'
                                         */
   0.0,                                 /* Expression: 0
-                                        * Referenced by: '<S20>/Memory1'
+                                        * Referenced by: '<S21>/Memory1'
                                         */
   1.5,                                 /* Expression: 1.5
-                                        * Referenced by: '<S21>/Constant'
+                                        * Referenced by: '<S22>/Constant'
                                         */
 
   /*  Computed Parameter: PCI6221AD1_P1_Size
@@ -444,47 +493,13 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
                                         * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   0.172,                               /* Expression: .172
-                                        * Referenced by: '<S21>/gain'
+                                        * Referenced by: '<S22>/gain'
                                         */
   0.0,                                 /* Expression: 0
                                         * Referenced by: '<S6>/Unit Delay1'
                                         */
   0.0,                                 /* Expression: 0
                                         * Referenced by: '<S7>/Unit Delay1'
-                                        */
-  0.0,                                 /* Expression: 0
-                                        * Referenced by: '<S1>/Delay1'
-                                        */
-  0.0,                                 /* Expression: 0
-                                        * Referenced by: '<S1>/Delay'
-                                        */
-
-  /*  Expression: [b_hp]
-   * Referenced by: '<S1>/Discrete Filter'
-   */
-  { 0.99968593938935957, -0.99968593938935957 },
-
-  /*  Expression: [a_hp]
-   * Referenced by: '<S1>/Discrete Filter'
-   */
-  { 1.0, -0.99937187877871914 },
-  0.0,                                 /* Expression: 0
-                                        * Referenced by: '<S1>/Discrete Filter'
-                                        */
-  0.001,                               /* Computed Parameter: DiscreteTimeIntegrator_gainva_m
-                                        * Referenced by: '<S1>/Discrete-Time Integrator'
-                                        */
-  0.0,                                 /* Expression: 0
-                                        * Referenced by: '<S1>/Discrete-Time Integrator'
-                                        */
-  0.9,                                 /* Expression: 0.9
-                                        * Referenced by: '<S1>/Discrete-Time Integrator'
-                                        */
-  0.0,                                 /* Expression: 0
-                                        * Referenced by: '<S1>/Discrete-Time Integrator'
-                                        */
-  -1.0,                                /* Expression: -1
-                                        * Referenced by: '<S1>/Gain1'
                                         */
   1.0,                                 /* Expression: 1
                                         * Referenced by: '<S8>/parTrajMode'
@@ -506,7 +521,7 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
                                         */
 
   /*  Expression: zeros(1,4)
-   * Referenced by: '<S28>/Memory'
+   * Referenced by: '<S29>/Memory'
    */
   { 0.0, 0.0, 0.0, 0.0 },
   0.05,                                /* Expression: .05
@@ -517,7 +532,7 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
                                         */
 
   /*  Expression: zeros(1,4)
-   * Referenced by: '<S29>/Memory'
+   * Referenced by: '<S30>/Memory'
    */
   { 0.0, 0.0, 0.0, 0.0 },
   0.0,                                 /* Expression: 0
@@ -525,7 +540,7 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
                                         */
 
   /*  Expression: zeros(1,4)
-   * Referenced by: '<S30>/Memory'
+   * Referenced by: '<S31>/Memory'
    */
   { 0.0, 0.0, 0.0, 0.0 },
   0.0,                                 /* Expression: 0.0
@@ -533,7 +548,7 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
                                         */
 
   /*  Expression: zeros(1,4)
-   * Referenced by: '<S31>/Memory'
+   * Referenced by: '<S32>/Memory'
    */
   { 0.0, 0.0, 0.0, 0.0 },
   0.0,                                 /* Expression: 0.0
@@ -541,7 +556,7 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
                                         */
 
   /*  Expression: zeros(1,4)
-   * Referenced by: '<S32>/Memory'
+   * Referenced by: '<S33>/Memory'
    */
   { 0.0, 0.0, 0.0, 0.0 },
   0.0,                                 /* Expression: 0.0
@@ -549,7 +564,7 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
                                         */
 
   /*  Expression: zeros(1,4)
-   * Referenced by: '<S33>/Memory'
+   * Referenced by: '<S34>/Memory'
    */
   { 0.0, 0.0, 0.0, 0.0 },
   0.0,                                 /* Expression: 0.0
@@ -576,11 +591,14 @@ P_FingerStrokeAssistance_T FingerStrokeAssistance_P = {
   0.5,                                 /* Expression: .5
                                         * Referenced by: '<S8>/parWiggleAmp'
                                         */
+  1U,                                  /* Computed Parameter: Delay_DelayLength
+                                        * Referenced by: '<S1>/Delay'
+                                        */
   1U,                                  /* Computed Parameter: Delay1_DelayLength
                                         * Referenced by: '<S1>/Delay1'
                                         */
-  1U,                                  /* Computed Parameter: Delay_DelayLength
-                                        * Referenced by: '<S1>/Delay'
+  1U,                                  /* Computed Parameter: Delay_DelayLength_i
+                                        * Referenced by: '<S2>/Delay'
                                         */
   0                                    /* Computed Parameter: Constant_Value_i
                                         * Referenced by: '<S4>/Constant'
