@@ -3,9 +3,9 @@
  *
  * Code generation for model "FingerStrokeAssistance".
  *
- * Model version              : 1.1046
+ * Model version              : 1.1092
  * Simulink Coder version : 8.10 (R2016a) 10-Feb-2016
- * C source code generated on : Thu Feb 23 15:35:38 2017
+ * C source code generated on : Wed Mar 01 12:39:05 2017
  *
  * Target selection: slrt.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -807,16 +807,16 @@
 /* user code (top of export header file) */
 #include "xpcdatatypes.h"
 
-/* Block signals for system '<S17>/MATLAB Function' */
+/* Block signals for system '<S21>/MATLAB Function' */
 typedef struct {
-  real_T output1;                      /* '<S17>/MATLAB Function' */
-  real_T output2;                      /* '<S17>/MATLAB Function' */
+  real_T output1;                      /* '<S21>/MATLAB Function' */
+  real_T output2;                      /* '<S21>/MATLAB Function' */
 } B_MATLABFunction_FingerStroke_T;
 
-/* Block signals for system '<S29>/gainramp' */
+/* Block signals for system '<S33>/gainramp' */
 typedef struct {
-  real_T val;                          /* '<S29>/gainramp' */
-  real_T state1[4];                    /* '<S29>/gainramp' */
+  real_T val;                          /* '<S33>/gainramp' */
+  real_T state1[4];                    /* '<S33>/gainramp' */
 } B_gainramp_FingerStrokeAssist_T;
 
 /* Block signals (auto storage) */
@@ -830,14 +830,15 @@ typedef struct {
   real_T Uk1;                          /* '<S10>/Delay Input1' */
   real_T DataTypeConversion_p;         /* '<S1>/Data Type Conversion' */
   real_T DiscreteTimeIntegrator;       /* '<S1>/Discrete-Time Integrator' */
+  real_T Delay_b;                      /* '<S2>/Delay' */
   real_T UnitDelay;                    /* '<Root>/Unit Delay' */
   real_T UnitDelay2;                   /* '<S6>/Unit Delay2' */
-  real_T Uk1_o;                        /* '<S27>/Delay Input1' */
+  real_T Uk1_o;                        /* '<S31>/Delay Input1' */
   real_T DataTypeConversion_o;         /* '<S6>/Data Type Conversion' */
   real_T DiscreteTimeIntegrator_e;     /* '<S6>/Discrete-Time Integrator' */
   real_T UnitDelay3[2];                /* '<Root>/Unit Delay3' */
   real_T UnitDelay2_j;                 /* '<S7>/Unit Delay2' */
-  real_T Uk1_m;                        /* '<S28>/Delay Input1' */
+  real_T Uk1_m;                        /* '<S32>/Delay Input1' */
   real_T DataTypeConversion_a;         /* '<S7>/Data Type Conversion' */
   real_T DiscreteTimeIntegrator_k;     /* '<S7>/Discrete-Time Integrator' */
   real_T PCI6221ENC;                   /* '<S5>/PCI 6221 ENC ' */
@@ -848,32 +849,32 @@ typedef struct {
   real_T UnitDelay_g[2];               /* '<S5>/Unit Delay' */
   real_T Sum[2];                       /* '<S5>/Sum' */
   real_T UnitDelay1;                   /* '<Root>/Unit Delay1' */
-  real_T TSamp[2];                     /* '<S14>/TSamp' */
-  real_T Uk1_d[2];                     /* '<S14>/UD' */
-  real_T Diff[2];                      /* '<S14>/Diff' */
-  real_T Switch[2];                    /* '<S13>/Switch' */
-  real_T Switch2[2];                   /* '<S13>/Switch2' */
-  real_T Sum_h[2];                     /* '<S2>/Sum' */
-  real_T ProportionalGain[2];          /* '<S12>/Proportional Gain' */
-  real_T Integrator[2];                /* '<S12>/Integrator' */
-  real_T DerivativeGain[2];            /* '<S12>/Derivative Gain' */
-  real_T Filter[2];                    /* '<S12>/Filter' */
-  real_T SumD[2];                      /* '<S12>/SumD' */
-  real_T FilterCoefficient[2];         /* '<S12>/Filter Coefficient' */
-  real_T Sum_a[2];                     /* '<S12>/Sum' */
-  real_T Delay_b;                      /* '<S2>/Delay' */
+  real_T TSamp[2];                     /* '<S18>/TSamp' */
+  real_T Uk1_d[2];                     /* '<S18>/UD' */
+  real_T Diff[2];                      /* '<S18>/Diff' */
+  real_T DiscreteFilter1_j[2];         /* '<S5>/Discrete Filter1' */
   real_T DataTypeConversion_l;         /* '<S2>/Data Type Conversion' */
+  real_T Switch[2];                    /* '<S14>/Switch' */
+  real_T Switch2[2];                   /* '<S14>/Switch2' */
+  real_T Sum_h[2];                     /* '<S2>/Sum' */
+  real_T DerivativeGain[2];            /* '<S13>/Derivative Gain' */
+  real_T Filter[2];                    /* '<S13>/Filter' */
+  real_T SumD[2];                      /* '<S13>/SumD' */
+  real_T FilterCoefficient[2];         /* '<S13>/Filter Coefficient' */
+  real_T IntegralGain[2];              /* '<S13>/Integral Gain' */
+  real_T Integrator[2];                /* '<S13>/Integrator' */
+  real_T ProportionalGain[2];          /* '<S13>/Proportional Gain' */
+  real_T Sum_a[2];                     /* '<S13>/Sum' */
   real_T Switch_h;                     /* '<S2>/Switch' */
   real_T Gain_l;                       /* '<S2>/Gain' */
-  real_T TmpSignalConversionAtDelayInpor[2];
-  real_T IntegralGain[2];              /* '<S12>/Integral Gain' */
+  real_T ManualSwitch[2];              /* '<S2>/Manual Switch' */
   real_T Gain1_l;                      /* '<S5>/Gain1' */
-  real_T Switch_n[2];                  /* '<S15>/Switch' */
-  real_T Switch2_l[2];                 /* '<S15>/Switch2' */
-  real_T LowPass100Hz;                 /* '<S21>/Low Pass 100 Hz' */
-  real_T LowPass100Hz1;                /* '<S21>/Low Pass 100 Hz1' */
-  real_T Memory;                       /* '<S21>/Memory' */
-  real_T Memory1;                      /* '<S21>/Memory1' */
+  real_T Switch_n[2];                  /* '<S19>/Switch' */
+  real_T Switch2_l[2];                 /* '<S19>/Switch2' */
+  real_T LowPass100Hz;                 /* '<S25>/Low Pass 100 Hz' */
+  real_T LowPass100Hz1;                /* '<S25>/Low Pass 100 Hz1' */
+  real_T Memory;                       /* '<S25>/Memory' */
+  real_T Memory1;                      /* '<S25>/Memory1' */
   real_T PCI6221AD1_o1;                /* '<S5>/PCI-6221 AD1' */
   real_T PCI6221AD1_o2;                /* '<S5>/PCI-6221 AD1' */
   real_T PCI6221AD1_o3;                /* '<S5>/PCI-6221 AD1' */
@@ -882,8 +883,8 @@ typedef struct {
   real_T PCI6221AD1_o6;                /* '<S5>/PCI-6221 AD1' */
   real_T PCI6221AD1_o7;                /* '<S5>/PCI-6221 AD1' */
   real_T PCI6221AD1_o8;                /* '<S5>/PCI-6221 AD1' */
-  real_T Sum_m;                        /* '<S22>/Sum' */
-  real_T gain;                         /* '<S22>/gain' */
+  real_T Sum_m;                        /* '<S26>/Sum' */
+  real_T gain;                         /* '<S26>/gain' */
   real_T UnitDelay1_g;                 /* '<S6>/Unit Delay1' */
   real_T UnitDelay1_d;                 /* '<S7>/Unit Delay1' */
   real_T parTrajMode;                  /* '<S8>/parTrajMode' */
@@ -891,18 +892,18 @@ typedef struct {
   real_T Saturation1;                  /* '<S8>/Saturation1' */
   real_T parFixedDur;                  /* '<S8>/parFixedDur' */
   real_T Saturation2;                  /* '<S8>/Saturation2' */
-  real_T Memory_g[4];                  /* '<S29>/Memory' */
+  real_T Memory_g[4];                  /* '<S33>/Memory' */
   real_T parChangeRate;                /* '<S8>/parChangeRate' */
   real_T parKp1;                       /* '<S8>/parKp1' */
-  real_T Memory_i[4];                  /* '<S30>/Memory' */
+  real_T Memory_i[4];                  /* '<S34>/Memory' */
   real_T parKp2;                       /* '<S8>/parKp2' */
-  real_T Memory_e[4];                  /* '<S31>/Memory' */
+  real_T Memory_e[4];                  /* '<S35>/Memory' */
   real_T parKd1;                       /* '<S8>/parKd1' */
-  real_T Memory_o[4];                  /* '<S32>/Memory' */
+  real_T Memory_o[4];                  /* '<S36>/Memory' */
   real_T parKd2;                       /* '<S8>/parKd2' */
-  real_T Memory_n[4];                  /* '<S33>/Memory' */
+  real_T Memory_n[4];                  /* '<S37>/Memory' */
   real_T parKdV1;                      /* '<S8>/parKdV1' */
-  real_T Memory_os[4];                 /* '<S34>/Memory' */
+  real_T Memory_os[4];                 /* '<S38>/Memory' */
   real_T parKdV2;                      /* '<S8>/parKdV2' */
   real_T parFThresh;                   /* '<S8>/parFThresh' */
   real_T parForceTrigger;              /* '<S8>/parForceTrigger' */
@@ -911,9 +912,9 @@ typedef struct {
   real_T parPStop;                     /* '<S8>/parPStop' */
   real_T parVThresh;                   /* '<S8>/parVThresh' */
   real_T parWiggleAmp;                 /* '<S8>/parWiggleAmp' */
-  real_T TmpSignalConversionAtSFunctionI[5];/* '<S18>/MATLAB Function' */
-  real_T output[5];                    /* '<S18>/MATLAB Function' */
-  real_T In1[2];                       /* '<S16>/In1' */
+  real_T TmpSignalConversionAtSFunctionI[5];/* '<S22>/MATLAB Function' */
+  real_T output[5];                    /* '<S22>/MATLAB Function' */
+  real_T In1[2];                       /* '<S20>/In1' */
   real_T state;                        /* '<Root>/MATLAB Function' */
   real_T f_ref[2];                     /* '<Root>/MATLAB Function' */
   real_T ramp_switch;                  /* '<Root>/MATLAB Function' */
@@ -923,23 +924,29 @@ typedef struct {
   real_T pos_ref[2];                   /* '<Root>/MATLAB Function' */
   real_T pos_ref_Ulim;                 /* '<Root>/MATLAB Function' */
   real_T pos_ref_Llim;                 /* '<Root>/MATLAB Function' */
+  real_T ff;                           /* '<S15>/MATLAB Function2' */
+  real_T f_ref_pid_1;                  /* '<S15>/MATLAB Function1' */
+  real_T DataTypeConversion1;          /* '<S2>/Data Type Conversion1' */
+  real_T Switch1;                      /* '<S2>/Switch1' */
+  real_T Sum1;                         /* '<S15>/Sum1' */
   boolean_T FixPtRelationalOperator;   /* '<S10>/FixPt Relational Operator' */
-  boolean_T FixPtRelationalOperator_i; /* '<S27>/FixPt Relational Operator' */
-  boolean_T FixPtRelationalOperator_f; /* '<S28>/FixPt Relational Operator' */
-  boolean_T LowerRelop1[2];            /* '<S13>/LowerRelop1' */
-  boolean_T UpperRelop[2];             /* '<S13>/UpperRelop' */
   boolean_T Compare;                   /* '<S11>/Compare' */
-  boolean_T LowerRelop1_p[2];          /* '<S15>/LowerRelop1' */
-  boolean_T UpperRelop_l[2];           /* '<S15>/UpperRelop' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_a;/* '<S34>/gainramp' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_f;/* '<S33>/gainramp' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_b;/* '<S32>/gainramp' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_id;/* '<S31>/gainramp' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp_i;/* '<S30>/gainramp' */
-  B_gainramp_FingerStrokeAssist_T sf_gainramp;/* '<S29>/gainramp' */
-  B_MATLABFunction_FingerStroke_T sf_MATLABFunction_n;/* '<S20>/MATLAB Function' */
-  B_MATLABFunction_FingerStroke_T sf_MATLABFunction;/* '<S19>/MATLAB Function' */
-  B_MATLABFunction_FingerStroke_T sf_MATLABFunction_m;/* '<S17>/MATLAB Function' */
+  boolean_T FixPtRelationalOperator_i; /* '<S31>/FixPt Relational Operator' */
+  boolean_T FixPtRelationalOperator_f; /* '<S32>/FixPt Relational Operator' */
+  boolean_T LowerRelop1[2];            /* '<S14>/LowerRelop1' */
+  boolean_T UpperRelop[2];             /* '<S14>/UpperRelop' */
+  boolean_T LowerRelop1_p[2];          /* '<S19>/LowerRelop1' */
+  boolean_T UpperRelop_l[2];           /* '<S19>/UpperRelop' */
+  boolean_T Compare_e;                 /* '<S12>/Compare' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp_a;/* '<S38>/gainramp' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp_f;/* '<S37>/gainramp' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp_b;/* '<S36>/gainramp' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp_id;/* '<S35>/gainramp' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp_i;/* '<S34>/gainramp' */
+  B_gainramp_FingerStrokeAssist_T sf_gainramp;/* '<S33>/gainramp' */
+  B_MATLABFunction_FingerStroke_T sf_MATLABFunction_n;/* '<S24>/MATLAB Function' */
+  B_MATLABFunction_FingerStroke_T sf_MATLABFunction;/* '<S23>/MATLAB Function' */
+  B_MATLABFunction_FingerStroke_T sf_MATLABFunction_m;/* '<S21>/MATLAB Function' */
 } B_FingerStrokeAssistance_T;
 
 /* Block states (auto storage) for system '<Root>' */
@@ -949,33 +956,35 @@ typedef struct {
   real_T Delay1_DSTATE;                /* '<S1>/Delay1' */
   real_T DelayInput1_DSTATE;           /* '<S10>/Delay Input1' */
   real_T DiscreteTimeIntegrator_DSTATE;/* '<S1>/Discrete-Time Integrator' */
+  real_T Delay_DSTATE_m;               /* '<S2>/Delay' */
   real_T UnitDelay_DSTATE;             /* '<Root>/Unit Delay' */
   real_T UnitDelay2_DSTATE;            /* '<S6>/Unit Delay2' */
-  real_T DelayInput1_DSTATE_l;         /* '<S27>/Delay Input1' */
+  real_T DelayInput1_DSTATE_l;         /* '<S31>/Delay Input1' */
   real_T DiscreteTimeIntegrator_DSTATE_i;/* '<S6>/Discrete-Time Integrator' */
   real_T UnitDelay3_DSTATE[2];         /* '<Root>/Unit Delay3' */
   real_T UnitDelay2_DSTATE_h;          /* '<S7>/Unit Delay2' */
-  real_T DelayInput1_DSTATE_j;         /* '<S28>/Delay Input1' */
+  real_T DelayInput1_DSTATE_j;         /* '<S32>/Delay Input1' */
   real_T DiscreteTimeIntegrator_DSTATE_o;/* '<S7>/Discrete-Time Integrator' */
   real_T UnitDelay_DSTATE_h[2];        /* '<S5>/Unit Delay' */
   real_T UnitDelay1_DSTATE;            /* '<Root>/Unit Delay1' */
-  real_T UD_DSTATE[2];                 /* '<S14>/UD' */
-  real_T Integrator_DSTATE[2];         /* '<S12>/Integrator' */
-  real_T Filter_DSTATE[2];             /* '<S12>/Filter' */
-  real_T Delay_DSTATE_m;               /* '<S2>/Delay' */
-  real_T LowPass100Hz_DSTATE[2];       /* '<S21>/Low Pass 100 Hz' */
-  real_T LowPass100Hz1_DSTATE[2];      /* '<S21>/Low Pass 100 Hz1' */
+  real_T UD_DSTATE[2];                 /* '<S18>/UD' */
+  real_T DiscreteFilter1_states_g[2];  /* '<S5>/Discrete Filter1' */
+  real_T Filter_DSTATE[2];             /* '<S13>/Filter' */
+  real_T Integrator_DSTATE[2];         /* '<S13>/Integrator' */
+  real_T LowPass100Hz_DSTATE[2];       /* '<S25>/Low Pass 100 Hz' */
+  real_T LowPass100Hz1_DSTATE[2];      /* '<S25>/Low Pass 100 Hz1' */
   real_T UnitDelay1_DSTATE_l;          /* '<S6>/Unit Delay1' */
   real_T UnitDelay1_DSTATE_i;          /* '<S7>/Unit Delay1' */
   real_T DiscreteFilter1_tmp;          /* '<S1>/Discrete Filter1' */
-  real_T Memory_PreviousInput;         /* '<S21>/Memory' */
-  real_T Memory1_PreviousInput;        /* '<S21>/Memory1' */
-  real_T Memory_PreviousInput_k[4];    /* '<S29>/Memory' */
-  real_T Memory_PreviousInput_n[4];    /* '<S30>/Memory' */
-  real_T Memory_PreviousInput_b[4];    /* '<S31>/Memory' */
-  real_T Memory_PreviousInput_j[4];    /* '<S32>/Memory' */
-  real_T Memory_PreviousInput_i[4];    /* '<S33>/Memory' */
-  real_T Memory_PreviousInput_c[4];    /* '<S34>/Memory' */
+  real_T DiscreteFilter1_tmp_d[2];     /* '<S5>/Discrete Filter1' */
+  real_T Memory_PreviousInput;         /* '<S25>/Memory' */
+  real_T Memory1_PreviousInput;        /* '<S25>/Memory1' */
+  real_T Memory_PreviousInput_k[4];    /* '<S33>/Memory' */
+  real_T Memory_PreviousInput_n[4];    /* '<S34>/Memory' */
+  real_T Memory_PreviousInput_b[4];    /* '<S35>/Memory' */
+  real_T Memory_PreviousInput_j[4];    /* '<S36>/Memory' */
+  real_T Memory_PreviousInput_i[4];    /* '<S37>/Memory' */
+  real_T Memory_PreviousInput_c[4];    /* '<S38>/Memory' */
   real_T PCI6221DA_RWORK[6];           /* '<S5>/PCI-6221 DA' */
   void *PCI6221ENC_PWORK;              /* '<S5>/PCI 6221 ENC ' */
   void *PCI6221ENC1_PWORK;             /* '<S5>/PCI 6221 ENC 1' */
@@ -984,19 +993,19 @@ typedef struct {
   int_T PCI6221AD1_IWORK[41];          /* '<S5>/PCI-6221 AD1' */
   struct {
     int_T AcquireOK;
-  } SFunction_IWORK;                   /* '<S46>/S-Function' */
+  } SFunction_IWORK;                   /* '<S50>/S-Function' */
 
   struct {
     int_T AcquireOK;
-  } SFunction_IWORK_l;                 /* '<S48>/S-Function' */
+  } SFunction_IWORK_l;                 /* '<S52>/S-Function' */
 
   struct {
     int_T AcquireOK;
-  } SFunction_IWORK_b;                 /* '<S45>/S-Function' */
+  } SFunction_IWORK_b;                 /* '<S49>/S-Function' */
 
   struct {
     int_T AcquireOK;
-  } SFunction_IWORK_h;                 /* '<S47>/S-Function' */
+  } SFunction_IWORK_h;                 /* '<S51>/S-Function' */
 
   int8_T DiscreteTimeIntegrator_PrevRese;/* '<S1>/Discrete-Time Integrator' */
   int8_T DiscreteTimeIntegrator_PrevRe_i;/* '<S6>/Discrete-Time Integrator' */
@@ -1023,61 +1032,67 @@ typedef struct {
 struct P_FingerStrokeAssistance_T_ {
   real_T Alow[4];                      /* Variable: Alow
                                         * Referenced by:
-                                        *   '<S21>/Low Pass 100 Hz'
-                                        *   '<S21>/Low Pass 100 Hz1'
+                                        *   '<S25>/Low Pass 100 Hz'
+                                        *   '<S25>/Low Pass 100 Hz1'
                                         */
   real_T Blow[2];                      /* Variable: Blow
                                         * Referenced by:
-                                        *   '<S21>/Low Pass 100 Hz'
-                                        *   '<S21>/Low Pass 100 Hz1'
+                                        *   '<S25>/Low Pass 100 Hz'
+                                        *   '<S25>/Low Pass 100 Hz1'
                                         */
   real_T Clow[2];                      /* Variable: Clow
                                         * Referenced by:
-                                        *   '<S21>/Low Pass 100 Hz'
-                                        *   '<S21>/Low Pass 100 Hz1'
+                                        *   '<S25>/Low Pass 100 Hz'
+                                        *   '<S25>/Low Pass 100 Hz1'
                                         */
   real_T Dlow;                         /* Variable: Dlow
                                         * Referenced by:
-                                        *   '<S21>/Low Pass 100 Hz'
-                                        *   '<S21>/Low Pass 100 Hz1'
+                                        *   '<S25>/Low Pass 100 Hz'
+                                        *   '<S25>/Low Pass 100 Hz1'
                                         */
   real_T x0low[2];                     /* Variable: x0low
                                         * Referenced by:
-                                        *   '<S21>/Low Pass 100 Hz'
-                                        *   '<S21>/Low Pass 100 Hz1'
+                                        *   '<S25>/Low Pass 100 Hz'
+                                        *   '<S25>/Low Pass 100 Hz1'
                                         */
   real_T DiscretePIDController_D;      /* Mask Parameter: DiscretePIDController_D
-                                        * Referenced by: '<S12>/Derivative Gain'
+                                        * Referenced by: '<S13>/Derivative Gain'
                                         */
   real_T DiscretePIDController_I;      /* Mask Parameter: DiscretePIDController_I
-                                        * Referenced by: '<S12>/Integral Gain'
+                                        * Referenced by: '<S13>/Integral Gain'
                                         */
   real_T DiscreteDerivative_ICPrevScaled;/* Mask Parameter: DiscreteDerivative_ICPrevScaled
-                                          * Referenced by: '<S14>/UD'
+                                          * Referenced by: '<S18>/UD'
                                           */
   real_T DiscretePIDController_N;      /* Mask Parameter: DiscretePIDController_N
-                                        * Referenced by: '<S12>/Filter Coefficient'
+                                        * Referenced by: '<S13>/Filter Coefficient'
                                         */
   real_T DiscretePIDController_P;      /* Mask Parameter: DiscretePIDController_P
-                                        * Referenced by: '<S12>/Proportional Gain'
+                                        * Referenced by: '<S13>/Proportional Gain'
                                         */
   real_T CompareToConstant_const;      /* Mask Parameter: CompareToConstant_const
                                         * Referenced by: '<S11>/Constant'
+                                        */
+  real_T CompareToConstant1_const;     /* Mask Parameter: CompareToConstant1_const
+                                        * Referenced by: '<S12>/Constant'
                                         */
   real_T DetectChange_vinit;           /* Mask Parameter: DetectChange_vinit
                                         * Referenced by: '<S10>/Delay Input1'
                                         */
   real_T DetectChange_vinit_a;         /* Mask Parameter: DetectChange_vinit_a
-                                        * Referenced by: '<S27>/Delay Input1'
+                                        * Referenced by: '<S31>/Delay Input1'
                                         */
   real_T DetectChange_vinit_d;         /* Mask Parameter: DetectChange_vinit_d
-                                        * Referenced by: '<S28>/Delay Input1'
+                                        * Referenced by: '<S32>/Delay Input1'
                                         */
   real_T Constant_Value;               /* Expression: 0
                                         * Referenced by: '<S2>/Constant'
                                         */
+  real_T Switch1_Threshold;            /* Expression: 0
+                                        * Referenced by: '<S2>/Switch1'
+                                        */
   real_T Out1_Y0;                      /* Expression: [0]
-                                        * Referenced by: '<S16>/Out1'
+                                        * Referenced by: '<S20>/Out1'
                                         */
   real_T Constant1_Value;              /* Expression: 0.1
                                         * Referenced by: '<Root>/Constant1'
@@ -1100,7 +1115,7 @@ struct P_FingerStrokeAssistance_T_ {
   real_T Gain1_Gain;                   /* Expression: -1
                                         * Referenced by: '<S1>/Gain1'
                                         */
-  real_T Damping_Gain;                 /* Expression: 1
+  real_T Damping_Gain;                 /* Expression: 1/1
                                         * Referenced by: '<S1>/Damping'
                                         */
   real_T Delay1_InitialCondition;      /* Expression: 0
@@ -1118,6 +1133,9 @@ struct P_FingerStrokeAssistance_T_ {
   real_T DiscreteTimeIntegrator_LowerSat;/* Expression: 0
                                           * Referenced by: '<S1>/Discrete-Time Integrator'
                                           */
+  real_T Delay_InitialCondition_e;     /* Expression: 0
+                                        * Referenced by: '<S2>/Delay'
+                                        */
   real_T UnitDelay_InitialCondition;   /* Expression: 1
                                         * Referenced by: '<Root>/Unit Delay'
                                         */
@@ -1284,25 +1302,43 @@ struct P_FingerStrokeAssistance_T_ {
                                         * Referenced by: '<Root>/Unit Delay1'
                                         */
   real_T TSamp_WtEt;                   /* Computed Parameter: TSamp_WtEt
-                                        * Referenced by: '<S14>/TSamp'
+                                        * Referenced by: '<S18>/TSamp'
                                         */
-  real_T Integrator_gainval;           /* Computed Parameter: Integrator_gainval
-                                        * Referenced by: '<S12>/Integrator'
+  real_T DiscreteFilter1_NumCoef_g[2]; /* Expression: [b_lp]
+                                        * Referenced by: '<S5>/Discrete Filter1'
                                         */
-  real_T Integrator_IC;                /* Expression: InitialConditionForIntegrator
-                                        * Referenced by: '<S12>/Integrator'
+  real_T DiscreteFilter1_DenCoef_a[2]; /* Expression: [a_lp]
+                                        * Referenced by: '<S5>/Discrete Filter1'
                                         */
+  real_T DiscreteFilter1_InitialStates_c;/* Expression: 0
+                                          * Referenced by: '<S5>/Discrete Filter1'
+                                          */
   real_T Filter_gainval;               /* Computed Parameter: Filter_gainval
-                                        * Referenced by: '<S12>/Filter'
+                                        * Referenced by: '<S13>/Filter'
                                         */
   real_T Filter_IC;                    /* Expression: InitialConditionForFilter
-                                        * Referenced by: '<S12>/Filter'
+                                        * Referenced by: '<S13>/Filter'
                                         */
-  real_T Delay_InitialCondition_e;     /* Expression: 0
-                                        * Referenced by: '<S2>/Delay'
+  real_T Integrator_gainval;           /* Computed Parameter: Integrator_gainval
+                                        * Referenced by: '<S13>/Integrator'
                                         */
-  real_T Gain_Gain_h;                  /* Expression: 1
+  real_T Integrator_IC;                /* Expression: InitialConditionForIntegrator
+                                        * Referenced by: '<S13>/Integrator'
+                                        */
+  real_T Gain_Gain_h;                  /* Expression: -1
                                         * Referenced by: '<S2>/Gain'
+                                        */
+  real_T Constant3_Value_n;            /* Expression: 0
+                                        * Referenced by: '<S15>/Constant3'
+                                        */
+  real_T Constant1_Value_h;            /* Expression: .2
+                                        * Referenced by: '<S15>/Constant1'
+                                        */
+  real_T Constant2_Value;              /* Expression: -0.3
+                                        * Referenced by: '<S15>/Constant2'
+                                        */
+  real_T Constant4_Value;              /* Expression: 1
+                                        * Referenced by: '<S15>/Constant4'
                                         */
   real_T Gain1_Gain_a;                 /* Expression: -1
                                         * Referenced by: '<S5>/Gain1'
@@ -1350,13 +1386,13 @@ struct P_FingerStrokeAssistance_T_ {
                                         * Referenced by: '<S5>/PCI-6221 DA'
                                         */
   real_T Memory_X0;                    /* Expression: 0
-                                        * Referenced by: '<S21>/Memory'
+                                        * Referenced by: '<S25>/Memory'
                                         */
   real_T Memory1_X0;                   /* Expression: 0
-                                        * Referenced by: '<S21>/Memory1'
+                                        * Referenced by: '<S25>/Memory1'
                                         */
   real_T Constant_Value_k;             /* Expression: 1.5
-                                        * Referenced by: '<S22>/Constant'
+                                        * Referenced by: '<S26>/Constant'
                                         */
   real_T PCI6221AD1_P1_Size[2];        /* Computed Parameter: PCI6221AD1_P1_Size
                                         * Referenced by: '<S5>/PCI-6221 AD1'
@@ -1401,7 +1437,7 @@ struct P_FingerStrokeAssistance_T_ {
                                         * Referenced by: '<S5>/PCI-6221 AD1'
                                         */
   real_T gain_Gain;                    /* Expression: .172
-                                        * Referenced by: '<S22>/gain'
+                                        * Referenced by: '<S26>/gain'
                                         */
   real_T UnitDelay1_InitialCondition_o;/* Expression: 0
                                         * Referenced by: '<S6>/Unit Delay1'
@@ -1428,7 +1464,7 @@ struct P_FingerStrokeAssistance_T_ {
                                         * Referenced by: '<S8>/Saturation2'
                                         */
   real_T Memory_X0_g[4];               /* Expression: zeros(1,4)
-                                        * Referenced by: '<S29>/Memory'
+                                        * Referenced by: '<S33>/Memory'
                                         */
   real_T parChangeRate_Gain;           /* Expression: .05
                                         * Referenced by: '<S8>/parChangeRate'
@@ -1437,31 +1473,31 @@ struct P_FingerStrokeAssistance_T_ {
                                         * Referenced by: '<S8>/parKp1'
                                         */
   real_T Memory_X0_a[4];               /* Expression: zeros(1,4)
-                                        * Referenced by: '<S30>/Memory'
+                                        * Referenced by: '<S34>/Memory'
                                         */
   real_T parKp2_Gain;                  /* Expression: 0
                                         * Referenced by: '<S8>/parKp2'
                                         */
   real_T Memory_X0_b[4];               /* Expression: zeros(1,4)
-                                        * Referenced by: '<S31>/Memory'
+                                        * Referenced by: '<S35>/Memory'
                                         */
   real_T parKd1_Gain;                  /* Expression: 0.0
                                         * Referenced by: '<S8>/parKd1'
                                         */
   real_T Memory_X0_g0[4];              /* Expression: zeros(1,4)
-                                        * Referenced by: '<S32>/Memory'
+                                        * Referenced by: '<S36>/Memory'
                                         */
   real_T parKd2_Gain;                  /* Expression: 0.0
                                         * Referenced by: '<S8>/parKd2'
                                         */
   real_T Memory_X0_bp[4];              /* Expression: zeros(1,4)
-                                        * Referenced by: '<S33>/Memory'
+                                        * Referenced by: '<S37>/Memory'
                                         */
   real_T parKdV1_Gain;                 /* Expression: 0.0
                                         * Referenced by: '<S8>/parKdV1'
                                         */
   real_T Memory_X0_e[4];               /* Expression: zeros(1,4)
-                                        * Referenced by: '<S34>/Memory'
+                                        * Referenced by: '<S38>/Memory'
                                         */
   real_T parKdV2_Gain;                 /* Expression: 0.0
                                         * Referenced by: '<S8>/parKdV2'
@@ -1495,6 +1531,9 @@ struct P_FingerStrokeAssistance_T_ {
                                         */
   uint32_T Delay_DelayLength_i;        /* Computed Parameter: Delay_DelayLength_i
                                         * Referenced by: '<S2>/Delay'
+                                        */
+  uint8_T ManualSwitch_CurrentSetting; /* Computed Parameter: ManualSwitch_CurrentSetting
+                                        * Referenced by: '<S2>/Manual Switch'
                                         */
   boolean_T Constant_Value_i;          /* Computed Parameter: Constant_Value_i
                                         * Referenced by: '<S4>/Constant'
@@ -1737,42 +1776,46 @@ extern RT_MODEL_FingerStrokeAssistance_T *const FingerStrokeAssistance_M;
  * '<S9>'   : 'FingerStrokeAssistance/signals'
  * '<S10>'  : 'FingerStrokeAssistance/HL Controller/Detect Change'
  * '<S11>'  : 'FingerStrokeAssistance/LL Controller/Compare To Constant'
- * '<S12>'  : 'FingerStrokeAssistance/LL Controller/Discrete PID Controller'
- * '<S13>'  : 'FingerStrokeAssistance/LL Controller/Saturation Dynamic1'
- * '<S14>'  : 'FingerStrokeAssistance/Robot/Discrete Derivative'
- * '<S15>'  : 'FingerStrokeAssistance/Robot/Saturation Dynamic'
- * '<S16>'  : 'FingerStrokeAssistance/Robot/Triggered Subsystem'
- * '<S17>'  : 'FingerStrokeAssistance/Robot/account for handedness'
- * '<S18>'  : 'FingerStrokeAssistance/Robot/account for handedness force'
- * '<S19>'  : 'FingerStrokeAssistance/Robot/account for handedness1'
- * '<S20>'  : 'FingerStrokeAssistance/Robot/account for handedness2'
- * '<S21>'  : 'FingerStrokeAssistance/Robot/filtered force output'
- * '<S22>'  : 'FingerStrokeAssistance/Robot/gravDir'
- * '<S23>'  : 'FingerStrokeAssistance/Robot/account for handedness/MATLAB Function'
- * '<S24>'  : 'FingerStrokeAssistance/Robot/account for handedness force/MATLAB Function'
- * '<S25>'  : 'FingerStrokeAssistance/Robot/account for handedness1/MATLAB Function'
- * '<S26>'  : 'FingerStrokeAssistance/Robot/account for handedness2/MATLAB Function'
- * '<S27>'  : 'FingerStrokeAssistance/Subsystem/Detect Change'
- * '<S28>'  : 'FingerStrokeAssistance/Subsystem1/Detect Change'
- * '<S29>'  : 'FingerStrokeAssistance/parameters/gain transition'
- * '<S30>'  : 'FingerStrokeAssistance/parameters/gain transition1'
- * '<S31>'  : 'FingerStrokeAssistance/parameters/gain transition2'
- * '<S32>'  : 'FingerStrokeAssistance/parameters/gain transition3'
- * '<S33>'  : 'FingerStrokeAssistance/parameters/gain transition4'
- * '<S34>'  : 'FingerStrokeAssistance/parameters/gain transition5'
- * '<S35>'  : 'FingerStrokeAssistance/parameters/gain transition/gainramp'
- * '<S36>'  : 'FingerStrokeAssistance/parameters/gain transition1/gainramp'
- * '<S37>'  : 'FingerStrokeAssistance/parameters/gain transition2/gainramp'
- * '<S38>'  : 'FingerStrokeAssistance/parameters/gain transition3/gainramp'
- * '<S39>'  : 'FingerStrokeAssistance/parameters/gain transition4/gainramp'
- * '<S40>'  : 'FingerStrokeAssistance/parameters/gain transition5/gainramp'
- * '<S41>'  : 'FingerStrokeAssistance/signals/Scope (xPC) '
- * '<S42>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 1'
- * '<S43>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 2'
- * '<S44>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 3'
- * '<S45>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 4'
- * '<S46>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 5'
- * '<S47>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 6'
- * '<S48>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 7'
+ * '<S12>'  : 'FingerStrokeAssistance/LL Controller/Compare To Constant1'
+ * '<S13>'  : 'FingerStrokeAssistance/LL Controller/Discrete PID Controller'
+ * '<S14>'  : 'FingerStrokeAssistance/LL Controller/Saturation Dynamic1'
+ * '<S15>'  : 'FingerStrokeAssistance/LL Controller/Subsystem'
+ * '<S16>'  : 'FingerStrokeAssistance/LL Controller/Subsystem/MATLAB Function1'
+ * '<S17>'  : 'FingerStrokeAssistance/LL Controller/Subsystem/MATLAB Function2'
+ * '<S18>'  : 'FingerStrokeAssistance/Robot/Discrete Derivative'
+ * '<S19>'  : 'FingerStrokeAssistance/Robot/Saturation Dynamic'
+ * '<S20>'  : 'FingerStrokeAssistance/Robot/Triggered Subsystem'
+ * '<S21>'  : 'FingerStrokeAssistance/Robot/account for handedness'
+ * '<S22>'  : 'FingerStrokeAssistance/Robot/account for handedness force'
+ * '<S23>'  : 'FingerStrokeAssistance/Robot/account for handedness1'
+ * '<S24>'  : 'FingerStrokeAssistance/Robot/account for handedness2'
+ * '<S25>'  : 'FingerStrokeAssistance/Robot/filtered force output'
+ * '<S26>'  : 'FingerStrokeAssistance/Robot/gravDir'
+ * '<S27>'  : 'FingerStrokeAssistance/Robot/account for handedness/MATLAB Function'
+ * '<S28>'  : 'FingerStrokeAssistance/Robot/account for handedness force/MATLAB Function'
+ * '<S29>'  : 'FingerStrokeAssistance/Robot/account for handedness1/MATLAB Function'
+ * '<S30>'  : 'FingerStrokeAssistance/Robot/account for handedness2/MATLAB Function'
+ * '<S31>'  : 'FingerStrokeAssistance/Subsystem/Detect Change'
+ * '<S32>'  : 'FingerStrokeAssistance/Subsystem1/Detect Change'
+ * '<S33>'  : 'FingerStrokeAssistance/parameters/gain transition'
+ * '<S34>'  : 'FingerStrokeAssistance/parameters/gain transition1'
+ * '<S35>'  : 'FingerStrokeAssistance/parameters/gain transition2'
+ * '<S36>'  : 'FingerStrokeAssistance/parameters/gain transition3'
+ * '<S37>'  : 'FingerStrokeAssistance/parameters/gain transition4'
+ * '<S38>'  : 'FingerStrokeAssistance/parameters/gain transition5'
+ * '<S39>'  : 'FingerStrokeAssistance/parameters/gain transition/gainramp'
+ * '<S40>'  : 'FingerStrokeAssistance/parameters/gain transition1/gainramp'
+ * '<S41>'  : 'FingerStrokeAssistance/parameters/gain transition2/gainramp'
+ * '<S42>'  : 'FingerStrokeAssistance/parameters/gain transition3/gainramp'
+ * '<S43>'  : 'FingerStrokeAssistance/parameters/gain transition4/gainramp'
+ * '<S44>'  : 'FingerStrokeAssistance/parameters/gain transition5/gainramp'
+ * '<S45>'  : 'FingerStrokeAssistance/signals/Scope (xPC) '
+ * '<S46>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 1'
+ * '<S47>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 2'
+ * '<S48>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 3'
+ * '<S49>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 4'
+ * '<S50>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 5'
+ * '<S51>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 6'
+ * '<S52>'  : 'FingerStrokeAssistance/signals/Scope (xPC) 7'
  */
 #endif                                 /* RTW_HEADER_FingerStrokeAssistance_h_ */
