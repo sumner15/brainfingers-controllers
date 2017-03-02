@@ -352,6 +352,49 @@ To Constant</Name>
 
     </SubSystem>
     <SubSystem>
+    <Name>Compare
+To Constant1</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/Compare To Constant1</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>LL Controller/Compare To Constant1/Constant</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Compare To Constant1/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Compare</sigName>
+              <xpcsigName>LL Controller/Compare To Constant1/Compare</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>Discrete PID Controller</Name>
     <xPCName>FingerStrokeAssistance/LL Controller/Discrete PID Controller</xPCName>
     
@@ -668,6 +711,150 @@ Dynamic1</Name>
 
 
     </SubSystem>
+    <SubSystem>
+    <Name>Subsystem</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/Subsystem</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function1</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/Subsystem/MATLAB Function1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function2</Name>
+    <xPCName>FingerStrokeAssistance/LL Controller/Subsystem/MATLAB Function2</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+ 
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>LL Controller/Subsystem/Constant1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Subsystem/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>LL Controller/Subsystem/Constant2</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Subsystem/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>LL Controller/Subsystem/Constant3</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Subsystem/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant4</blkName>
+            <xpcblkName>LL Controller/Subsystem/Constant4</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Subsystem/Constant4</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function1</sigName>
+              <xpcsigName>LL Controller/Subsystem/MATLAB Function1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function2</sigName>
+              <xpcsigName>LL Controller/Subsystem/MATLAB Function2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum1</sigName>
+              <xpcsigName>LL Controller/Subsystem/Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
 
     
  
@@ -676,6 +863,19 @@ Dynamic1</Name>
 To Constant</blkName>
             <xpcblkName>LL Controller/Compare To Constant</xpcblkName>
             <SLblockPath>FingerStrokeAssistance/LL Controller/Compare To Constant</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Compare
+To Constant1</blkName>
+            <xpcblkName>LL Controller/Compare To Constant1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Compare To Constant1</SLblockPath>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
           <paramName>const</paramName>
@@ -711,6 +911,7 @@ To Constant</blkName>
           </block>
 
 
+
  
             <block>
             <blkName>Constant</blkName>
@@ -722,6 +923,7 @@ To Constant</blkName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
+
 
 
  
@@ -737,6 +939,30 @@ To Constant</blkName>
           </block>
 
 
+
+ 
+            <block>
+            <blkName>Switch1</blkName>
+            <xpcblkName>LL Controller/Switch1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Switch1</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Manual Switch</blkName>
+            <xpcblkName>LL Controller/Manual Switch</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/LL Controller/Manual Switch</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>CurrentSetting</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
 
  
             <block>
@@ -774,6 +1000,23 @@ To Constant</blkName>
               <signal>
               <sigName>Data Type Conversion</sigName>
               <xpcsigName>LL Controller/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>LL Controller/Data Type Conversion1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -827,6 +1070,40 @@ To Constant</blkName>
               <xpcsigName>LL Controller/Switch</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Switch1</sigName>
+              <xpcsigName>LL Controller/Switch1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Manual Switch</sigName>
+              <xpcsigName>LL Controller/Manual Switch</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
             </signal>
 
 
@@ -1665,6 +1942,28 @@ Subsystem</Name>
 
  
             <block>
+            <blkName>Discrete Filter1</blkName>
+            <xpcblkName>Robot/Discrete Filter1</xpcblkName>
+            <SLblockPath>FingerStrokeAssistance/Robot/Discrete Filter1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Numerator</paramName>
+          <dim>[1, 2]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>Denominator</paramName>
+          <dim>[1, 2]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialStates</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
             <blkName>Unit Delay</blkName>
             <xpcblkName>Robot/Unit Delay</xpcblkName>
             <SLblockPath>FingerStrokeAssistance/Robot/Unit Delay</SLblockPath>
@@ -1865,6 +2164,23 @@ Subsystem</Name>
               <signal>
               <sigName>Sum</sigName>
               <xpcsigName>Robot/Sum</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Discrete Filter1</sigName>
+              <xpcsigName>Robot/Discrete Filter1</xpcsigName>
               <sigWidth>2</sigWidth>
               <sigDim>[2, 1]</sigDim>
             </signal>
